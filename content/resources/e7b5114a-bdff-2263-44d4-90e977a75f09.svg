@@ -1,0 +1,53 @@
+<svg width="1360" height="520" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Características principales de Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="260" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="18" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">¿Por qué Python?</text>
+
+<!-- Card 1: Sencillo -->
+<rect x="20" y="50" width="122" height="110" rx="10" fill="#0891B2"/>
+<text font-size="28" x="81" y="90" text-anchor="middle" dominant-baseline="central">📖</text>
+<text x="81" y="118" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Sencillo</text>
+<text x="81" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Código legible</text>
+<text x="81" y="150" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">como inglés natural</text>
+
+<!-- Card 2: Versátil -->
+<rect x="152" y="50" width="122" height="110" rx="10" fill="#7C3AED"/>
+<text font-size="28" x="213" y="90" text-anchor="middle" dominant-baseline="central">🔧</text>
+<text x="213" y="118" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Versátil</text>
+<text x="213" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Web, IA, datos,</text>
+<text x="213" y="150" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">scripts y más</text>
+
+<!-- Card 3: Gratuito -->
+<rect x="284" y="50" width="122" height="110" rx="10" fill="#059669"/>
+<text font-size="28" x="345" y="90" text-anchor="middle" dominant-baseline="central">🆓</text>
+<text x="345" y="118" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Gratuito</text>
+<text x="345" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Libre de usar</text>
+<text x="345" y="150" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">y modificar</text>
+
+<!-- Card 4: Comunidad -->
+<rect x="416" y="50" width="122" height="110" rx="10" fill="#D97706"/>
+<text font-size="28" x="477" y="90" text-anchor="middle" dominant-baseline="central">👥</text>
+<text x="477" y="118" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Comunidad</text>
+<text x="477" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Millones de</text>
+<text x="477" y="150" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">usuarios y recursos</text>
+
+<!-- Card 5: Demandado -->
+<rect x="548" y="50" width="112" height="110" rx="10" fill="#DC2626"/>
+<text font-size="28" x="604" y="90" text-anchor="middle" dominant-baseline="central">💼</text>
+<text x="604" y="118" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Demandado</text>
+<text x="604" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Top en el</text>
+<text x="604" y="150" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">mercado laboral</text>
+
+<!-- Usos reales -->
+<rect x="20" y="174" width="640" height="72" rx="10" fill="#1E3A5F"/>
+<text x="340" y="194" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">Python en la vida real</text>
+<text x="340" y="214" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Instagram · Spotify · Pinterest · NASA · Netflix · YouTube</text>
+<text x="340" y="232" text-anchor="middle" dominant-baseline="central" style="fill:#E0F2FE;font-size:10px;font-weight:400;">Inteligencia Artificial · Ciencia de datos · Finanzas · Automatización</text>
+</svg>

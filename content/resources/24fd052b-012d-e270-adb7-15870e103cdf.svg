@@ -1,0 +1,63 @@
+<svg width="1380" height="700" viewBox="0 0 690 350" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Funciones útiles de la biblioteca os en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="340" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="14" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Biblioteca os — Funciones para archivos</text>
+<text x="340" y="28" text-anchor="middle" dominant-baseline="central" style="fill:#BAE6FD;font-size:10px;font-weight:600;">Herramientas para gestionar archivos y carpetas desde Python</text>
+
+<!-- Cabecera columnas -->
+<rect x="20" y="44" width="196" height="26" rx="6" fill="#0891B2"/>
+<rect x="224" y="44" width="200" height="26" rx="6" fill="#0891B2"/>
+<rect x="432" y="44" width="228" height="26" rx="6" fill="#0891B2"/>
+<text x="118" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Función</text>
+<text x="324" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Descripción</text>
+<text x="546" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Ejemplo en el Gestor</text>
+
+<!-- Fila 1 -->
+<rect x="20" y="74" width="640" height="36" rx="4" fill="#E0F2FE"/>
+<text x="30" y="92" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.path.exists("ruta")</text>
+<text x="234" y="92" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">¿Existe el archivo o carpeta?</text>
+<text x="442" y="92" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">os.path.exists("gestor.json")</text>
+
+<!-- Fila 2 -->
+<rect x="20" y="114" width="640" height="36" rx="4" fill="#FFFFFF"/>
+<text x="30" y="132" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.path.getsize("ruta")</text>
+<text x="234" y="132" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">Tamaño del archivo en bytes</text>
+<text x="442" y="132" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">os.path.getsize("gestor.json")</text>
+
+<!-- Fila 3 -->
+<rect x="20" y="154" width="640" height="36" rx="4" fill="#E0F2FE"/>
+<text x="30" y="172" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.getcwd()</text>
+<text x="234" y="172" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">Carpeta de trabajo actual</text>
+<text x="442" y="172" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">print(os.getcwd())</text>
+
+<!-- Fila 4 -->
+<rect x="20" y="194" width="640" height="36" rx="4" fill="#FFFFFF"/>
+<text x="30" y="212" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.makedirs("carpeta")</text>
+<text x="234" y="212" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">Crea una carpeta nueva</text>
+<text x="442" y="212" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">os.makedirs("backups")</text>
+
+<!-- Fila 5 -->
+<rect x="20" y="234" width="640" height="36" rx="4" fill="#E0F2FE"/>
+<text x="30" y="252" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.remove("ruta")</text>
+<text x="234" y="252" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">Elimina un archivo</text>
+<text x="442" y="252" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">os.remove("gestor_viejo.json")</text>
+
+<!-- Fila 6 -->
+<rect x="20" y="274" width="640" height="36" rx="4" fill="#FFFFFF"/>
+<text x="30" y="292" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Fira Code','Courier New',monospace;font-size:11px;font-weight:600;">os.path.join("dir","file")</text>
+<text x="234" y="292" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">Une rutas de forma segura</text>
+<text x="442" y="292" dominant-baseline="central" style="fill:#475569;font-family:'Fira Code','Courier New',monospace;font-size:10px;font-weight:600;">os.path.join("datos","gestor.json")</text>
+
+<rect x="20" y="74" width="640" height="236" rx="4" fill="none" stroke="#BAE6FD" stroke-width="1"/>
+
+<!-- Footer -->
+<rect x="20" y="318" width="640" height="16" rx="6" fill="#1E3A5F" opacity="0.85"/>
+<text x="340" y="326" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:700;">💡 Úsalas siempre ANTES de abrir un archivo para evitar errores inesperados</text>
+</svg>

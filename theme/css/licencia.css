@@ -1,0 +1,73 @@
+#packageLicense{
+  text-align:left;
+  font-size:.9em;
+  color:#555;
+  line-height:1em;
+  margin:2.5em 0 2em 0;
+  border:1px solid rgba(0,
+  0,
+  0,
+  0);
+  border-radius:2px
+
+}
+#packageLicense p{
+  margin:0
+
+}
+#packageLicense a{
+  color:#666;
+  text-transform:capitalize;
+  display:inline-block;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  max-width:100%;
+  overflow:hidden;
+  line-height:15px
+
+}
+#packageLicense a:hover,
+  #packageLicense a:focus{
+  text-decoration:none;
+  color:#b04721
+
+}
+#packageLicense.propietary{
+  position:absolute;
+  overflow:hidden;
+  clip:rect(0,
+   0,
+   0,
+   0);
+  height:0
+
+}
+#packageLicense.cc{
+  padding:0 20px 0 90px;
+  background:url(img/licenses.gif) no-repeat 0 0
+
+}
+#packageLicense.cc-by-sa{
+  background-position:0 -100px
+
+}
+#packageLicensea.cc-by-nd{
+  background-position:0 -200px
+
+}
+#packageLicense.cc-by-nc{
+  background-position:0 -300px
+
+}
+#packageLicense.cc-by-nc-sa{
+  background-position:0 -400px
+
+}
+#packageLicense.cc-by-nc-nd{
+  background-position:0 -500px
+
+}
+#packageLicense.cc-0{
+  background-position:0 -600px
+
+}

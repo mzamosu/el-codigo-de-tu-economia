@@ -1,0 +1,18 @@
+background/*CAMBIO COLOR FONDO CUERPO SEGÚN SELECCIÓN DEL USUARIO EN EL DUA*/
+
+body:not(.dark-mode-active) article:not(.no-header) :is(.box-content, .udl-content, .eXelearning-content){
+  background-color:var(--fondo-cuerpo-iDevice);
+  border-radius:0 0 10px 10px;
+}
+
+body:not(.dark-mode-active) .no-header :is(.box-content, .udl-content, .eXelearning-content){
+  background-color:transparent !important;
+  border-radius:0 0 10px 10px;
+}
+
+ /*SUBCUERPO VERDADERO/FALSO*/
+body:not(.dark-mode-active) .TOFP-QuestionDiv{
+  background-color: #deeffd !important;
+}
+
+/*CAMBIO DE CUERPO POR SELECCIÓN DE ICONOS*/

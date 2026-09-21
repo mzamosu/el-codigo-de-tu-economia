@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb6g-itcorr77c">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>4.2 Tu taller: Python y VSCode | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb6g-itcorr77c" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li class="current-page-parent"> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li class="active"> <a href="../html/42-tu-taller-python-y-vscode.html" class="active no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb6g-itcorr77c" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">7</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">4.2 Tu taller: Python y VSCode</h1></div>
+</header><div id="page-content-page-mubjgb6g-itcorr77c" class="page-content">
+<article id="block-mq6pvsxu-4c0nyn16t" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Python tu nuevo idioma</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxu-e7nxwjkbk" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ya sabes que los lenguajes de alto nivel están diseñados para que los entiendas tú, no solo la máquina. Pues bien, entre todos ellos, vas a aprender Python: uno de los más usados del mundo y, no por casualidad, uno de los más sencillos de aprender.</p>
+<p>Mira lo sencillo que resulta Python comparado con otros lenguajes. Esta única línea le dice al programa que muestre un mensaje en pantalla. Sin configuraciones, sin complicaciones. Cuando instales tu entorno, será lo primero que escribas.</p>
+<figure class="exe-figure exe-image license-CC-BY-NC-SA position-center" style="width: 333px; text-align: center;"><img src="../content/resources/img0.1.png" alt="La imagen muestra el código del algoritmo "Hola mundo" en Python" width="333" height="133" title="Hola Mundo en Python">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Hola Mundo en Python</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Eso es Python: un lenguaje que se lee casi como inglés natural. Fue creado en 1991 por Guido van Rossum con un objetivo muy claro: que programar fuera lo más sencillo y legible posible.</p>
+<p><strong>¿Por qué vamos a usar Python?</strong></p>
+<figure class="exe-figure exe-image license-CC-BY-NC-SA position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/caracteristicas_python_v2_large.svg" title="caracteristicas Python" rel="lightbox"><img src="../content/resources/caracteristicas_python_v2_large.svg" alt="La imagen muestra cinco tarjetas de colores que resumen las principales características de Python: sencillo, por su código legible similar al inglés natural; versátil, ya que se usa en web, inteligencia artificial y datos; gratuito y de código abierto; con una gran comunidad de millones de usuarios; y muy demandado en el mercado laboral. En la parte inferior se destacan empresas y ámbitos reales que usan Python como Instagram, Spotify, NASA o Netflix." width="500" height="191" title="Características Python"></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de creación propia generada con Claude</a>. <span class="title"><em>Características Python</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>¿Dónde se usa Python en la vida real?</strong></p>
+<p>Quizás te sorprenda saber que Python está detrás de muchas cosas que usas a diario:</p>
+<ul>
+<li>En aplicaciones de gestión y automatización de tareas de oficina.</li>
+<li>En análisis de datos y finanzas, como nuestro Gestor de Gastos.</li>
+<li>En inteligencia artificial y ciencia de datos.</li>
+<li>En el desarrollo web (Instagram, Spotify o Pinterest están construidos con Python).</li>
+<li>En robótica y domótica.&nbsp;</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxu-ya64du5er" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">2. Tu entorno de trabajo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxu-rn2lwyb1h" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si quisieras escribir una novela, usarías un procesador de textos como Word o Writer. Para escribir código, necesitas un<strong> Editor de Código</strong>.</p>
+<p>Nuestra herramienta principal será <strong>Visual Studio Code</strong> (o simplemente <strong>VSCode</strong>). Piensa en él como un bloc de notas con "superpoderes". Es un programa gratuito, potente y muy utilizado en el mundo profesional.</p>
+<p>Para instalarlo, sigue estos pasos:</p>
+<ol>
+<li>Descarga VS Code desde su página oficial: <a href="https://code.visualstudio.com/" target="_blank" title="" rel="noopener">code.visualstudio.com</a></li>
+<li>Descarga e instala Python desde:&nbsp;<a href="https://www.python.org/downloads/" target="_blank" title="" rel="noopener">https://www.python.org/downloads/</a>&nbsp;</li>
+<li>Abre VS Code e instala la extensión oficial de Python buscando <em>Python</em> en el panel de extensiones.</li>
+</ol>
+<p>Si estás trabajando en un ordenador con el sistema operativo EducandOs, busca en el centro de Software (Aplicaciones->Herramientas del Sistema->Centro de Software de EducandOs).</p>
+<p>Una vez instalado, este será un entorno de trabajo:</p>
+<figure class="exe-figure exe-image license-CC-BY-NC-SA position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<img src="../content/resources/Gemini_Generated_EntornoVSCode.png" alt="La imagen muestra la interfaz del entorno Visual Studio Code con sus tres áreas principales resaltadas mediante recuadros: el explorador de archivos en el lateral izquierdo, el editor de código principal con sintaxis coloreada en el centro, y la terminal de comandos en la parte inferior." width="500" height="273" title="Entorno VSCode">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://gemini.google.com/ " class="author" target="_blank" rel="noopener">Imagen de creación propia generada con Gemini</a>. <span class="title"><em>Entorno VSCode</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure>
+<div class="exe-fx exe-accordion">
+<h2>Instalación Windows</h2>
+<figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px; text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/TGb8LVUlUYM" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://www.youtube.com/@davidtoscano" target="_blank" class="author" rel="noopener">Vídeo de David Toscano.</a>. <a href="https://www.youtube.com/watch?v=TGb8LVUlUYM" target="_blank" class="title" rel="noopener"><em>Instalar Python en Visual Studio Code</em></a></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="https://www.youtube.com/static?template=terms" rel="license nofollow noopener" target="_blank">Licencia de YouTube estándar</a><span class="sep">)</span></span></figcaption>
+</figure>
+<h2>Instalación Ubuntu</h2>
+<figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px; text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/aicZINm0zs4" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://www.youtube.com/@elrincondelhacker" target="_blank" class="author" rel="noopener">Vídeo de El Rincón del Hacker</a>. <a href="https://www.youtube.com/watch?v=aicZINm0zs4" target="_blank" class="title" rel="noopener"><em>Cómo instalar y configurar Python en Linux con Visual Studio Code</em></a> </span><span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="https://www.youtube.com/static?template=terms" rel="license nofollow noopener" target="_blank">Licencia de YouTube estándar</a><span class="sep">)</span></span></figcaption>
+</figure>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxu-zzht49bwp" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">3. Comprueba lo aprendido</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxu-bncskbo6x" class="idevice_node relate" data-idevice-path="../idevices/relate/" data-idevice-type="relate">
+<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona cada tarjeta con su pareja.</p></div><div class="relaciona-DataGame js-hidden">{"typeGame":"Relaciona","author":"","randomCards":true,"instructions":"<p>Relaciona cada tarjeta con su pareja.</p>","showMinimize":false,"itinerary":{"showClue":false,"clueGame":"","percentageClue":40,"showCodeAccess":false,"codeAccess":"","messageCodeAccess":""},"cardsGame":[{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Lenguaje%20de%20bajo%20nivel","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Habla%20casi%20directamente%20el%20idioma%20electr%C3%B3nico%20del%20ordenador"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Lenguaje%20de%20alto%20nivel","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Dise%C3%B1ado%20para%20ser%20entendido%20por%20humanos%3B%20usa%20palabras%20cercanas%20al%20ingl%C3%A9s%20natural"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Lenguaje%20compilado","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Traduce%20el%20c%C3%B3digo%20completo%20de%20una%20vez%20y%20genera%20un%20archivo%20ejecutable"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Lenguaje%20interpretado","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Lee%20y%20ejecuta%20el%20c%C3%B3digo%20l%C3%ADnea%20a%20l%C3%ADnea%2C%20sobre%20la%20marcha"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Python%20","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Gratuito%2C%20vers%C3%A1til%2C%20muy%20legible%20y%20uno%20de%20los%20lenguajes%20m%C3%A1s%20demandados%20del%20mundo"}],"isScorm":0,"textButtonScorm":"Guardar la puntuación","repeatActivity":false,"textAfter":"","version":1.3,"percentajeCards":100,"type":1,"showSolution":true,"timeShowSolution":3,"time":3,"evaluation":false,"evaluationID":"","id":"202651811427-120","msgs":{"msgSubmit":"Enviar","msgClue":"¡Genial! La pista es:","msgCodeAccess":"Código de acceso","msgPlayStart":"Pulse aquí para jugar","msgScore":"Puntuación","msgErrors":"Errores","msgHits":"Aciertos","msgMinimize":"Minimizar","msgMaximize":"Maximizar","msgFullScreen":"Pantalla Completa","msgExitFullScreen":"Salir del modo pantalla completa","msgNoImage":"Pregunta sin imágenes","msgEndGameScore":"Antes de guardar la puntuación comience la partida.","msgScoreScorm":"La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.","msgOnlySaveScore":"¡Sólo puede guardar la puntuación una vez!","msgOnlySave":"Sólo puede guardar una vez","msgInformation":"Información","msgYouScore":"Su puntuación","msgAuthor":"Autoría","msgOnlySaveAuto":"Su puntuación se guardará después de cada pregunta. Sólo puede jugar una vez.","msgSaveAuto":"Su puntuación se guardará automáticamente después de cada pregunta.","msgSeveralScore":"Puede guardar la puntuación tantas veces como quiera","msgYouLastScore":"La última puntuación guardada es","msgActityComply":"Ya ha realizado esta actividad.","msgPlaySeveralTimes":"Puede realizar esta actividad cuantas veces quiera","msgClose":"Cerrar","msgAudio":"Audio","msgNumQuestions":"Número de tarjetas","msgTryAgain":"Necesita al menos un %s% de respuestas correctas para conseguir la información. Vuelva a intentarlo.","msgEndGameM":"Has completado el juego. Tu puntuación es %s.","msgUncompletedActivity":"Actividad no completada","msgSuccessfulActivity":"Actividad superada. Puntuación: %s","msgUnsuccessfulActivity":"Actividad no superada. Puntuación: %s","msgTypeGame":"Relaciona","msgCheck":"Comprobar","msgRestart":"Reiniciar"}}</div><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-1787478614634-l5ub0f84n" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">4. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787478614629-v671a3yvc" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Alto vs. Bajo nivel</h2>
+<p>Los lenguajes de alto nivel (como el que aprenderemos) están pensados para ser leídos por personas; los de bajo nivel, para ser procesados directamente por el hardware.</p>
+<h2>Compilado vs. Interpretado</h2>
+<p>El código compilado se traduce entero de una vez creando un ejecutable. El interpretado se traduce y ejecuta línea a línea.</p>
+<h2>Estructura E-P-S</h2>
+<p>Todo programa sigue el ciclo: Entrada (recibir datos) > Proceso (hacer cálculos/lógica) > Salida (mostrar resultados).</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/41-tipos-y-estructura-general.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/5-los-cimientos-del-codigo.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

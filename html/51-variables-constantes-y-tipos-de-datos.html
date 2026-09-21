@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb6n-1muyi93ev">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>5.1 Variables, constantes y tipos de datos | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../idevices/complete/complete.js"></script><link rel="stylesheet" href="../idevices/complete/complete.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb6n-1muyi93ev" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="active no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb6n-1muyi93ev" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">9</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">5.1 Variables, constantes y tipos de datos</h1></div>
+</header><div id="page-content-page-mubjgb6n-1muyi93ev" class="page-content">
+<article id="block-mq6pvsxu-k29xvrfsu" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Variables y constantes</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxu-r7p8ftw5c" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para que tu Gestor de Gastos funcione, necesita recordar información: cuánto dinero tienes en la cuenta, qué has comprado o en qué fecha. En programación, para guardar esa información utilizamos <strong>variables</strong>.</p>
+<p>Una variable es un espacio en la memoria del ordenador donde puedes guardar un dato y ponerle un nombre para usarlo después. Lo que la hace especial es que, como su nombre indica, su valor puede cambiar a lo largo del programa.</p>
+<p>Piensa en una variable como si fuera una caja de mudanza a la que le pones una etiqueta por fuera y le metes algo dentro. En Python, crear una variable es tan fácil como escribir el nombre de la etiqueta, un signo igual (=) y el valor que quieres guardar:</p>
+<p>saldo_actual = 1500</p>
+<p>concepto = "Factura de la luz"</p>
+<p>A lo largo del mes, el contenido de esa caja variará (por eso se llaman variables).&nbsp;Sin embargo, a veces necesitamos guardar valores fijos que nunca cambian, como un límite de presupuesto.</p>
+<p>A estas "cajas" las llamamos constantes. En Python, para diferenciarlas, las escribimos en mayúsculas: LIMITE_AVISO = 50.</p>
+<p>Python técnicamente te permitiría modificar ese valor, pero por convención todos los programadores saben que no deben hacerlo.</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;"><img src="../content/resources/Gemini_Generated_Ap5_1.png" title="Variables vs. Constantes" width="500" height="273" alt="La imagen muestra una comparativa visual donde una "Variable" se representa como una caja de cartón abierta con dinero, indicando que su valor puede cambiar durante el mes. A su lado, una "Constante" se ilustra como una caja fuerte cerrada, simbolizando un límite de aviso que siempre se mantiene igual.">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://gemini.google.com/ " class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Gemini</a>. <span class="title"><em>Variables vs. Constantes</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>¿Cómo debes nombrar una variable?</strong></p>
+<p>No puedes ponerle cualquier nombre a una variable. Python tiene unas reglas que debes respetar:</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/reglas_nomenclatura_v2_large.svg" title="Nomenclatura variables" rel="lightbox"><img src="../content/resources/reglas_nomenclatura_v2_large.svg" width="500" height="221" alt="La imagen muestra una tabla comparativa con las reglas para nombrar variables en Python, dividida en dos columnas: ejemplos válidos en verde e inválidos en rojo. Se ilustran cuatro reglas fundamentales: las variables pueden contener letras, números y guión bajo; no pueden empezar por número ni contener espacios; no pueden coincidir con palabras reservadas como for; y se recomienda el estilo snake_case. Al pie, una nota advierte que Python distingue entre mayúsculas y minúsculas." title="Nomenclatura variables"></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Nomenclatura variables</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Además de las reglas obligatorias, existe una convención muy usada en Python: el estilo snake_case, que consiste en escribir los nombres en minúsculas y separar las palabras con guión bajo:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ✅ Correcto: snake_case
+total_gastos = 320.50
+nombre_categoria = &quot;ocio&quot;
+
+# ❌ Evitar
+TotalGastos = 320.50
+nombreCategoria = &quot;ocio&quot;</code></pre>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1789317358122-9ip7ddv8s" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">2. Verdadero o falso</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1789317358121-1rt0s4g9w" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1789317358121-1rt0s4g9w&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;En Python, una variable puede comenzar por un número.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. Los nombres de variables deben empezar siempre por una letra o un guión bajo. Por ejemplo, 1gasto no sería válido, pero gasto1 sí.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;❌ Falso. Los nombres de variables deben empezar siempre por una letra o un guión bajo. Por ejemplo, 1gasto no sería válido, pero gasto1 sí.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Python distingue entre mayúsculas y minúsculas en los nombres de variables.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. importe, Importe e IMPORTE serían tres variables distintas para Python. Por eso es importante ser coherente con el estilo que uses.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;✅ Verdadero. importe, Importe e IMPORTE serían tres variables distintas para Python. Por eso es importante ser coherente con el estilo que uses.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;En Python, las constantes están bloqueadas y el lenguaje impide modificarlas.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. Python no tiene un mecanismo que impida modificar una constante. Escribirlas en MAYÚSCULAS es solo una convención que todos los programadores respetan para indicar que ese valor no debe cambiarse.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;❌ Falso. Python no tiene un mecanismo que impida modificar una constante. Escribirlas en MAYÚSCULAS es solo una convención que todos los programadores respetan para indicar que ese valor no debe cambiarse.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;La palabra for es un nombre válido para una variable en Python.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. for es una palabra reservada de Python (se usa para los bucles). Nunca puedes usar palabras reservadas como nombres de variables.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;❌ Falso. for es una palabra reservada de Python (se usa para los bucles). Nunca puedes usar palabras reservadas como nombres de variables.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Una variable puede cambiar su valor a lo largo de un programa.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. De hecho, ese es precisamente el propósito de una variable: almacenar un valor que puede ir cambiando. Por ejemplo, total_gastos irá aumentando cada vez que registres un nuevo gasto.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;✅ Verdadero. De hecho, ese es precisamente el propósito de una variable: almacenar un valor que puede ir cambiando. Por ejemplo, total_gastos irá aumentando cada vez que registres un nuevo gasto.&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1789317358121-1rt0s4g9w&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1789317358121-1rt0s4g9w" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1789317358121-1rt0s4g9w" id="tofPMainContainer-idevice-1789317358121-1rt0s4g9w">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1789317358121-1rt0s4g9w">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1789317358121-1rt0s4g9w" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1789317358121-1rt0s4g9w">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1789317358121-1rt0s4g9w"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1789317358121-1rt0s4g9w">
+                    <button  id="tofPStartGame-idevice-1789317358121-1rt0s4g9w" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1789317358121-1rt0s4g9w">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1789317358121-1rt0s4g9w">
+                    <button id="tofPCheckTest-idevice-1789317358121-1rt0s4g9w" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1789317358121-1rt0s4g9w" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1789317358121-1rt0s4g9w" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-mq6pvsxv-0pbixanh7" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">3. Tipos de datos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxv-ex2ri4mlq" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El ordenador necesita saber qué tipo de elemento estás guardando para saber qué puede hacer con él. En nuestro Gestor de Gastos, no tratarás igual el importe de una factura (con el que debes hacer restas) que el nombre de un supermercado. Al igual que no es lo mismo&nbsp;meter agua que arena en una caja. Cada tipo de dato ocupa un espacio diferente en la memoria y permite operaciones distintas.</p>
+<p>Python tiene cuatro tipos de datos básicos que usarás constantemente en tu Gestor de Gastos:</p>
+<ol>
+<li><strong>Enteros (int)</strong>: números exactos sin decimales. <em>Ejemplo en el Gestor: el mes del año (mes = 3).</em></li>
+<li><strong>Decimales (float)</strong>: números con decimales. ¡Ojo! En programación usamos el punto, no la coma. <em>Ejemplo: el importe de una compra (gasto = 45.50).</em></li>
+<li><strong>Cadenas de texto (str)</strong>: palabras o frases. Siempre deben ir abrazadas por comillas. <em>Ejemplo: la categoría (categoria = "Ocio").</em></li>
+<li><strong>Booleanos (bool)</strong>: solo pueden tener dos estados: Verdadero (True) o Falso (False). <em><em>Ejemplo: saber si una factura está pagada (pagado = True).</em></em>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/tipos_datos_v3_large.svg" title="Tipos de datos" rel="lightbox"><img src="../content/resources/tipos_datos_v3_large.svg" title="Tipos de datos básicos en Python" width="500" height="225" alt="La imagen muestra las cuatro tarjetas de los tipos de datos básicos en Python: int para números enteros, float para números decimales, str para cadenas de texto entre comillas y bool para valores lógicos verdadero o falso. Cada tarjeta incluye un ejemplo aplicado al Gestor de Gastos. En la parte inferior se ilustra cómo Python detecta automáticamente el tipo de dato según el valor asignado a la variable."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href=" https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Tipos de datos básicos en Python</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<em></em></li>
+</ol></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxv-22zp5v46a" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">4. ¿Cómo sabe Python qué tipo de dato es cada variable?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxv-otiche0af" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A diferencia de otros lenguajes, en Python no necesitas declarar el tipo de dato explícitamente. Python lo detecta de forma automática según el valor que asignas. A esto se le llama <strong>tipado dinámico</strong>:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>numero_gastos = 5             #Python detecta: int
+importe = 45.50                  # Python detecta: float
+categoria = &quot;comida&quot;          # Python detecta: str
+presupuesto_superado = False   # Python detecta: bool</code></pre>
+</div>
+</div>
+<p>Si en algún momento quieres comprobar qué tipo de dato tiene una variable, puedes usar la función type():</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>print(type(importe))        # &lt;class &#039;float&#039;&gt;
+print(type(categoria))      # &lt;class &#039;str&#039;&gt;</code></pre>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxv-fgmd3de8y" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">5. Conversión entre tipos de datos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxv-ov13h9dcv" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A veces necesitarás convertir un dato de un tipo a otro. Esto es especialmente importante cuando usas input(), ya que todo lo que el usuario escribe llega siempre como texto (str). Si quieres operar con ese valor matemáticamente, deberás convertirlo:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># El usuario escribe &quot;45.50&quot; pero Python lo recibe como texto
+dato = input(&quot;Introduce el importe: &quot;)     # dato = &quot;45.50&quot; (str)
+importe = float(dato)                               # importe = 45.50 (float)</code></pre>
+</div>
+</div>
+<p>Recuerda: intentar sumar un número y un texto sin convertir es uno de los errores más frecuentes en Python. El propio intérprete te avisará con un mensaje de error.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxv-u7fln3hwi" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">6. Completa</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxv-binfp4689" class="idevice_node complete" data-idevice-path="../idevices/complete/" data-idevice-type="complete">
+<div class="completa-IDevice"><div class="completa-feedback-game"><p><b data-path-to-node="34,0,1,1,0" data-index-in-node="0">Dato 1:</b> float (Decimal). <i data-path-to-node="34,0,1,1,0" data-index-in-node="37">(Al llevar decimales separados por un punto, es un 'float').</i></p>
+<p><i data-path-to-node="34,0,1,1,0" data-index-in-node="37"><b data-path-to-node="34,1,1,1,0" data-index-in-node="0">Dato 2:</b> str (Texto). <i data-path-to-node="34,1,1,1,0" data-index-in-node="33">(Recuerda que todo lo que vaya entre comillas es una cadena de texto o 'string').</i></i></p>
+<p><b data-path-to-node="34,2,1,1,0" data-index-in-node="0" style="font-size: 1.05em;">Dato 3:</b><span style="font-size: 1.05em;"> bool (Booleano). </span><i data-path-to-node="34,2,1,1,0" data-index-in-node="37" style="font-size: 1.05em;">(Solo puede ser Verdadero o Falso).</i></p></div><div class="completa-instructions gameQP-instructions"><p>Imagina que estás introduciendo el primer movimiento del mes en tu Gestor. Selecciona el tipo de dato correcto para cada variable. </p></div><div class="completa-DataGame js-hidden">%E9%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%AE%E2%AC%DB%FF%F3%F5%FB%FC%F3%B2%E3%E7%F7%B2%F7%E1%E6s%E1%B2%FB%FC%E6%E0%FD%F6%E7%F1%FB%F7%FC%F6%FD%B2%F7%FE%B2%E2%E0%FB%FF%F7%E0%B2%FF%FD%E4%FB%FF%FB%F7%FC%E6%FD%B2%F6%F7%FE%B2%FF%F7%E1%B2%F7%FC%B2%E6%E7%B2%D5%F7%E1%E6%FD%E0%BC%B2%C1%F7%FE%F7%F1%F1%FB%FD%FC%F3%B2%F7%FE%B2%E6%FB%E2%FD%B2%F6%F7%B2%F6%F3%E6%FD%B2%F1%FD%E0%E0%F7%F1%E6%FD%B2%E2%F3%E0%F3%B2%F1%F3%F6%F3%B2%E4%F3%E0%FB%F3%F0%FE%F7%BC2%AE%BD%E2%AC%B0%BE%B0%E6%F7%EA%E6%C6%F7%EA%E6%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A3%B7%A1%D3%B7%A0%A2%F5%F3%E1%E6%FD%B7%A0%A2%B7%A1%D6%B7%A0%A2%A1%A6%BC%AB%A2%B7%A0%A2%DE%F3%B7%A0%A2%E4%F3%E0%FB%F3%F0%FE%F7%B7%A0%A2%F5%F3%E1%E6%FD%B7%A0%A2%F7%E1%B7%A0%A2%F6%F7%B7%A0%A2%E6%FB%E2%FD%B7%A0%A2%D2%D2%F4%FE%FD%F3%E6%B7%A0%A2%B7%A0%AA%D6%F7%F1%FB%FF%F3%FE%B7%A0%AB%B7%A5%D1%FB%FC%E6%B7%A0%A2%B7%A0%AA%D7%FC%E6%F7%E0%FD%B7%A0%AB%B7%A5%D1%E1%E6%E0%B7%A0%A2%B7%A0%AA%C6%F7%EA%E6%FD%B7%A0%AB%B7%A5%D1%F0%FD%FD%FE%B7%A0%A2%B7%A0%AA%D0%FD%FD%FE%F7%F3%FC%FD%B7%A0%AB%D2%D2%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A0%B7%A1%D3%B7%A0%A2%E6%FB%F7%FC%F6%F3%B7%A0%A2%B7%A1%D6%B7%A0%A2%B7%A0%A0%DF%F7%E0%F1%F3%F6%FD%FC%F3%B7%A0%A0%B7%A0%A2%DE%F3%B7%A0%A2%E4%F3%E0%FB%F3%F0%FE%F7%B7%A0%A2%E6%FB%F7%FC%F6%F3%B7%A0%A2%F7%E1%B7%A0%A2%F6%F7%B7%A0%A2%E6%FB%E2%FD%B7%A0%A2%D2%D2%E1%E6%E0%B7%A0%A2%B7%A0%AA%C6%F7%EA%E6%FD%B7%A0%AB%B7%A5%D1%FB%FC%E6%B7%A0%A2%B7%A0%AA%D7%FC%E6%F7%E0%FD%B7%A0%AB%B7%A5%D1%F4%FE%FD%F3%E6%B7%A0%A2%B7%A0%AA%D6%F7%F1%FB%FF%F3%FE%B7%A0%AB%B7%A5%D1%F0%FD%FD%FE%B7%A0%A2%B7%A0%AA%D0%FD%FD%FE%F7%F3%FC%FD%B7%A0%AB%D2%D2%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A1%B7%A1%D3%B7%A0%A2%E2%E0%F7%E1%E7%E2%E7%F7%E1%E6%FD%CD%E1%E7%E2%F7%E0%F3%F6%FD%B7%A0%A2%B7%A1%D6%B7%A0%A2%D4%F3%FE%E1%F7%B7%A0%A2%DE%F3%B7%A0%A2%E4%F3%E0%FB%F3%F0%FE%F7%B7%A0%A2%E2%E0%F7%E1%E7%E2%E7%F7%E1%E6%FD%CD%E1%E7%E2%F7%E0%F3%F6%FD%B7%A0%A2%F7%E1%B7%A0%A2%F6%F7%B7%A0%A2%E6%FB%E2%FD%B7%A0%A2%D2%D2%F0%FD%FD%FE%B7%A0%A2%B7%A0%AA%D0%FD%FD%FE%F7%F3%FC%FD%B7%A0%AB%B7%A5%D1%FB%FC%E6%B7%A0%A2%B7%A0%AA%D7%FC%E6%F7%E0%FD%B7%A0%AB%B7%A5%D1%F4%FE%FD%F3%E6%B7%A0%A2%B7%A0%AA%D6%F7%F1%FB%FF%F3%FE%B7%A0%AB%B7%A5%D1%E1%E6%E0%B7%A0%A2%B7%A0%AA%C6%F7%EA%E6%FD%B7%A0%AB%D2%D2%B7%D3%A2%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%D3%A2%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%F1%F3%E1%F7%C1%F7%FC%E1%FB%E6%FB%E4%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%F0%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A2%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A2%B7%A0%A0%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A3%B7%A1%D3%B7%A1%D1%BD%F0%B7%A1%D7%B7%A0%A2%F4%FE%FD%F3%E6%B7%A0%A2%B7%A0%AA%D6%F7%F1%FB%FF%F3%FE%B7%A0%AB%BC%B7%A0%A2%B7%A1%D1%FB%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A2%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A5%B7%A0%A0%B7%A1%D7%B7%A0%AA%D3%FE%B7%A0%A2%FE%FE%F7%E4%F3%E0%B7%A0%A2%F6%F7%F1%FB%FF%F3%FE%F7%E1%B7%A0%A2%E1%F7%E2%F3%E0%F3%F6%FD%E1%B7%A0%A2%E2%FD%E0%B7%A0%A2%E7%FC%B7%A0%A2%E2%E7%FC%E6%FD%B7%A0%D1%B7%A0%A2%F7%E1%B7%A0%A2%E7%FC%B7%A0%A2%B7%A0%A5%F4%FE%FD%F3%E6%B7%A0%A5%B7%A0%AB%BC%B7%A1%D1%BD%FB%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%FB%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A2%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A5%B7%A0%A0%B7%A1%D7%B7%A1%D1%F0%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A2%B7%A0%A0%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A0%B7%A1%D3%B7%A1%D1%BD%F0%B7%A1%D7%B7%A0%A2%E1%E6%E0%B7%A0%A2%B7%A0%AA%C6%F7%EA%E6%FD%B7%A0%AB%BC%B7%A0%A2%B7%A1%D1%FB%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A1%B7%A0%A0%B7%A1%D7%B7%A0%AA%C0%F7%F1%E7%F7%E0%F6%F3%B7%A0%A2%E3%E7%F7%B7%A0%A2%E6%FD%F6%FD%B7%A0%A2%FE%FD%B7%A0%A2%E3%E7%F7%B7%A0%A2%E4%F3%EB%F3%B7%A0%A2%F7%FC%E6%E0%F7%B7%A0%A2%F1%FD%FF%FB%FE%FE%F3%E1%B7%A0%A2%F7%E1%B7%A0%A2%E7%FC%F3%B7%A0%A2%F1%F3%F6%F7%FC%F3%B7%A0%A2%F6%F7%B7%A0%A2%E6%F7%EA%E6%FD%B7%A0%A2%FD%B7%A0%A2%B7%A0%A5%E1%E6%E0%FB%FC%F5%B7%A0%A5%B7%A0%AB%BC%B7%A1%D1%BD%FB%B7%A1%D7%B7%A1%D1%BD%FB%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%F0%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A0%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A2%B7%A0%A0%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%F4%FD%FC%E6%BF%E1%FB%E8%F7%B7%A1%D3%B7%A0%A2%A3%BC%A2%A7%F7%FF%B7%A1%D0%B7%A0%A0%B7%A1%D7%D6%F3%E6%FD%B7%A0%A2%A1%B7%A1%D3%B7%A1%D1%BD%F0%B7%A1%D7%B7%A1%D1%E1%E2%F3%FC%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%F4%FD%FC%E6%BF%E1%FB%E8%F7%B7%A1%D3%B7%A0%A2%A3%BC%A2%A7%F7%FF%B7%A1%D0%B7%A0%A0%B7%A1%D7%B7%A0%A2%F0%FD%FD%FE%B7%A0%A2%B7%A0%AA%D0%FD%FD%FE%F7%F3%FC%FD%B7%A0%AB%BC%B7%A0%A2%B7%A1%D1%BD%E1%E2%F3%FC%B7%A1%D7%B7%A1%D1%FB%B7%A0%A2%F6%F3%E6%F3%BF%E2%F3%E6%FA%BF%E6%FD%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A6%B7%A0%D1%A0%B7%A0%D1%A3%B7%A0%D1%A3%B7%A0%D1%A2%B7%A0%A0%B7%A0%A2%F6%F3%E6%F3%BF%FB%FC%F6%F7%EA%BF%FB%FC%BF%FC%FD%F6%F7%B7%A1%D6%B7%A0%A0%A1%A5%B7%A0%A0%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%F4%FD%FC%E6%BF%E1%FB%E8%F7%B7%A1%D3%B7%A0%A2%A3%BC%A2%A7%F7%FF%B7%A1%D0%B7%A0%A0%B7%A1%D7%B7%A0%AA%C1%FD%FE%FD%B7%A0%A2%E2%E7%F7%F6%F7%B7%A0%A2%E1%F7%E0%B7%A0%A2%C4%F7%E0%F6%F3%F6%F7%E0%FD%B7%A0%A2%FD%B7%A0%A2%D4%F3%FE%E1%FD%B7%A0%AB%BC%B7%A1%D1%BD%FB%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%E6%E0%E7%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A1%A1%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A3%BE%B0%F7%E1%E6%E0%FB%F1%E6%D1%FA%F7%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%C1%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%E6%EB%E2%F7%B0%A8%A0%BE%B0%E5%FD%E0%F6%E1%D7%E0%E0%FD%E0%E1%B0%A8%B0%B0%BE%B0%F3%E6%E6%F7%FF%E2%E1%DC%E7%FF%F0%F7%E0%B0%A8%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D7%E0%E0%FD%E0%B0%A8%A0%A2%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%DE%FB%FF%FB%E6%B0%A8%E6%E0%E7%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A4%A7%A3%AB%A3%AA%A7%A4%AA%BF%A3%A0%A2%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%DA%F3%E2%E2%F7%FC%B0%A8%B0%C2%F3%E1%F3%E0%B0%BE%B0%FF%E1%F5%C0%F7%E2%FE%EB%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%D7%FC%E4%FB%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%DD%E4%F7%E0%B0%A8%B03%D4%FB%FC%B2%F6%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%B3%B0%BE%B0%FF%E1%F5%DB%FC%F6%FB%F1%F3%E6%F7%C5%FD%E0%F6%B0%A8%B0%C2%E0%FD%E2%FD%E0%F1%FB%FD%FC%F7%B2%E7%FC%F3%B2%E2%F3%FE%F3%F0%E0%F3%B2%FD%B2%F7%EA%E2%E0%F7%E1%FBa%FC%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%CB%FD%E7%DA%F3%E1%B0%A8%B0%C6%FB%F7%FC%F7%B2%B7%A3%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%A0%B2%F4%F3%FE%FE%FD%E1%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%D3%F5%F3%FB%FC%B0%A8%B0%D8%E7%F5%F3%E0%B2%FD%E6%E0%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%C0%F7%E3%E7%FB%E0%F7%F6%D3%F1%F1%F7%E1%E1%D9%F7%EB%B0%A8%B0%D7%E1%B2%FC%F7%F1%F7%E1%F3%E0%FB%FD%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%DE%FD%FD%F9%FB%FC%F5%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%F7%E1%E6%F3%F0%F3%B2%F0%E7%E1%F1%F3%FC%F6%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%D7%E0%E0%FD%E0%B0%BE%B0%FF%E1%F5%DF%FD%E4%F7%DD%FC%F7%B0%A8%B0%C2%F3%E1%F3%E0%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B2%E1%FB%FC%B2%FB%FFs%F5%F7%FC%F7%E1%B0%BE%B0%FF%E1%F5%D1%FD%FD%FE%B0%A8%B03%D0%FB%F7%FC%B3%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%C6%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%A1%A1%A2%B2%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%DE%FB%E4%F7%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E7%FC%F3%B2%E4%FB%F6%F3%B0%BE%B0%FF%E1%F5%DE%FD%E1%E6%DE%FB%E4%F7%E1%B0%A8%B03%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E6%FD%F6%F3%E1%B2%E1%E7%E1%B2%E4%FB%F6%F3%E1%B3%B0%BE%B0%FF%F5%E1%D3%FE%FE%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B03%D1%FD%FF%E2%FE%F7%E6%F3%F6%F3%E1%B2%FE%F3%E1%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%E7%FC%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%F1%FD%FC%E1%F7%F5%E7%FB%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%C4%E7%F7%FE%E4%F3%B2%F3%B2%FB%FC%E6%F7%FC%E6%F3%E0%FE%FD%BC%B0%BE%B0%FF%E1%F5%C5%E0%FD%E6%F7%B0%A8%B0%D7%E1%F1%E0%FB%F0%F3%B2%FE%F3%B2%E2%F3%FE%F3%F0%E0%F3%B2%F1%FD%E0%E0%F7%F1%E6%F3%B2%EB%B2%E2%E7%FE%E1%F7%B2%F7%FC%B2%C0%F7%E1%E2%FD%FC%F6%F7%E0%BC%B2%C1%FB%B2%F6%E7%F6%F3%BE%B2%E2%E7%FE%E1%F7%B2%F7%FC%B2%C1%F7%F5%E7%FB%E0%BC%B0%BE%B0%FF%E1%F5%DC%FD%E6%DC%F7%E6%E5%FD%E0%F9%B0%A8%B0%D3%B2%F7%E1%E6%F7%B2%F8%E7%F7%F5%FD%B2%E1a%FE%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%F1%FD%FC%B2%F1%FD%FC%F7%EA%FBa%FC%B2%F3%B2%FB%FC%E6%F7%E0%FC%F7%E6%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%D3%FC%E6%F7%E1%B2%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F1%FD%FF%FB%F7%FC%F1%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%D3%FC%E1%E5%F7%E0%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%DE%FD%F3%F6%FB%FC%F5%B0%A8%B0%D1%F3%E0%F5%F3%FC%F6%FD%BC%B2%D7%E1%E2%F7%E0%F7%BE%B2%E2%FD%E0%B2%F4%F3%E4%FD%E0%BC%BC%BC%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%C1%FD%FE%E7%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C6%E0%EB%B0%A8%B03%C2%E0%E7%F7%F0%F3%B2%FD%E6%E0%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%D1%FA%F7%F1%F9%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%F6%C1%F1%FD%E0%F7%B0%A8%B0%DA%F3%E1%B2%E6%F7%FC%FB%F6%FD%B2%B7%E1%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%F6%B2%F7%E0%E0%FD%E0%F7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%C6%FB%FF%F7%B0%A8%B0%D7%FE%B2%E6%FB%F7%FF%E2%FD%B2%FA%F3%B2%F4%FB%FC%F3%FE%FB%E8%F3%F6%FD%BC%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%D7%FC%F6%B0%A8%B0%DA%F3%E1%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B2%FE%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%EF%EF</div><div class="completa-text-game js-hidden"><p>Dato 1: gasto = 34.90 La variable gasto es de tipo @@float (Decimal)|int (Entero)|str (Texto)|bool (Booleano)@@</p>
+<p>Dato 2: tienda = "Mercadona" La variable tienda es de tipo @@str (Texto)|int (Entero)|float (Decimal)|bool (Booleano)@@</p>
+<p>Dato 3: presupuesto_superado = False La variable presupuesto_superado es de tipo @@bool (Booleano)|int (Entero)|float (Decimal)|str (Texto)@@ </p>
+<p> </p></div><div class="cmpt-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxv-ezyr7u6xu" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_lee.svg" alt="">
+</div>
+<h1 class="box-title">7. Habla contigo mismo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxv-fw130a9c3" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Cuando escribas código, no solo lo leerá el ordenador: también lo leerás tú mismo, días o semanas después, y quizás otras personas. Los comentarios son líneas que Python ignora completamente al ejecutar el programa, pero que sirven para explicar qué hace cada parte del código.</p>
+<p>En Python los comentarios de una sola línea se escriben con #:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Inicializamos las variables del gestor de gastos
+importe = 45.50                           # Importe del gasto en euros
+categoria = &quot;comida&quot;                   # Categoría a la que pertenece
+PRESUPUESTO_MAXIMO = 500   # Constante: presupuesto mensual</code></pre>
+</div>
+</div>
+<p>Para comentarios más largos que ocupen varias líneas se usan tres comillas:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>&#039;&#039;&#039;
+Este programa gestiona los gastos personales del usuario.
+Permite registrar importes, categorías y fechas, 
+y avisa cuando se supera el presupuesto mensual. 
+&#039;&#039;&#039;
+importe = 45.50
+categoria = &quot;comida&quot;</code></pre>
+</div>
+</div>
+<p>Un buen programador no es solo el que escribe código que funciona, sino el que escribe código que cualquiera puede entender. Acostúmbrate a comentar desde el principio.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1787495342664-nyg65qrhq" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">8. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787495342660-bb2y60hvh" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Variables y constantes</h2>
+<p>Son los espacios en memoria (cajas) donde guardamos nuestra información. Las variables pueden cambiar de valor durante el programa, las constantes no.</p>
+<h2>Tipos de datos</h2>
+<p>Los más comunes son los enteros (<em>int</em>), los decimales (<em>float</em>), las cadenas de texto (<em>str</em>), que se escriben entre comillas, y los booleanos (<em>bool</em>), que pueden tomar los valores True o False."</p>
+<h2>Comentarios</h2>
+<p>Se escriben con el símbolo #. El ordenador los ignora, pero son vitales para explicar qué hace tu código y que tú (u otra persona) lo entienda en el futuro.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/5-los-cimientos-del-codigo.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/52-operadores-y-expresiones.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

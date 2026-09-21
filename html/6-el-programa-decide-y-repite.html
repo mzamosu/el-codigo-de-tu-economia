@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb6u-jlbmnhnic">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>6. El programa decide y repite | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb6u-jlbmnhnic" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/6-el-programa-decide-y-repite.html" class="active daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb6u-jlbmnhnic" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">11</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">6. El programa decide y repite</h1></div>
+</header><div id="page-content-page-mubjgb6u-jlbmnhnic" class="page-content">
+<article id="block-mq6pvsxw-djedj4r5q" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Estructuras de control</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxw-v95x6brjq" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Hasta este momento, los pequeños programas que has imaginado o escrito funcionan como una cascada de agua: empiezan en la primera línea de código y caen hacia abajo, ejecutando una instrucción tras otra hasta llegar al final. A esto se le llama <strong>programación secuencial</strong><b data-path-to-node="9" data-index-in-node="245">&nbsp;</b>y, aunque es el punto de partida, tiene una limitación enorme: <strong>la vida real no es lineal</strong>.</p>
+<p>A veces tienes que tomar decisiones basadas en lo que ocurre: <i data-path-to-node="10" data-index-in-node="126">"Si llueve, entonces cojo el paraguas; si no, me pongo gafas de sol"</i>. Otras veces, tienes que repetir la misma acción muchas veces: <i data-path-to-node="10" data-index-in-node="258">"Mientras queden platos sucios en el fregadero, sigo lavando"</i>.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Piensa en tu Gestor de Gastos. Necesitas que haga cosas distintas según la situación:</p>
+<ul class="[li_&]:mb-0 [li_&]:mt-1 [li_&]:gap-1 [&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Si el gasto supera el presupuesto, mostrar una alerta. Si no, confirmarlo.</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Repetir el proceso de registro para cada gasto del mes sin escribir el mismo código veinte veces.</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Seguir mostrando el menú hasta que el usuario decida salir.</li>
+</ul>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Nada de esto es posible solo con secuencias. Necesitas que tu programa sea capaz de <strong>tomar decisiones</strong> y de <strong>repetir acciones</strong> de forma automática. Para eso existen las <strong>estructuras de control</strong>:</p>
+<ol>
+<li>
+<p data-path-to-node="13,0,0"><b data-path-to-node="13,0,0" data-index-in-node="0">Estructuras condicionales (las decisiones):</b> permiten al programa elegir entre varios caminos diferentes.</p>
+</li>
+<li>
+<p data-path-to-node="13,1,0"><b data-path-to-node="13,1,0" data-index-in-node="0">Estructuras iterativas o bucles (las repeticiones):</b> permiten al programa repetir un bloque de código las veces que haga falta.</p>
+</li>
+</ol>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/estructuras_control_v2_large.svg" title="Estructuras de control" rel="lightbox"><img src="../content/resources/estructuras_control_v2_large.svg" title="Estructuras de control " width="500" height="264" alt="La imagen muestra un diagrama comparativo de las tres estructuras de flujo en programación mediante diagramas de flujo. La primera columna, en azul, representa la secuencia, donde las instrucciones se ejecutan siempre de arriba a abajo. La segunda, en morado, muestra la estructura condicional, donde el programa elige un camino u otro según si se cumple una condición. La tercera, en azul oscuro, ilustra el bucle, donde el programa repite una acción mientras la condición sea verdadera."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Estructuras de control</em></span> </span><span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Con ellas, tu código deja de ser una lista rígida de pasos y se convierte en un programa que reacciona, que se adapta y que trabaja por ti. En este bloque aprenderás a usarlas todas.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxw-azgcfm6mk" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">2. ¿Preparados?</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxw-23iob6fhx" class="idevice_node form db-no-data" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;questionsData&quot;:[{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Vamos a comprobar si has pillado la idea principal antes de meternos a escribir código. Imagina que quieres que tu Gestor de Gastos te pida la contraseña al abrir la aplicación. Si la pones mal, te la vuelve a pedir. ¿Qué tipo de estructura necesitará el programa para hacer esto?&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Una estructura puramente secuencial.&quot;,&quot;2&quot;:&quot;&lt;p&gt;Incorrecto. Si fuera secuencial, el programa te pediría la contraseña una vez, fallarías, y seguiría hacia adelante dándote acceso de todas formas).&lt;/p&gt;&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Una estructura de repetición (bucle).&quot;,&quot;2&quot;:&quot;&lt;p&gt;¡Exacto! Necesitas un bucle que diga: \&quot;MIENTRAS la contraseña sea incorrecta, vuelve a pedirla\&quot;).&lt;/p&gt;&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;No hace falta ninguna estructura, Python lo hace solo.&quot;,&quot;2&quot;:&quot;&lt;p&gt;Incorrecto. Los ordenadores son muy obedientes pero no tienen iniciativa; tienes que programar tú esa lógica)&lt;/p&gt;&quot;}]}]}" data-idevice-template="form.html">
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/52-operadores-y-expresiones.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/61-toma-de-decisiones.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@font-face{
+  font-family:"quicksand";
+  src:local("quicksand"),
+  url("../fonts/quicksand.ttf") format("truetype");
+  font-display:swap
+}
+
+@font-face {
+    font-family: 'AtkinsonHyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+    font-display: swap;
+}

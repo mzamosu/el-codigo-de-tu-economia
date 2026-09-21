@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb6e-teeeg6q6e">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>4.1 Tipos y estructura general | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb6e-teeeg6q6e" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li class="current-page-parent"> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li class="active"> <a href="../html/41-tipos-y-estructura-general.html" class="active no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb6e-teeeg6q6e" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">6</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">4.1 Tipos y estructura general</h1></div>
+</header><div id="page-content-page-mubjgb6e-teeeg6q6e" class="page-content">
+<article id="block-mq6pvsxt-csqt4gmsg" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. De la idea al código real</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxt-cuuzv84xk" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Como viste en la primera situación de aprendizaje, ya sabes cómo organizar una mudanza o hacer un café paso a paso. Aprendiste a usar el "divide y vencerás" y a plasmar esas soluciones en diagramas de flujo y pseudocódigo. Pero, como bien sabes, un ordenador no entiende nuestro pseudocódigo; necesita que le hablemos en su propio idioma. Aquí es donde entran los lenguajes de programación.</p>
+<p>Un <strong>lenguaje de programación</strong> no es más que un conjunto de reglas, símbolos y palabras (casi siempre en inglés) que nos permite darle instrucciones exactas a la máquina.</p>
+<p><strong>Tipos de lenguajes de programación</strong></p>
+<p>No todos los lenguajes son iguales. Se clasifican principalmente según dos criterios:</p>
+<div class="exe-fx exe-accordion">
+<h2>1. Según su cercanía a la máquina (Nivel):&nbsp;</h2>
+<ul>
+<li><strong>Bajo nivel</strong>: hablan casi directamente el "idioma" electrónico del ordenador (ceros y unos). Son dificilísimos de leer para un humano, pero rapidísimos para la máquina.</li>
+</ul>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;"><img src="../content/resources/img0.png" title="Código lenguaje ensamblador" width="500" height="330" alt="La imagen muestra una captura de pantalla de un editor de código con fondo oscuro que contiene un programa escrito en lenguaje ensamblador x86. El código detalla las instrucciones de bajo nivel necesarias para sumar dos números, estructurado en secciones de datos y texto con comentarios explicativos al margen para cada operación.">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Código lenguaje ensamblador</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<ul>
+<li><strong>Alto nivel</strong>: están diseñados para que tú los entiendas fácilmente. Usan palabras como <em>print </em>(imprimir) o <em>if </em>(si condicional). La máquina necesita "traducirlos" antes de ejecutarlos. (Nosotros usaremos estos).<br></li>
+</ul>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;"><img src="../content/resources/img1.png" title="Código lenguaje alto nivel " width="500" height="202" alt="La imagen muestra una captura de pantalla de un editor con fondo oscuro que contiene un breve programa escrito en Python, ilustrando el uso de un lenguaje de alto nivel. El código realiza la suma de dos números definiendo dos variables (num1 = 5 y num2 = 3) y calculando su resultado con una sintaxis clara y muy cercana al lenguaje humano.">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Código lenguaje alto nivel</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<h2>2. Según como se traducen (Ejecución):&nbsp;</h2>
+<ul>
+<li><strong>Compilados</strong>: un programa (compilador) coge todo tu código, lo traduce de golpe al idioma de la máquina y crea un archivo ejecutable (como los .exe de Windows).</li>
+<li><strong>Interpretados</strong>: un programa (intérprete) lee tu código y lo va traduciendo y ejecutando línea a línea, sobre la marcha. Es como tener un traductor simultáneo a tu lado.</li>
+</ul>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/compilado_vs_interpretado_v4_large.svg" title="compilado_vs_interpretado" rel="lightbox"><img src="../content/resources/compilado_vs_interpretado_v4_large.svg" title="Comparador de lenguajes compilados e interpretados" width="500" height="290" alt="La imagen muestra un diagrama comparativo entre los lenguajes compilados e interpretados. En la columna izquierda, el compilador traduce todo el código de una vez y genera un archivo ejecutable. En la columna derecha, el intérprete lee y ejecuta el código línea a línea sin generar ningún archivo previo. Python pertenece a este segundo grupo."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Comparador de lenguajes compilados e interpretados</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>Nota aclaratoria: el caso de Java</strong></p>
+<p>Aunque en el esquema anterior Java aparece clasificado como lenguaje compilado, conviene matizar este punto. Java sigue en realidad un modelo <strong>híbrido</strong>:</p>
+<ol>
+<li>El compilador (javac) traduce el código fuente a un código intermedio llamado <strong>bytecode</strong>, no a lenguaje máquina nativo del procesador.</li>
+<li>Ese bytecode es después ejecutado por la <strong>Máquina Virtual de Java (JVM)</strong>, que lo interpreta y, para mejorar el rendimiento, compila en tiempo de ejecución (JIT, Just-In-Time) las partes del código que se ejecutan con más frecuencia.</li>
+</ol>
+<p>Por tanto, Java combina ambos enfoques: hay una fase de compilación (a bytecode) y una fase de interpretación/compilación en tiempo real (por la JVM). Este mismo patrón lo siguen otros lenguajes como C# (con el CLR de .NET) o Kotlin.</p>
+</div>
+<p style="text-align: left;"><strong>La estructura de un programa</strong></p>
+<p>Independientemente del lenguaje que uses, cuando pases tu algoritmo a código, la inmensa mayoría de los programas siguen una estructura básica de tres fases:</p>
+<ol>
+<li><strong>Entrada de datos (Input)</strong>: el programa recibe la información que necesita. Por ejemplo, le pedimos al usuario que introduzca el importe de una factura.</li>
+<li><strong>Procesamiento</strong>: el programa aplica la lógica (operaciones, condicionales, bucles) sobre esos datos. Por ejemplo, sumar la factura al total mensual.</li>
+<li><strong>Salida de información (Output)</strong>: el programa muestra el resultado. Por ejemplo, mostrar en pantalla: "Llevas gastados 150€ este mes".
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header" style="text-align: center;"><span style="font-size: 10pt;"><strong>Haz clic sobre la imagen para ampliar</strong></span></div>
+<a href="../content/resources/estructura_programa_v2_large.svg" title="Estructura de un programa" rel="lightbox noopener" target="_blank"><img src="../content/resources/estructura_programa_v2_large.svg" title="Estructura de un programa" width="500" height="232" alt="La imagen muestra un diagrama de la estructura básica de un programa, dividida en tres bloques conectados por flechas: Entrada, Procesamiento y Salida. En la Entrada, el usuario introduce datos como el importe, la categoría o el presupuesto mensual. En el Procesamiento, el programa calcula, clasifica y detecta alertas. En la Salida, se muestran los resultados como el total gastado o los avisos de límite superado."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Estructura de un programa</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxu-fpj4d6g3x" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">2. Comprueba lo aprendido</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxu-1lp4y25vl" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mq6pvsxu-1lp4y25vl&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;idevice-mq6pvsxu-1lp4y25vl&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Responde a las preguntas del cuestionario&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1787471893404-P8BNX&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;En nuestro reto del Gestor de Gastos, cuando la aplicación muestra en la pantalla de tu móvil una alerta diciendo \&quot;¡Cuidado, has superado tu presupuesto!\&quot;, ¿en qué fase de la estructura del programa nos encontramos?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;¡Exacto! La pantalla mostrándote el aviso es el resultado final (Output) tras haber procesado los datos&quot;,&quot;feedbackWrong&quot;:&quot;Repasa el apartado anterior \&quot;Estructura de un programa\&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Entrada de datos.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Procesamiento.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Salida de información.&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1787471893404-CQH9D&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Si escribimos un programa en un lenguaje de alto nivel y este se va traduciendo y ejecutando línea por línea en el momento, estamos ante un lenguaje...&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;¡Muy bien! Actúa como un traductor simultáneo que lee y ejecuta tu código paso a paso&quot;,&quot;feedbackWrong&quot;:&quot;Repasa el apartado anterior \&quot;Tipos de lenguajes de programación\&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Compilado.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Interpretado.&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mq6pvsxu-1lp4y25vl" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mq6pvsxu-1lp4y25vl" class="form-IDevice" data-id="idevice-mq6pvsxu-1lp4y25vl">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Responde a las preguntas del cuestionario</p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mq6pvsxu-1lp4y25vl">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mq6pvsxu-1lp4y25vl" style="display:none;">
+                      <button  id="frmStartGame-idevice-mq6pvsxu-1lp4y25vl" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mq6pvsxu-1lp4y25vl" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mq6pvsxu-1lp4y25vl" > </div>
+                        <div id="frmCover-idevice-mq6pvsxu-1lp4y25vl" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mq6pvsxu-1lp4y25vl" class="form-results-container inline">
+                        <div id="form-score-idevice-mq6pvsxu-1lp4y25vl" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mq6pvsxu-1lp4y25vl" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mq6pvsxu-1lp4y25vl" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mq6pvsxu-1lp4y25vl" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-mq6pvsxu-1lp4y25vl" type="button" value="Reiniciar"
+                            data-id="idevice-mq6pvsxu-1lp4y25vl" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mq6pvsxu-1lp4y25vl" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mq6pvsxu-1lp4y25vl" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-idevice-mq6pvsxu-1lp4y25vl" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/4-el-lenguaje-de-las-maquinas-.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/42-tu-taller-python-y-vscode.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

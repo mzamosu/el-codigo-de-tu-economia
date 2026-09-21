@@ -1,0 +1,196 @@
+.exe-fx a{
+  color:#1a718b
+
+}
+.exe-fx a:hover,
+  .exe-fx a:focus{
+  color:#338aa4
+
+} 
+
+/*EFECTO ACORDEÓN*/
+
+body:not(.dark-mode-active) .fx-accordion-title{
+  color:white !important;
+  font-weight:bold !important;
+  background-color: var(--fondo-cabecera-iDevice-fx) !important;
+}
+
+body:not(.dark-mode-active) .exe-accordion .fx-accordion-title h2::before {
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 22px;
+      margin-right: 14px;
+      background: white;
+      border-radius: 4px;
+      clip-path: polygon(
+        5% 0,
+        55% 0,
+        95% 100%,
+        15% 100%
+      );
+}
+
+body:not(.dark-mode-active) .exe-accordion .fx-accordion-content.open{
+  background-color: white !important;
+}
+
+body:not(.dark-mode-active) .fx-accordion-title.active{
+  padding-left: 40px !important;
+}
+
+body:not(.dark-mode-active) .exe-accordion .fx-accordion-title h2{
+  color: white !important;
+  font-weight: bold !important;
+}
+
+
+/*FIN EFECTO ACORDEÓN*/
+
+/*EFECTO PESTAÑAS*/
+/*Cabecera*/
+
+.exe-fx.exe-tabs{
+  border:1px solid;
+  border-color: var(--fondo-cabecera-iDevice-fx) !important;
+  border-radius:0px;
+}
+
+.fx-tabs{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+body:not(.dark-mode-active) .fx-tabs{
+  background-color: white !important;
+}
+.fx-tabs *{ 
+  border-radius: 0px !important;
+}
+
+.fx-tabs li{
+    display: block !important;
+    flex: 1 1 auto !important;
+}
+
+.exe-tabs .fx-tab-content{
+  border-radius:0px !important;
+}
+body:not(.dark-mode-active) .fx-tabs li{
+    background-color: transparent !important;
+}
+body:not(.dark-mode-active) .fx-tabs a {
+  font-weight:bold;
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx) 90%, black) !important;
+      display: block;
+    float: none;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    transition: background-color .15s linear;
+    border-radius: 0;
+    position: relative;
+}
+
+body:not(.dark-mode-active) .fx-tabs .fx-current a {
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx) 90%, white) !important;
+}
+
+body:not(.dark-mode-active) .fx-tabs a:hover {
+  background-color: var(--fondo-cabecera-iDevice-fx-contenido) !important;
+}
+
+.fx-tabs .fx-current a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent white transparent;
+}
+
+.fx-tabs .fx-current a::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+/*Contenido*/
+body:not(.dark-mode-active) .fx-tab-content.fx-current{
+  color:#1F1F1F !important;
+  background-color: white !important;
+} 
+
+
+/*FIN EFECTO PESTAÑAS*/
+
+/*EFECTO PAGINACIÓN*/
+
+body:not(.dark-mode-active) .fx-pagination .fx-current a{
+  color:black !important;
+  font-weight:bold !important;
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx-contenido) 20%, white) !important;
+
+}
+body:not(.dark-mode-active) .fx-page-content.fx-current{
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx-contenido) 20%, white) !important;
+  color:#1F1F1F !important;
+}
+
+body:not(.dark-mode-active) .fx-page-content.fx-current h2{
+  font-weight: bold !important;
+  color:#1F1F1F !important; 
+}
+/*FIN EFECTO PAGINACIÓN*/
+/*EFECTO CARRUSEL*/
+body:not(.dark-mode-active) .fx-carousel-content{
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx-contenido) 20%, white) !important;
+  color:#1F1F1F !important;
+}
+
+body:not(.dark-mode-active) .fx-carousel-content h2
+{
+  font-weight: bold !important;
+  color:#1F1F1F !important;
+} 
+
+/*FIN EFECTO CARRUSEL*/
+/*EFECTO LINEA DE TIEMPO*/
+
+:is(.box-content, .udl-content, .eXelearning-content) .fx-timeline-container h3 a{
+  color:white !important;
+  border-radius: 4px;
+  font-weight: bold !important;
+  padding: 4px;
+}
+
+:is(.box-content, .udl-content, .eXelearning-content) .fx-timeline-container h2 a{
+  color:white !important;
+  font-weight: bold !important;
+} 
+.fx-timeline-container{
+  background-color: color-mix(in srgb, var(--fondo-cabecera-iDevice-fx-contenido) 10%, white) !important; 
+} 
+.fx-timeline-expand{
+  background-color: var(--fondo-cabecera-iDevice) !important;
+} 
+.fx-timeline-container h2 a{
+  background-color: var(--fondo-cabecera-iDevice) !important;
+} 
+.fx-timeline-container h3 a{
+  background-color: var(--fondo-cabecera-iDevice-fx) !important;
+} 
+
+/*FIN EFECTO LINEA DE TIEMPO*/
+

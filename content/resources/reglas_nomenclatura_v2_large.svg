@@ -1,0 +1,61 @@
+<svg width="1380" height="610" viewBox="0 0 690 305" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Reglas de nomenclatura de variables en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="295" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="18" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Reglas para nombrar variables en Python</text>
+
+<!-- Cabecera válido -->
+<rect x="20" y="44" width="305" height="26" rx="6" fill="#059669"/>
+<text x="172" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">✅ Válido</text>
+
+<!-- Cabecera inválido -->
+<rect x="355" y="44" width="305" height="26" rx="6" fill="#DC2626"/>
+<text x="507" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">❌ Inválido</text>
+
+<!-- Fila 1 -->
+<rect x="20" y="74" width="305" height="34" rx="6" fill="#DCFCE7"/>
+<text fill="#059669" x="40" y="91" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">total_gastos</text>
+<text x="315" y="91" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">letras y guión bajo ✔</text>
+
+<rect x="355" y="74" width="305" height="34" rx="6" fill="#FEF2F2"/>
+<text fill="#DC2626" x="375" y="91" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">1gasto</text>
+<text x="650" y="91" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">empieza por número ✘</text>
+
+<!-- Fila 2 -->
+<rect x="20" y="112" width="305" height="34" rx="6" fill="#F0FDF4"/>
+<text fill="#059669" x="40" y="129" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">importe2</text>
+<text x="315" y="129" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">letras y números ✔</text>
+
+<rect x="355" y="112" width="305" height="34" rx="6" fill="#FFF1F2"/>
+<text fill="#DC2626" x="375" y="129" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">total gastos</text>
+<text x="650" y="129" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">contiene un espacio ✘</text>
+
+<!-- Fila 3 -->
+<rect x="20" y="150" width="305" height="34" rx="6" fill="#DCFCE7"/>
+<text fill="#059669" x="40" y="167" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">_categoria</text>
+<text x="315" y="167" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">empieza por guión bajo ✔</text>
+
+<rect x="355" y="150" width="305" height="34" rx="6" fill="#FEF2F2"/>
+<text fill="#DC2626" x="375" y="167" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">for</text>
+<text x="650" y="167" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">palabra reservada ✘</text>
+
+<!-- Fila 4 -->
+<rect x="20" y="188" width="305" height="34" rx="6" fill="#F0FDF4"/>
+<text fill="#059669" x="40" y="205" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">nombre_usuario</text>
+<text x="315" y="205" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">snake_case recomendado ✔</text>
+
+<rect x="355" y="188" width="305" height="34" rx="6" fill="#FFF1F2"/>
+<text fill="#DC2626" x="375" y="205" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;">total-gastos</text>
+<text x="650" y="205" text-anchor="end" dominant-baseline="central" style="fill:#0F172A;font-size:11px;font-weight:600;">guión medio no permitido ✘</text>
+
+<!-- Nota mayúsculas -->
+<rect x="20" y="236" width="640" height="44" rx="8" fill="#FEF3C7"/>
+<text x="340" y="252" text-anchor="middle" dominant-baseline="central" style="fill:#92400E;font-size:11px;font-weight:600;">⚠️ Python distingue mayúsculas y minúsculas:</text>
+<text x="340" y="270" text-anchor="middle" dominant-baseline="central" style="font-family:'Courier New',monospace;font-size:12px;font-weight:700;fill:#92400E;">importe  ≠  Importe  ≠  IMPORTE</text>
+</svg>

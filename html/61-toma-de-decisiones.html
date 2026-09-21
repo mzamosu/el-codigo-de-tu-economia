@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb6v-ph7rmschj">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>6.1 Toma de decisiones | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb6v-ph7rmschj" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/61-toma-de-decisiones.html" class="active no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb6v-ph7rmschj" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">12</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">6.1 Toma de decisiones</h1></div>
+</header><div id="page-content-page-mubjgb6v-ph7rmschj" class="page-content">
+<article id="block-mq6pvsxw-ipe612qo0" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Estructuras condicionales</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxw-4nhagbnwv" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En tu día a día, tomas cientos de decisiones basadas en condiciones: "Si tengo saldo en la cuenta, compro las entradas; si no, espero al mes que viene". En Python, le enseñamos al ordenador a pensar exactamente de la misma manera utilizando la estructura if (que en inglés significa "si...", de condición).</p>
+<figure class="exe-figure position-center" style="width: 400px; text-align: center;"><span style="font-size: 10pt;"><img src="../content/resources/Gemini_EstructurasControl_Red.jpeg" title="Estructuras de control" width="400" height="218" alt="La imagen muestra a un estudiante concentrado trabajando con Python, mientras que una visualización de realidad aumentada ilustra cómo las estructuras condicionales if, elif y else desvían la ejecución del código por caminos distintos según se cumpla o no una decisión lógica central."></span>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://gemini.google.com/ " class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Gemini</a>. <span class="title"><em>Estructuras de control</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure>
+<p>Vamos a ver las tres piezas clave para construir la lógica de tu Gestor de Gastos:</p>
+<div class="exe-fx exe-tabs">
+<h2>Condición simple IF</h2>
+<p>Es la regla más básica. Le decimos al programa que compruebe una expresión matemática o lógica. Solo si el resultado es verdadero (True), ejecutará las instrucciones que vienen justo debajo.</p>
+<p>Imagina que tienes un presupuesto de 100€ y acabas de introducir un ticket de 120€. El programa debería darte un aviso de alerta:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>presupuesto = 100
+gasto = 120
+
+if gasto &gt; presupuesto:
+    print(&quot;¡Alerta roja! Has superado tu presupuesto mensual.&quot;)</code></pre>
+</div>
+</div>
+<h2>Plan B: ELSE (Si no...)</h2>
+<p>¿Qué pasa si la condición del <em>if</em> no se cumple (por ejemplo, el gasto es de solo 40€)? El programa, por defecto, se salta ese bloque y no hace nada. Pero a veces queremos que haga otra cosa en ese caso. Para eso usamos la palabra <em>else</em>.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>presupuesto = 100
+gasto = 120
+
+if gasto &gt; presupuesto:
+    print(&quot;¡Alerta roja! Has superado tu presupuesto mensual.&quot;)
+else:
+    print(&quot;¡Todo en orden! Sigues dentro del límite.&quot;)</code></pre>
+</div>
+</div>
+<h2>Múltiples opciones: ELIF (O si no, si...)</h2>
+<p>El <em>if</em> y el <em>else</em> te permiten elegir entre dos caminos. Pero, ¿qué pasa cuando hay más de dos posibilidades? Imagina que quieres clasificar tus gastos en tres niveles según el importe: bajo, moderado o elevado. Para eso existe el <em>elif</em>.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>importe = 75
+
+if importe &lt; 20:
+    print(&quot;💚 Gasto bajo&quot;)
+elif importe &lt; 50:
+    print(&quot;🟡 Gasto moderado&quot;)
+elif importe &lt; 100:
+    print(&quot;🟠 Gasto elevado&quot;)
+else:
+    print(&quot;🔴 Gasto muy elevado: ¿es necesario?&quot;)</code></pre>
+</div>
+</div>
+<p>Python evalúa las condiciones en orden, de arriba a abajo. En cuanto encuentra una que se cumple, ejecuta su bloque y salta el resto. Por eso el orden importa: coloca siempre las condiciones de más restrictiva a menos restrictiva.<br></p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/comparativa_if_elif_else (3).png" title="Comparativa_if_elif_else " rel="lightbox"><img src="../content/resources/comparativa_if_elif_else (3).png" title="Comparativa if, else, elif" width="500" height="275" alt="La imagen muestra un diagrama comparativo de las tres palabras clave de la estructura condicional en Python: if, elif y else, cada una representada en una tarjeta de color distinto. Para cada una se explica cuándo usarla y si puede ir sola, con ejemplos de código aplicados al Gestor de Gastos. En la parte inferior se muestra la estructura condicional completa, indicando que if es obligatorio, elif es opcional y puede repetirse, y else es opcional y siempre va al final."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Comparativa if, else, elif</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<h2>Condiciones encadenadas</h2>
+<p>A veces una sola condición no es suficiente para tomar una decisión. En tu Gestor de Gastos puede que necesites comprobar varias cosas a la vez: que el gasto sea elevado <strong>y</strong> que además pertenezca a la categoría de ocio, <strong>o</strong> que se haya superado el presupuesto <strong>o</strong> que el número de gastos sea muy alto. Para eso puedes encadenar condiciones usando los operadores lógicos <em>and</em> y <em>or</em> que ya conoces:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>importe = 75
+categoria = &quot;ocio&quot;
+total = 480
+presupuesto = 500
+
+# AND: se deben cumplir AMBAS condiciones
+if categoria == &quot;ocio&quot; and importe &gt; 50:
+    print(&quot;Gasto de ocio elevado: revisa si es necesario&quot;)
+
+# OR: basta con que se cumpla UNA de las dos
+if total &gt; 450 or importe &gt; 100:
+    print(&quot;Atención: estás cerca del límite mensual&quot;)
+
+# Combinación de AND y OR con paréntesis
+if (categoria == &quot;ocio&quot; and importe &gt; 50) or total &gt; presupuesto:
+    print(&quot;Alerta de gasto: revisa tu presupuesto&quot;)</code></pre>
+</div>
+</div>
+<p>Cuando combinas <em>and</em> y <em>or</em> en una misma condición, usa paréntesis para dejar claro el orden de evaluación. Igual que en matemáticas, los paréntesis se evalúan primero y evitan resultados inesperados.<br>Recuerda: con <em>and</em> ambas condiciones deben ser <em>True</em> para que el bloque se ejecute. Con <em>or</em> basta con que una lo sea.</p>
+</div>
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 500px; text-align: center;"></figure></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxw-6gpamtjzz" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">2. La regla de oro de Python: la indentación</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxw-9mpdmnmbz" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Fíjate muy bien en los ejemplos de código anteriores. Las órdenes <em>print</em>() que van por dentro del <em>if, elif o else</em> no empiezan pegadas al margen izquierdo, sino que tienen un espacio hacia la derecha (una tabulación o sangría). Así es como Python sabe visualmente qué instrucciones pertenecen a la condición. Si olvidas esta sangría, VSCode te marcará la línea en rojo y el programa dará error. Esta tabulación se consigue dejando 4 espacios al comienzo de cada línea o pulsando la tecla tabulador.&nbsp;</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>presupuesto = 500
+total = 320
+
+# ✅ Correcto
+if total &gt; presupuesto:
+    print(&quot;Presupuesto superado&quot;)   # 4 espacios de sangría
+    print(&quot;Revisa tus gastos&quot;)      # mismo nivel
+
+# ❌ Error: falta indentación
+if total &gt; presupuesto:
+print(&quot;Presupuesto superado&quot;)       # Python no sabe que pertenece al if</code></pre>
+</div>
+</div>
+<p>VS Code añade la indentación automáticamente al pulsar Enter después de los dos puntos. Si ves que algo no funciona, revisa siempre la sangría primero.<br></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxw-zv93h7mrz" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_informarse.svg" alt="">
+</div>
+<h1 class="box-title">3. Para saber más</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxw-3zytkfd56" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul>
+<li><a href="https://www.freecodecamp.org/espanol/news/sentencia-if-else-de-python-explicacion-de-las-sentencias-condiciones/" target="_blank" title="" rel="noopener">Artículo de <strong>freeCodeCamp</strong></a>: Una explicación paso a paso y muy visual sobre las sentencias <em>if/else</em>, ideal para principiantes.</li>
+<li><a href="https://codigodev.com/ejercicios-resueltos-de-estructuras-de-control-en-python/" target="_blank" title="" rel="noopener">¡Practica! Ejercicios resueltos de estructuras de control en Python.&nbsp;</a></li>
+</ul></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1789320649238-sgc0zudo1" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">4. Revisa lo aprendido</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1789320649234-1v8y29hy3" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1789320649234-1v8y29hy3&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;El bloque else es obligatorio siempre que uses un if.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌Falso. El else es opcional. Puedes usar un if sin else si solo necesitas ejecutar código cuando se cumple la condición, sin hacer nada en caso contrario.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Falso. El else es opcional. Puedes usar un if sin else si solo necesitas ejecutar código cuando se cumple la condición, sin hacer nada en caso contrario.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;En Python, la indentación es solo una cuestión de estilo visual.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. En Python la indentación es obligatoria y forma parte de la sintaxis del lenguaje. Un error de indentación provoca que el programa no se ejecute correctamente o lance un error.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Falso. En Python la indentación es obligatoria y forma parte de la sintaxis del lenguaje. Un error de indentación provoca que el programa no se ejecute correctamente o lance un error.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;La condición de un if debe devolver siempre True o False.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. La condición de un if se evalúa como un valor booleano. Si es True se ejecuta el bloque; si es False se salta.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Verdadero. La condición de un if se evalúa como un valor booleano. Si es True se ejecuta el bloque; si es False se salta.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;El siguiente código es correcto en Python:&lt;/p&gt;\n&lt;div class=\&quot;highlighted-code language-python\&quot;&gt;\n&lt;div&gt;\n&lt;pre&gt;&lt;code&gt;if total &gt; 500: \n   print(\&quot;Alerta\&quot;)&lt;/code&gt;&lt;/pre&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;pre&gt;&lt;br /&gt;&lt;/pre&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. Es perfectamente válido usar un if sin else. El programa mostrará \&quot;Alerta\&quot; solo si total supera 500 y no hará nada en caso contrario.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Verdadero. Es perfectamente válido usar un if sin else. El programa mostrará \&quot;Alerta\&quot; solo si total supera 500 y no hará nada en caso contrario.&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1789320649234-1v8y29hy3&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1789320649234-1v8y29hy3" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1789320649234-1v8y29hy3" id="tofPMainContainer-idevice-1789320649234-1v8y29hy3">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1789320649234-1v8y29hy3">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1789320649234-1v8y29hy3" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1789320649234-1v8y29hy3">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1789320649234-1v8y29hy3"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1789320649234-1v8y29hy3">
+                    <button  id="tofPStartGame-idevice-1789320649234-1v8y29hy3" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1789320649234-1v8y29hy3">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1789320649234-1v8y29hy3">
+                    <button id="tofPCheckTest-idevice-1789320649234-1v8y29hy3" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1789320649234-1v8y29hy3" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1789320649234-1v8y29hy3" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-1787670446004-664bu1k89" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_tarea.svg" alt="">
+</div>
+<h1 class="box-title">5. El guardián de tu cartera</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787670446003-ziae4a1yv" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>¿Recuerdas el programa ¡Hola, Gestor! que escribiste antes? Ha llegado el momento de mejorarlo. Vas a programar el sistema de avisos de tu Gestor de Gastos siguiendo estos pasos:</p>
+<ol>
+<li>Crea un archivo llamado <em>alertas.py</em>. Tu objetivo es programar el sistema de avisos de tu Gestor de Gastos.</li>
+<li>Crea una variable llamada saldo y asígnale el valor de tu dinero actual (por ejemplo, 50).</li>
+<li>Pide al usuario por teclado (usando input y float) que introduzca el importe de su última compra y guárdalo en la variable compra.</li>
+<li>Crea la estructura de decisión:</li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>SI </strong>la compra es mayor que el saldo, muestra en pantalla: "Operación denegada. No tienes fondos suficientes."</li>
+<li><strong>SI NO</strong>, calcula el nuevo saldo (restando la compra al saldo), y muestra en pantalla: "Compra aceptada. Tu nuevo saldo es de X euros."</li>
+</ul>
+</li>
+</ul>
+<p>¡Inténtalo sin mirar la solución! Ejecuta tu código un par de veces introduciendo números diferentes para comprobar que el programa sabe tomar ambos caminos de forma inteligente.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2 style="display:none;">Mostrar retroalimentación</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># 1. Establecemos nuestro saldo inicial
+saldo = 50.0
+
+# 2. Pedimos el gasto al usuario (convertido a decimal)
+compra = float(input(&quot;¿De cuánto es tu ticket de compra?: &quot;))
+
+# 3. Estructura de decisión
+if compra &gt; saldo:
+    print(&quot;Operación denegada. No tienes fondos suficientes.&quot;)
+else:
+    saldo = saldo - compra
+    print(&quot;Compra aceptada. Tu nuevo saldo es de:&quot;, saldo, &quot;euros.&quot;)
+
+    </code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</article><article id="block-1787510057490-0lfadm5y6" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">6. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787510057487-q4u3j3lkp" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>El bloque if</h2>
+<p>&nbsp;Es la estructura principal. Evalúa una condición y, si es verdadera (true), ejecuta las instrucciones tabuladas en su interior.</p>
+<h2>Las alternativas elif y else</h2>
+<p>Se utilizan justo después de un if. Elif permite añadir más comprobaciones encadenadas, y else se ejecuta automáticamente como último recurso cuando ninguna de las condiciones anteriores se ha cumplido.</p>
+<h2>La indentación</h2>
+<p>En Python es obligatorio utilizar una sangría (indentación) en el código que va dentro de las estructuras de control. Esta sangría se consigue normalmente dejando cuatro espacios al comienzo de cada línea y sirve para indicar qué instrucciones pertenecen a cada bloque de código. Otros lenguajes de programación utilizan llaves {} para delimitar estos bloques.</p>
+<h2>Condiciones encadenadas (and / or)</h2>
+<p>A veces necesitas que tu programa compruebe varias cosas al mismo tiempo antes de tomar una decisión. Para unir varias condiciones en una sola línea, utilizamos los operadores lógicos:</p>
+<ul>
+<li>and (Y lógico): obliga a que todas las condiciones sean verdaderas para que se ejecute el código. Es ideal para ser muy específico.
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Ejemplo: avisar solo si el gasto es alto Y además es de una categoría prescindible.</li>
+<li>if compra > 100 and categoria == "Ocio":</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>or (O lógico): basta con que al menos una de las condiciones sea verdadera. Es muy útil para agrupar opciones.
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Ejemplo: clasificar un ticket como "Gasto del Hogar" si es de luz o si es de agua.</li>
+<li>if recibo == "Luz" or recibo == "Agua":</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/6-el-programa-decide-y-repite.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/62-repite-sin-cansarte.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

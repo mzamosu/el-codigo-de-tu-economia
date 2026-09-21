@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb7b-153h4gn12">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>9. La memoria a largo plazo | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
+<script src="../idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="../idevices/quick-questions/quick-questions.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb7b-153h4gn12" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/9-la-memoria-a-largo-plazo.html" class="active no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb7b-153h4gn12" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">18</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">9. La memoria a largo plazo</h1></div>
+</header><div id="page-content-page-mubjgb7b-153h4gn12" class="page-content">
+<article id="block-mq6pvsxz-opsl5mqcu" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_lee.svg" alt="">
+</div>
+<h1 class="box-title">1. Los archivos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-0tdbqm038" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Imagina que pasas horas introduciendo todos los tickets del mes en tu Gestor de Gastos. Estás orgulloso de tu trabajo, pero al cerrar VSCode... ¡puf! Todo desaparece. Esto ocurre porque las variables (como tus listas y diccionarios) viven en la memoria RAM del ordenador, que se borra al apagar el programa.</p>
+<p>Cuando un programa termina de ejecutarse, todo lo que había en sus variables desaparece de la memoria del ordenador. Es como si cada vez que cerraras una libreta, todas las anotaciones se borraran solas. Evidentemente, un gestor de gastos que no recuerda nada no sirve de mucho.</p>
+<p>Para que tu aplicación tenga "memoria a largo plazo", necesitamos que escriba esos datos en un archivo físico (como un .txt o un .csv) guardado en tu disco duro. En Python, hacer esto es increíblemente fácil.</p>
+<figure class="exe-figure exe-image license-CC-BY-NC-SA position-center" style="width: 500px; text-align: center;"><img src="../content/resources/Gemini_Persistencia_archivos_red.png" alt="La imagen muestra una comparativa visual sobre la persistencia de datos, ilustrando a la izquierda cómo la memoria temporal (RAM) pierde la información al cerrar el programa. A la derecha, se representa cómo Python permite guardar esos datos de forma segura y permanente en el disco duro mediante un archivo de texto dentro de un archivador." width="500" height="273" title="Persistencia de datos">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://gemini.google.com/ " class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Gemini</a>. <span class="title"><em>Persistencia de datos</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxz-1rc3fmtq4" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">2. Leer y escribir archivos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-wp0w43wvo" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Trabajar con archivos en programación es exactamente igual que trabajar con una libreta de papel en la vida real. Tienes que seguir tres pasos:</p>
+<ol>
+<li>Abrir la libreta.</li>
+<li>Leer lo que pone o escribir algo nuevo.</li>
+<li>Cerrar la libreta y guardarla en el cajón.</li>
+</ol>
+<p>En Python trabajar con archivos es muy sencillo. Todo gira en torno a la función open(), que abre un archivo y te devuelve un objeto con el que puedes leer o escribir. Cuando terminas, debes cerrarlo para liberar recursos.</p>
+<p><strong>La función open() y los modos de apertura</strong></p>
+<p><span style="font-size: 12pt;">archivo = open(<span style="color: #99cc00;">"gastos.txt"</span>, <span style="color: #99cc00;">"r"</span>) # Abre para leer</span><br><span style="font-size: 12pt;">archivo = open(<span style="color: #99cc00;">"gastos.txt"</span>, <span style="color: #99cc00;">"w"</span>) # Abre para escribir (borra el contenido anterior)</span><br><span style="font-size: 12pt;">archivo = open(<span style="color: #99cc00;">"gastos.txt"</span>, <span style="color: #99cc00;">"a"</span>) # Abre para añadir al final</span><br><span style="font-size: 12pt;">archivo = open(<span style="color: #99cc00;">"gastos.txt"</span>, <span style="color: #99cc00;">"x"</span>) # Crea un archivo nuevo (error si ya existe)<br><br><strong></strong></span></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Y si hacemos magia?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>La magia de la palabra with</strong></p>
+<p>El error más común de los programadores principiantes es olvidar "cerrar la libreta" (usar .close()), lo que puede corromper el archivo. Para evitarlo, Python inventó una estructura maravillosa usando la palabra <em>with</em> (con).</p>
+<p>Al usar <em>with</em>, Python se encarga de abrir el archivo, dejarte escribir, y cerrarlo automáticamente en cuanto terminas.&nbsp;</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ❌ Sin with: hay que cerrar manualmente
+archivo = open(&quot;gastos.txt&quot;, &quot;w&quot;)
+archivo.write(&quot;45.50,comida,01/11/2024\n&quot;)
+archivo.close()    # Si olvidamos esto, el archivo puede corromperse
+
+# ✅ Con with: se cierra automáticamente
+with open(&quot;gastos.txt&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    archivo.write(&quot;45.50,comida,01/11/2024\n&quot;)
+    archivo.write(&quot;32.00,transporte,03/11/2024\n&quot;)</code></pre>
+</div>
+</div>
+<p>Usa siempre <em>with </em>para abrir archivos. Es más seguro, más limpio y es la práctica estándar en Python.<br></p></div></div></section><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Leer</h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Leer todo el contenido de una vez
+with open(&quot;gastos.txt&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    contenido = archivo.read()
+    print(contenido)
+
+# Leer línea a línea (útil para archivos grandes)
+with open(&quot;gastos.txt&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    for linea in archivo:
+        print(linea.strip())    # strip() elimina el salto de línea
+
+# Leer todas las líneas en una lista
+with open(&quot;gastos.txt&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    lineas = archivo.readlines()
+    print(f&quot;El archivo tiene {len(lineas)} gastos registrados&quot;)</code></pre>
+</div>
+</div>
+<p><br><br></p>
+<h2>Escribir</h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>gastos = [
+    &quot;45.50,comida,01/11/2024&quot;,
+    &quot;32.00,transporte,03/11/2024&quot;,
+    &quot;18.75,ocio,05/11/2024&quot;
+]
+
+# Escribir varias líneas de golpe
+with open(&quot;gastos.txt&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    archivo.writelines(f&quot;{gasto}\n&quot; for gasto in gastos)
+
+# Añadir un gasto sin borrar los anteriores
+with open(&quot;gastos.txt&quot;, &quot;a&quot;, encoding=&quot;utf-8&quot;) as archivo:
+    archivo.write(&quot;120.00,casa,08/11/2024\n&quot;)
+    print(&quot; Gasto añadido al historial&quot;)</code></pre>
+</div>
+</div>
+<p><br><br></p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxz-gxhneeu10" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">3. Relaciona</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-d2mave1jq" class="idevice_node relate" data-idevice-path="../idevices/relate/" data-idevice-type="relate">
+<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona el modo con su uso:</p></div><div class="relaciona-DataGame js-hidden">{"typeGame":"Relaciona","author":"","randomCards":true,"instructions":"<p>Relaciona el modo con su uso:</p>","showMinimize":false,"itinerary":{"showClue":false,"clueGame":"","percentageClue":40,"showCodeAccess":false,"codeAccess":"","messageCodeAccess":""},"cardsGame":[{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%22r%22","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Abre%20para%20leer.%20Error%20si%20el%20archivo%20no%20existe"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%22w%22","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Abre%20para%20escribir.%20Borra%20el%20contenido%20anterior"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%22a%22","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Abre%20para%20a%C3%B1adir%20datos%20al%20final%20sin%20borrar%20nada"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%22x%22","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Crea%20un%20archivo%20nuevo.%20Error%20si%20ya%20existe"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"with%20open(...)%20as%20f%3A","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Abre%20y%20cierra%20el%20archivo%20autom%C3%A1ticamente"}],"isScorm":0,"textButtonScorm":"Guardar la puntuación","repeatActivity":false,"textAfter":"","version":1.3,"percentajeCards":100,"type":1,"showSolution":true,"timeShowSolution":3,"time":3,"evaluation":false,"evaluationID":"","id":"2026531183716-120","msgs":{"msgSubmit":"Enviar","msgClue":"¡Genial! La pista es:","msgCodeAccess":"Código de acceso","msgPlayStart":"Pulse aquí para jugar","msgScore":"Puntuación","msgErrors":"Errores","msgHits":"Aciertos","msgMinimize":"Minimizar","msgMaximize":"Maximizar","msgFullScreen":"Pantalla Completa","msgExitFullScreen":"Salir del modo pantalla completa","msgNoImage":"Pregunta sin imágenes","msgEndGameScore":"Antes de guardar la puntuación comience la partida.","msgScoreScorm":"La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.","msgOnlySaveScore":"¡Sólo puede guardar la puntuación una vez!","msgOnlySave":"Sólo puede guardar una vez","msgInformation":"Información","msgYouScore":"Su puntuación","msgAuthor":"Autoría","msgOnlySaveAuto":"Su puntuación se guardará después de cada pregunta. Sólo puede jugar una vez.","msgSaveAuto":"Su puntuación se guardará automáticamente después de cada pregunta.","msgSeveralScore":"Puede guardar la puntuación tantas veces como quiera","msgYouLastScore":"La última puntuación guardada es","msgActityComply":"Ya ha realizado esta actividad.","msgPlaySeveralTimes":"Puede realizar esta actividad cuantas veces quiera","msgClose":"Cerrar","msgAudio":"Audio","msgNumQuestions":"Número de tarjetas","msgTryAgain":"Necesita al menos un %s% de respuestas correctas para conseguir la información. Vuelva a intentarlo.","msgEndGameM":"Has completado el juego. Tu puntuación es %s.","msgUncompletedActivity":"Actividad no completada","msgSuccessfulActivity":"Actividad superada. Puntuación: %s","msgUnsuccessfulActivity":"Actividad no superada. Puntuación: %s","msgTypeGame":"Relaciona","msgCheck":"Comprobar","msgRestart":"Reiniciar"}}</div><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxz-4u4j64qi2" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">4. El Gestor con memoria</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-sintoxcey" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ya sabes abrir, leer y escribir archivos. Ahora vamos a aplicarlo directamente al Gestor de Gastos para que recuerde los datos entre sesiones. Usaremos <em>json</em> para guardar los datos, <em>os</em> para comprobar si el archivo existe y <em>try/except</em> para gestionar los posibles errores.</p>
+<div class="exe-fx exe-accordion">
+<h2>os — El guardián de los archivos</h2>
+<p>Antes de intentar abrir un archivo, es fundamental comprobar que existe y que está en condiciones de ser leído. Para eso usamos la biblioteca os, incluida en Python sin necesidad de instalarla:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import os</code></pre>
+</div>
+</div>
+<p>Las funciones de os más útiles para trabajar con archivos en el Gestor son:</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><span style="font-size: 10pt;"><strong>Haz clic sobre la imagen para ampliar</strong></span></div>
+<a href="../content/resources/tabla_funciones_os_large.svg" title="Tabla Funciones os" rel="lightbox noopener" target="_blank"><span style="font-size: 10pt;" title="Tabla Funciones os"><img src="../content/resources/tabla_funciones_os_large.svg" title="Tabla de funciones os" width="500" height="254" alt="La imagen muestra una tabla con seis funciones de la biblioteca os de Python para gestionar archivos y carpetas. Para cada función se indica su nombre, una descripción de lo que hace y un ejemplo aplicado al Gestor de Gastos. Las funciones incluidas son: comprobar si un archivo existe, obtener su tamaño en bytes, conocer la carpeta de trabajo actual, crear carpetas nuevas, eliminar archivos y unir rutas de forma segura entre distintos sistemas operativos."></span></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Tabla de funciones os</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure>
+<p>Aplicadas al Gestor, así es como las usarías antes de intentar cargar los datos:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import os
+
+ARCHIVO = &quot;gestor.json&quot;
+
+# ¿Existe el archivo?
+if not os.path.exists(ARCHIVO):
+    print(&quot; No hay datos previos. Empezando desde cero.&quot;)
+
+# ¿Está vacío?
+elif os.path.getsize(ARCHIVO) == 0:
+    print(&quot; El archivo existe pero está vacío.&quot;)
+
+# Todo correcto, podemos cargarlo
+else:
+    tamaño = os.path.getsize(ARCHIVO)
+    print(f&quot; Archivo encontrado ({tamaño} bytes). Cargando datos...&quot;)</code></pre>
+</div>
+</div>
+<p>Combinar <em>os.path.exists()</em> con <em>os.path.getsize()</em> antes de abrir un archivo es una buena práctica que evita errores inesperados, especialmente en la primera ejecución del programa o si el archivo se ha corrompido.</p>
+<h2>El manejo de excepciones: try / except</h2>
+<p>Cuando trabajas con archivos siempre pueden ocurrir errores imprevistos: el archivo no existe, está corrupto o no tienes permisos para abrirlo. Si no los gestionas, tu programa se cerrará con un error feo. La solución es el bloque try/except:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>try:
+    with open(&quot;gestor.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+        datos = json.load(f)
+    print(&quot;Datos cargados correctamente&quot;)
+
+except FileNotFoundError:
+    print(&quot; No hay datos previos. Empezando desde cero.&quot;)
+    datos = {&quot;gastos&quot;: [], &quot;totales&quot;: {}}
+
+except json.JSONDecodeError:
+    print(&quot; El archivo está dañado. Empezando desde cero.&quot;)
+    datos = {&quot;gastos&quot;: [], &quot;totales&quot;: {}}</code></pre>
+</div>
+</div>
+<p><em>try</em> contiene el código que puede fallar. <em>except</em> captura el error específico y lo gestiona sin que el programa se cierre. Puedes encadenar varios <em>except</em> para distintos tipos de error.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Cómo quedaría el gestor con memoria?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Con todo lo aprendido, el Gestor completo con memoria quedaría así:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import json
+import os
+
+# Nombre del archivo donde se guardarán los datos del gestor
+ARCHIVO = &quot;gestor.json&quot;
+
+def cargar_datos():
+    &quot;&quot;&quot;Carga los datos del archivo si existe y está en buen estado.&quot;&quot;&quot;
+
+    # Comprobamos si el archivo existe antes de intentar abrirlo
+    if not os.path.exists(ARCHIVO):
+        print(&quot; No hay datos previos. Empezando desde cero.&quot;)
+        return [], {}  # Devolvemos estructuras vacías para empezar desde cero
+    
+    if os.path.getsize(ARCHIVO) == 0: # Comprobamos que el archivo no esté vacío
+        print(&quot;El archivo está vacío. Empezando desde cero.&quot;)
+        return [], {}
+    try:
+        with open(ARCHIVO, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f: # Abrimos el archivo en modo lectura
+           datos = json.load(f)  # Convertimos el contenido JSON a estructuras Python
+        print(&quot;Sesión anterior cargada correctamente.&quot;) 
+        return datos[&quot;gastos&quot;], datos[&quot;totales&quot;] # Devolvemos la lista de gastos y el diccionario de totales       
+    except json.JSONDecodeError:
+        print(&quot;El archivo está dañado. Empezando desde cero.&quot;)   # El archivo existe pero su contenido no es JSON válido
+        return [], {}
+    except KeyError:      
+        print(&quot;Formato incorrecto. Empezando desde cero.&quot;)   # El archivo JSON no tiene la estructura esperada
+        return [], {}
+
+def guardar_datos(gastos, totales):
+    &quot;&quot;&quot;Guarda los datos actuales en el archivo JSON.&quot;&quot;&quot;
+
+    try:
+        # Creamos el diccionario con todos los datos a guardar
+        datos = {
+            &quot;gastos&quot;:  gastos,    # Lista completa de gastos
+            &quot;totales&quot;: totales    # Diccionario de totales por categoría
+        }
+        # Abrimos el archivo en modo escritura (sobrescribe el contenido anterior)
+        with open(ARCHIVO, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+            # Guardamos los datos en formato JSON legible (indent=2)
+            # ensure_ascii=False permite guardar tildes y ñ correctamente
+            json.dump(datos, f, ensure_ascii=False, indent=2)
+
+        print(&quot;Datos guardados correctamente.&quot;)
+
+    except IOError:
+        # Error de entrada/salida: permisos, disco lleno, etc.
+        print(&quot;Error al guardar. Comprueba los permisos del archivo.&quot;)
+
+        </code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxz-fnm53r1ns" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">5. Revisa lo aprendido</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-8dvfjdtp0" class="idevice_node quick-questions" data-idevice-path="../idevices/quick-questions/" data-idevice-type="quick-questions">
+<div class="quext-IDevice"><div class="quext-instructions gameQP-instructions"><p>Elija la respuesta correcta</p></div><div class="quext-version js-hidden">2</div><div class="quext-feedback-game"></div><div class="quext-DataGame js-hidden" >%E9%B0%F3%E1%FB%F5%FC%F3%E6%E7%E0%F3%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C3%E7%D7%EA%E6%B0%BE%B0%F7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%F6%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E1%E6%F3%E0%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%D7%EA%F7%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%D7%FE%FB%F8%F3%B7%A0%A2%FE%F3%B7%A0%A2%E0%F7%E1%E2%E7%F7%E1%E6%F3%B7%A0%A2%F1%FD%E0%E0%F7%F1%E6%F3%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%D7%FE%FB%F8%F3%B2%FE%F3%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%B2%F1%FD%E0%E0%F7%F1%E6%F3%B2%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FD%E2%E6%FB%FD%FC%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F3%FC%E1%E5%F7%E0%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%E6%E0%E7%F7%BE%B0%E6%FB%FF%F7%C1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A1%BE%B0%E7%E1%F7%DE%FB%E4%F7%E1%B0%A8%E6%E0%E7%F7%BE%B0%FC%E7%FF%F0%F7%E0%DE%FB%E4%F7%E1%B0%A8%A1%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%E3%E7%F7%E1%E6%FB%FD%FC%E1%D5%F3%FF%F7%B0%A8%C9%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%D7%FE%B2%F0%FE%FD%E3%E7%F7%B2%E5%FB%E6%FA%B2%FD%E2%F7%FC%BA%BB%B2%F1%FB%F7%E0%E0%F3%B2%F7%FE%B2%F3%E0%F1%FA%FB%E4%FD%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F3%FE%B2%E6%F7%E0%FF%FB%FC%F3%E0%BC%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C4%F7%E0%F6%F3%F6%F7%E0%FD%B0%BE%B0%D4%F3%FE%E1%FD%B0%BE%B0%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A2%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%D7%FE%B2%FF%FD%F6%FD%B2%CE%B0%E5%CE%B0%B2%F3c%F3%F6%F7%B2%F1%FD%FC%E6%F7%FC%FB%F6%FD%B2%F3%FE%B2%F4%FB%FC%F3%FE%B2%F6%F7%FE%B2%F3%E0%F1%FA%FB%E4%FD%B2%E1%FB%FC%B2%F0%FD%E0%E0%F3%E0%B2%FE%FD%B2%F3%FC%E6%F7%E0%FB%FD%E0%BC%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C4%F7%E0%F6%F3%F6%F7%E0%FD%B0%BE%B0%D4%F3%FE%E1%FD%B0%BE%B0%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A2%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C7%FC%B2%F0%FE%FD%E3%E7%F7%B2%E6%E0%EB%BD%F7%EA%F1%F7%E2%E6%B2%F7%E4%FB%E6%F3%B2%E3%E7%F7%B2%F7%FE%B2%E2%E0%FD%F5%E0%F3%FF%F3%B2%E1%F7%B2%F1%FB%F7%E0%E0%F7%B2%F0%E0%E7%E1%F1%F3%FF%F7%FC%E6%F7%B2%F1%E7%F3%FC%F6%FD%B2%FD%F1%E7%E0%E0%F7%B2%E7%FC%B2%F7%E0%E0%FD%E0%BC%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C4%F7%E0%F6%F3%F6%F7%E0%FD%B0%BE%B0%D4%F3%FE%E1%FD%B0%BE%B0%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A2%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C1%FB%B2%F7%FE%B2%F3%E0%F1%FA%FB%E4%FD%B2%F5%F7%E1%E6%FD%E0%BC%F8%E1%FD%FC%B2%FC%FD%B2%F7%EA%FB%E1%E6%F7%BE%B2%F8%E1%FD%FC%BC%FE%FD%F3%F6%BA%BB%B2%F1%E0%F7%F3%B2%E7%FC%FD%B2%FC%E7%F7%E4%FD%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%BC%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C4%F7%E0%F6%F3%F6%F7%E0%FD%B0%BE%B0%D4%F3%FE%E1%FD%B0%BE%B0%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%CF%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%E6%FE%F7%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F5%F3%FF%F7%DF%FD%F6%F7%B0%A8%A3%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A0%BE%B0%F1%E7%E1%E6%FD%FF%DF%F7%E1%E1%F3%F5%F7%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%A3%A2%A2%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A4%A7%A1%A3%A0%A2%A3%A5%AA%BF%A3%A0%A2%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C1%E6%F3%E0%E6%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%D7%FC%E4%FB%F3%E0%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%DC%F7%E5%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B2%FD%E6%E0%F3%B2%E2%F3%E0%E6%FB%F6%F3%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%DE%FD%FD%F9%FB%FC%F5%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%F7%E1%E6%F3%F0%F3%B2%F0%E7%E1%F1%F3%FC%F6%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%C6%FB%F7%FF%E2%FD%B2%E2%FD%E0%B2%E2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B2%E1%FB%FC%B2%FB%FFs%F5%F7%FC%F7%E1%B0%BE%B0%FF%E1%F5%D1%FD%FD%FE%B0%A8%B03%D0%FB%F7%FC%B3%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%C6%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%A1%A1%A2%B2%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%DE%FB%E4%F7%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E7%FC%F3%B2%E4%FB%F6%F3%B0%BE%B0%FF%E1%F5%DE%FD%E1%E6%DE%FB%E4%F7%E1%B0%A8%B03%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E6%FD%F6%F3%E1%B2%E1%E7%E1%B2%E4%FB%F6%F3%E1%B3%B0%BE%B0%FF%E1%F5%D3%FE%FE%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B03%D1%FD%FF%E2%FE%F7%E6%F3%F6%F3%E1%B2%FE%F3%E1%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%E7%FC%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%F1%FD%FC%E1%F7%F5%E7%FB%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%C4%E7%F7%FE%E4%F3%B2%F3%B2%FB%FC%E6%F7%FC%E6%F3%E0%FE%FD%BC%B0%BE%B0%FF%E1%F5%C4%FB%F6%F7%FD%DB%FC%E6%E0%FD%B0%A8%B0%C4%7F%F6%F7%FD%B2%F6%F7%B2%FB%FC%E6%E0%FD%F6%E7%F1%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%DD%E2%E6%FB%FD%FC%B0%A8%B0%DD%E2%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C7%E1%F7%D4%E7%FE%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%F7%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%E1%F7%E0s%B2%FF%E7%EB%B2h%E6%FB%FE%B0%BE%B0%FF%E1%F5%DE%FD%F3%F6%FB%FC%F5%B0%A8%B0%D1%F3%E0%F5%F3%FC%F6%FD%BC%B2%D7%E1%E2%F7%E0%F7%BE%B2%E2%FD%E0%B2%F4%F3%E4%FD%E0%BC%BC%BC%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%DB%FC%FB%F1%FB%F3%B2%F7%FE%B2%F8%E7%F7%F5%FD%BC%BC%BC%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C3%E7%D7%EA%E6%B0%EF%EF</div><div class="quext-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-mq6pvsxz-5txlsidu6" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_tarea.svg" alt="">
+</div>
+<h1 class="box-title">6. Dale memoria a tu Gestor</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxz-xu2kov4xd" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mq6pvsxz-xu2kov4xd&quot;}">
+<div class="exe-text-template">
+    <p>Integra las funciones <em>cargar_datos()</em> y <em>guardar_datos()</em> en el Gestor de Gastos que construiste en el bloque anterior. El programa debe:</p>
+<ol>
+<li><strong>Al arrancar</strong>: cargar los datos del archivo <em>gestor.json</em> si existe</li>
+<li><strong>Al registrar un gasto</strong>: guardar automáticamente los datos actualizados</li>
+<li><strong>Al salir</strong>: confirmar que los datos han quedado guardados</li>
+</ol>
+<p><strong>Pista</strong>: Llama a <strong>cargar_datos()</strong> antes del bucle <em>while</em> y a <em>guardar_datos()</em> dentro de la opción 1 (registrar gasto) y también en la opción 5 (salir).</p>
+<div class="exe-fx exe-accordion">
+<h2>Revisa solución</h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import json
+import os
+
+
+CATEGORIAS = (&quot;comida&quot;, &quot;transporte&quot;, &quot;ocio&quot;, &quot;casa&quot;, &quot;salud&quot;)
+ARCHIVO    = &quot;gestor.json&quot;
+
+
+def cargar_datos():
+    if not os.path.exists(ARCHIVO):
+        print(&quot;ℹ️ No hay datos previos. Empezando desde cero.&quot;)
+        return [], {}
+    try:
+        with open(ARCHIVO, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+            datos = json.load(f)
+        print(f&quot;✅ Sesión cargada: {len(datos[&#039;gastos&#039;])} gastos registrados.&quot;)
+        return datos[&quot;gastos&quot;], datos[&quot;totales&quot;]
+    except (json.JSONDecodeError, KeyError):
+        print(&quot;⚠️ Archivo dañado. Empezando desde cero.&quot;)
+        return [], {}
+
+
+def guardar_datos(gastos, totales):
+    try:
+        with open(ARCHIVO, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+            json.dump({&quot;gastos&quot;: gastos, &quot;totales&quot;: totales},
+                      f, ensure_ascii=False, indent=2)
+        print(&quot;✅ Datos guardados correctamente.&quot;)
+    except IOError:
+        print(&quot;❌ Error al guardar.&quot;)
+
+
+def mostrar_menu():
+    print(&quot; === MENÚ DEL GESTOR ===&quot;)
+    print(&quot;1. Registrar gasto&quot;)
+    print(&quot;2. Ver todos los gastos&quot;)
+    print(&quot;3. Ver resumen por categoría&quot;)
+    print(&quot;4. Ver categorías usadas&quot;)
+    print(&quot;5. Salir&quot;)
+
+
+def registrar_gasto(gastos, totales):
+    importe   = float(input(&quot;Importe: &quot;))
+    categoria = input(&quot;Categoría: &quot;).lower().strip()
+    if categoria not in CATEGORIAS:
+        print(f&quot;⚠️ Categoría no válida.&quot;)
+        return
+    import datetime
+    fecha = datetime.date.today().strftime(&quot;%d/%m/%Y&quot;)
+    gastos.append({&quot;importe&quot;: importe,
+                   &quot;categoria&quot;: categoria, &quot;fecha&quot;: fecha})
+    totales[categoria] = totales.get(categoria, 0) + importe
+    guardar_datos(gastos, totales)
+    print(f&quot;✅ Gasto de {importe} € en {categoria} registrado.&quot;)
+
+
+def mostrar_gastos(gastos):
+    if not gastos:
+        print(&quot;📋 No hay gastos registrados.&quot;)
+        return
+    print(&quot;📋 Listado de gastos:&quot;)
+    for g in gastos:
+        print(f&quot;  {g[&#039;fecha&#039;]}  {g[&#039;categoria&#039;]:&lt;14} {g[&#039;importe&#039;]:.2f} €&quot;)
+
+
+def mostrar_resumen(totales):
+    if not totales:
+        print(&quot;📊 No hay datos todavía.&quot;)
+        return
+    print(&quot;📊 Resumen por categoría:&quot;)
+    for cat, total in totales.items():
+        print(f&quot;  {cat:&lt;14} {total:.2f} €&quot;)
+
+
+def mostrar_categorias_usadas(gastos):
+    if not gastos:
+        print(&quot;🏷️ No hay categorías usadas.&quot;)
+        return
+    usadas = set(g[&quot;categoria&quot;] for g in gastos)
+    print(f&quot;🏷️ Categorías usadas: {usadas}&quot;)
+
+
+# ── Programa principal ─────────────────────────────────────────
+gastos, totales = cargar_datos()
+
+
+while True:
+    mostrar_menu()
+    opcion = input(&quot; Elige una opción: &quot;)
+
+
+    if opcion == &quot;1&quot;:
+        registrar_gasto(gastos, totales)
+    elif opcion == &quot;2&quot;:
+        mostrar_gastos(gastos)
+    elif opcion == &quot;3&quot;:
+        mostrar_resumen(totales)
+    elif opcion == &quot;4&quot;:
+        mostrar_categorias_usadas(gastos)
+    elif opcion == &quot;5&quot;:
+        guardar_datos(gastos, totales)
+        print(&quot;👋 ¡Hasta pronto!&quot;)
+        break
+    else:
+        print(&quot;⚠️ Opción no válida. Elige entre 1 y 5.&quot;)</code></pre>
+</div>
+</div>
+<p><strong>¿Tu programa no funciona? Comprueba esto:</strong></p>
+<p>¿Llamas a cargar_datos() antes del bucle while?<br />¿Guardas los datos después de registrar un gasto?<br />¿Usas try/except para gestionar errores al cargar?<br />¿El archivo gestor.json se crea en la misma carpeta que tu programa?</p>
+</div>
+</div>
+</div>
+</div>
+</article><article id="block-1787911642594-txxdbkeoo" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">7. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787911642580-1b2vsr44d" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Apertura de archivos</h2>
+<p>Abre siempre los archivos con with. El gestor de contexto with open(...) as f: cierra el archivo automáticamente aunque ocurra un error. Es la forma correcta y segura de trabajar con archivos en Python.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>#  Correcto
+with open(&quot;gestor.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+    datos = json.load(f)
+
+#  Incorrecto — hay que cerrar manualmente
+f = open(&quot;gestor.json&quot;, &quot;r&quot;)
+datos = json.load(f)
+f.close()</code></pre>
+</div>
+</div>
+<h2>Modos de apertura</h2>
+<p>El modo que uses al abrir un archivo determina qué puedes hacer con él y qué ocurre con su contenido anterior.</p>
+<table border="1" class="exe-table" cellpadding="10" style="width: 80%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 33.3196%;"><strong>Modo</strong></td>
+<td style="width: 33.3196%;"><strong>Acción</strong></td>
+<td style="width: 33.3196%;"><strong>¿Borra el contenido?</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3196%;">"r"</td>
+<td style="width: 33.3196%;">Leer</td>
+<td style="width: 33.3196%;">No</td>
+</tr>
+<tr>
+<td style="width: 33.3196%;">"w"</td>
+<td style="width: 33.3196%;">Escribir desde cero</td>
+<td style="width: 33.3196%;">Sí</td>
+</tr>
+<tr>
+<td style="width: 33.3196%;">"a"</td>
+<td style="width: 33.3196%;">Añadir al final</td>
+<td style="width: 33.3196%;">No</td>
+</tr>
+<tr>
+<td style="width: 33.3196%;">"x"</td>
+<td style="width: 33.3196%;">Crear nuevo</td>
+<td style="width: 33.3196%;">No existe aún</td>
+</tr>
+</tbody>
+</table>
+<p>El error más frecuente es usar "w" creyendo que añade datos cuando en realidad borra todo lo anterior. Para añadir sin borrar usa siempre "a".</p>
+<h2>Uso de os</h2>
+<p>Usa <em>os </em>antes de abrir un archivo. Comprueba siempre si el archivo existe antes de intentar cargarlo. Evitarás errores en la primera ejecución del programa.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import os
+
+if not os.path.exists(&quot;gestor.json&quot;):
+    print(&quot; No hay datos previos. Empezando desde cero.&quot;)
+    gastos, totales = [], {}
+else:
+    # El archivo existe, podemos cargarlo
+    with open(&quot;gestor.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+        datos = json.load(f)</code></pre>
+</div>
+</div>
+<h2>Guarda datos con JSON</h2>
+<p>Guarda tus datos con <em>json</em>.<em> </em></p>
+<ul>
+<li><em>json.dump()</em> guarda listas y diccionarios conservando su estructura.<em> </em></li>
+<li><em>json.load()</em> los recupera exactamente igual.</li>
+</ul>
+<p>Añade siempre ensure_ascii=False para que las tildes y la ñ se guarden correctamente.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>import json
+
+# Guardar
+with open(&quot;gestor.json&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    json.dump({&quot;gastos&quot;: gastos, &quot;totales&quot;: totales},
+              f, ensure_ascii=False, indent=2)
+
+# Cargar
+with open(&quot;gestor.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+    datos = json.load(f)
+    gastos  = datos[&quot;gastos&quot;]
+    totales = datos[&quot;totales&quot;]</code></pre>
+</div>
+</div>
+<p><br></p>
+<h2>Gestiona los errores con try/except</h2>
+<p>Cuando trabajas con archivos siempre pueden ocurrir errores imprevistos. Captura al menos <em>FileNotFoundError </em>y json.<em>JSONDecodeError </em>para que tu programa no se cierre bruscamente.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>try:
+    with open(&quot;gestor.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+        datos = json.load(f)
+
+except FileNotFoundError:
+    print(&quot;No hay datos previos.&quot;)
+    datos = {&quot;gastos&quot;: [], &quot;totales&quot;: {}}
+
+except json.JSONDecodeError:
+    print(&quot; Archivo dañado. Empezando desde cero.&quot;)
+    datos = {&quot;gastos&quot;: [], &quot;totales&quot;: {}}</code></pre>
+</div>
+</div>
+</div>
+<p><br></p></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/82-no-reinventes-la-rueda.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/10-el-mundo-en-objetos.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

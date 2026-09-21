@@ -1,0 +1,88 @@
+<svg width="1380" height="636" viewBox="0 0 690 318" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Operadores de asignación en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#475569" stroke-width="1.8"/>
+  </marker>
+</defs>
+
+<rect width="680" height="308" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="14" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Operadores de asignación en Python</text>
+<text x="340" y="28" text-anchor="middle" dominant-baseline="central" style="fill:#BAE6FD;font-size:10px;font-weight:600;">Asignan o actualizan el valor de una variable</text>
+
+<!-- Cabecera columnas -->
+<rect x="20" y="44" width="70" height="26" rx="6" fill="#0891B2"/>
+<rect x="98" y="44" width="190" height="26" rx="6" fill="#0891B2"/>
+<rect x="296" y="44" width="364" height="26" rx="6" fill="#0891B2"/>
+<text x="55" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Op.</text>
+<text x="193" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Equivale a</text>
+<text x="478" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Ejemplo con el Gestor</text>
+
+<!-- Fila = -->
+<rect x="20" y="74" width="640" height="28" rx="4" fill="#E0F2FE"/>
+<text x="55" y="88" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">=</text>
+<text x="193" y="88" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Asigna un valor</text>
+<text x="310" y="88" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total = 0</text>
+
+<!-- Fila += -->
+<rect x="20" y="106" width="640" height="28" rx="4" fill="#FFFFFF"/>
+<text x="55" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">+=</text>
+<text x="193" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">total = total + valor</text>
+<text x="310" y="120" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total += 45.50  →  total = 45.50</text>
+
+<!-- Fila -= -->
+<rect x="20" y="138" width="640" height="28" rx="4" fill="#E0F2FE"/>
+<text x="55" y="152" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">-=</text>
+<text x="193" y="152" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">total = total - valor</text>
+<text x="310" y="152" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">presupuesto -= 45.50</text>
+
+<!-- Fila *= -->
+<rect x="20" y="170" width="640" height="28" rx="4" fill="#FFFFFF"/>
+<text x="55" y="184" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">*=</text>
+<text x="193" y="184" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">total = total * valor</text>
+<text x="310" y="184" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">importe *= 2</text>
+
+<!-- Fila /= -->
+<rect x="20" y="202" width="640" height="28" rx="4" fill="#E0F2FE"/>
+<text x="55" y="216" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">/=</text>
+<text x="193" y="216" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">total = total / valor</text>
+<text x="310" y="216" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">media /= num_gastos</text>
+
+<rect x="20" y="74" width="640" height="156" rx="4" fill="none" stroke="#BAE6FD" stroke-width="1"/>
+
+<!-- Sección paso a paso -->
+<rect x="20" y="242" width="640" height="58" rx="8" fill="#1E3A5F"/>
+<text x="340" y="256" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Acumulando gastos paso a paso con +=</text>
+
+<!-- Paso 1 -->
+<rect x="30" y="264" width="128" height="28" rx="6" fill="rgba(255,255,255,0.08)"/>
+<text x="94" y="271" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">Paso 1</text>
+<text x="94" y="285" text-anchor="middle" dominant-baseline="central" style="fill:#67E8F9;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total = 0</text>
+
+<line x1="159" y1="278" x2="175" y2="278" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- Paso 2 -->
+<rect x="176" y="264" width="128" height="28" rx="6" fill="rgba(255,255,255,0.08)"/>
+<text x="240" y="271" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">Paso 2: total += 45.50</text>
+<text x="240" y="285" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:12px;font-weight:700;">total = 45.50</text>
+
+<line x1="305" y1="278" x2="321" y2="278" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- Paso 3 -->
+<rect x="322" y="264" width="128" height="28" rx="6" fill="rgba(255,255,255,0.08)"/>
+<text x="386" y="271" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">Paso 3: total += 32.00</text>
+<text x="386" y="285" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:12px;font-weight:700;">total = 77.50</text>
+
+<line x1="451" y1="278" x2="467" y2="278" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- Paso 4 -->
+<rect x="468" y="264" width="182" height="28" rx="6" fill="rgba(74,222,128,0.15)"/>
+<text x="559" y="271" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">Paso 4: total += 18.75</text>
+<text x="559" y="285" text-anchor="middle" dominant-baseline="central" style="fill:#4ADE80;font-family:'Courier New',monospace;font-size:13px;font-weight:700;">total = 96.25 € ✔</text>
+</svg>

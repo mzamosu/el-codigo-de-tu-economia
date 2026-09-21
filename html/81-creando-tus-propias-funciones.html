@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb77-uaool01ld">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>8.1 Creando tus propias funciones | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb77-uaool01ld" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li class="current-page-parent"> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/81-creando-tus-propias-funciones.html" class="active no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb77-uaool01ld" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">16</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">8.1 Creando tus propias funciones</h1></div>
+</header><div id="page-content-page-mubjgb77-uaool01ld" class="page-content">
+<article id="block-mq6pvsxy-pfbpo7jpd" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Conocemos las funciones</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsxy-aj6yol53t" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure position-center" style="width: 500px; text-align: center;"><span style="font-size: 10pt;"><img src="../content/resources/Gemini_Funciones_Red.jpeg" title="Creando funciones" width="500" height="273" alt="La imagen muestra a un estudiante adulto concentrado en su ordenador, mientras una superposición digital ilustra esquemáticamente la definición y reutilización de funciones en Python. Un bloque visual 'calcular_presupuesto' detalla cómo se procesan las entradas de 'ingresos' y 'gastos' para generar una salida de 'remanente', demostrando su aplicación práctica con diferentes valores."></span>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://gemini.google.com/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Gemini</a>. <span class="title"><em>Creando funciones</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure>
+<p>Una función es un bloque de código con nombre propio que realiza una tarea concreta. La defines una vez y la puedes llamar todas las veces que necesites desde cualquier parte de tu programa.</p>
+<div class="exe-fx exe-tabs">
+<h2>Definición</h2>
+<p>Para crear una función en Python utilizamos la palabra clave reservada <em>def</em> (de definir), seguida del nombre que queramos darle, unos paréntesis y dos puntos. Todo el código que vaya dentro (tabulado) pertenece a la función.</p>
+<p><strong>¡Importante!</strong> Cuando defines una función, el ordenador simplemente la guarda en su memoria y la aprende, pero no ejecuta el código todavía.</p>
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="highlighted-code language-python">
+<div>
+<pre><code>#Sintaxis definición función con retorno y parámetros de entrada
+
+def nombre_funcion(parametro1, parametro2):
+   # bloque de código
+    return resultado</code></pre>
+</div>
+</div>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>Sintaxis definición función sin retorno y sin parámetros
+
+def nombre_funcion():
+   # bloque de código
+    </code></pre>
+</div>
+</div>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Ejemplo creación de función &lt;br&gt;# Creamos la función una sola vez
+
+def mostrar_menu():
+  print(&quot;--- GESTOR DE GASTOS ---&quot;)
+  print(&quot;1. Añadir nuevo ticket&quot;)
+  print(&quot;2. Ver historial&quot;)
+  print(&quot;3. Salir&quot;)</code></pre>
+</div>
+</div>
+<br><br><br></div>
+<h2><span style="font-size: 12pt;">Llamada</span></h2>
+<p>Para que el código de la función se ejecute de verdad en la pantalla, tienes que invocarla por su nombre escribiendo los paréntesis. Puedes hacerlo tantas veces como quieras a lo largo de tu programa, ahorrando muchísimas líneas de código.</p>
+<p>Tenemos que tener en cuenta si la función tiene o no retorno al hacer la llamada:</p>
+<ul>
+<li><strong>Funciones con retorno</strong>:&nbsp;Cuando una función calcula algo que necesitas usar después, utiliza <em>return</em> para devolver el resultado.</li>
+</ul>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>#Función con retorno
+# &#039;importe&#039; es el parámetro (el ingrediente que necesita la función)
+def calcular_con_iva(importe):
+&amp;nbsp; &amp;nbsp; total = importe * 1.21
+&amp;nbsp; &amp;nbsp; return total&amp;nbsp; # La función devuelve el resultado calculado
+
+# Llamamos a la función enviándole un 10 y guardamos el resultado
+precio_final = calcular_con_iva(10)
+print(&quot;El precio con IVA es:&quot;, precio_final)</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Funciones sin retorno</strong>: No todas las funciones devuelven un valor. Algunas simplemente realizan una acción, como mostrar información por pantalla.</li>
+</ul>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Función sin retorno
+# Llamamos a la función dos veces seguidas
+mostrar_menu()
+mostrar_menu()</code></pre>
+</div>
+</div>
+<p>También podemos mandarle datos a la función para que trabaje con ellos, son los <strong>parámetros,</strong>&nbsp;variables que ponemos dentro de los paréntesis.&nbsp;</p>
+<p>Una función debería hacer <strong>una sola cosa</strong> y hacerla bien. Si tu función se llama registrar_gasto, solo debería registrar el gasto, no calcular totales ni mostrar menús. Esto se llama el <strong>principio de responsabilidad única</strong> y hace el código mucho más fácil de entender y mantener.</p>
+<h2>Ámbito de variables</h2>
+<p>Cuando trabajas con funciones surge una pregunta importante: ¿pueden las funciones ver y modificar las variables que has creado fuera de ellas? La respuesta depende del ámbito (scope en inglés) de cada variable.</p>
+<p>En Python existen dos tipos de variables según dónde se han creado:</p>
+<ul>
+<li><strong>Variable local</strong>: creada dentro de una función. Solo existe mientras la función se ejecuta y desaparece cuando termina. No es accesible desde fuera.</li>
+<li><strong>Variable global</strong>: creada fuera de cualquier función. Es accesible desde cualquier parte del programa, incluso desde dentro de las funciones, aunque solo para leerla.</li>
+</ul>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>presupuesto = 500      # Variable GLOBAL — accesible en todo el programa
+
+def comprobar_presupuesto(total):
+    margen = presupuesto - total   # Lee la variable global 
+    limite = 0.80                  # Variable LOCAL — solo existe aquí
+    if total &gt; presupuesto * limite:
+        print(f&quot; Llevas más del 80%. Margen restante: {margen:.2f} €&quot;)
+
+comprobar_presupuesto(420)
+print(limite)    # ERROR: limite no existe fuera de la función</code></pre>
+</div>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Puedo modificar una variable global desde dentro de una función?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Por defecto no. Si intentas asignar un nuevo valor a una variable global dentro de una función, Python crea una variable local con el mismo nombre sin modificar la global. Para modificarla explícitamente debes usar la palabra reservada <em>global</em>:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>total_mes = 0    # Variable global
+
+def registrar_gasto(importe):
+    global total_mes             # Indicamos que usamos la variable global
+    total_mes += importe         # Ahora sí modifica la variable global
+
+
+registrar_gasto(45.50)
+registrar_gasto(32.00)
+print(f&quot;Total acumulado: {total_mes} €&quot;)   # 77.50 €</code></pre>
+</div>
+</div>
+<p>Usar la palabra reservada global funciona pero no es una buena práctica. Lo más recomendable es pasar la variable como parámetro y devolverla con return. Así el código es más limpio y predecible.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1789322948444-cd1jyfonl" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">2. Repasamos lo aprendido</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1789322948439-6cqq4qbay" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1789322948439-6cqq4qbay&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Una función en Python debe devolver siempre un valor con &lt;em&gt;return&lt;/em&gt;.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. El return es opcional. Si una función no tiene return, simplemente ejecuta su código y termina devolviendo None implícitamente.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Falso. El &lt;em&gt;return&lt;/em&gt; es opcional. Si una función no tiene &lt;em&gt;return&lt;/em&gt;, simplemente ejecuta su código y termina devolviendo &lt;em&gt;None&lt;/em&gt; implícitamente.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Puedes llamar a una función tantas veces como necesites a lo largo del programa.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. Ese es precisamente el objetivo de las funciones: escribir el código una vez y reutilizarlo todas las veces que sea necesario.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Verdadero. Ese es precisamente el objetivo de las funciones: escribir el código una vez y reutilizarlo todas las veces que sea necesario.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Los parámetros de una función son los valores que le pasas cuando la llamas.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. Los parámetros permiten que la función trabaje con datos distintos en cada llamada, haciéndola flexible y reutilizable.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Verdadero. Los parámetros permiten que la función trabaje con datos distintos en cada llamada, haciéndola flexible y reutilizable.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;El nombre de la función puede ser cualquier palabra, incluidas las palabras reservadas de Python.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;❌ Falso. Las funciones siguen las mismas reglas de nomenclatura que las variables: no pueden usar palabras reservadas como for, if, while, etc.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Falso. Las funciones siguen las mismas reglas de nomenclatura que las variables: no pueden usar palabras reservadas como &lt;em&gt;for&lt;/em&gt;, &lt;em&gt;if&lt;/em&gt;, &lt;em&gt;while&lt;/em&gt;, etc.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Una función puede llamar a otra función dentro de su bloque de código.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;✅ Verdadero. Es completamente habitual y recomendable. Por ejemplo, una función mostrar_resumen() puede llamar internamente a calcular_total() y a calcular_media().&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Verdadero. Es completamente habitual y recomendable. Por ejemplo, una función &lt;em&gt;mostrar_resumen()&lt;/em&gt; puede llamar internamente a &lt;em&gt;calcular_total()&lt;/em&gt; y a &lt;em&gt;calcular_media()&lt;/em&gt;.&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1789322948439-6cqq4qbay&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1789322948439-6cqq4qbay" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1789322948439-6cqq4qbay" id="tofPMainContainer-idevice-1789322948439-6cqq4qbay">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1789322948439-6cqq4qbay">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1789322948439-6cqq4qbay" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1789322948439-6cqq4qbay">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1789322948439-6cqq4qbay"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1789322948439-6cqq4qbay">
+                    <button  id="tofPStartGame-idevice-1789322948439-6cqq4qbay" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1789322948439-6cqq4qbay">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1789322948439-6cqq4qbay">
+                    <button id="tofPCheckTest-idevice-1789322948439-6cqq4qbay" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1789322948439-6cqq4qbay" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1789322948439-6cqq4qbay" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-1787678321716-mxlnozmwo" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_tarea.svg" alt="">
+</div>
+<h1 class="box-title">3. Refactoriza tu Gestor</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787678321715-8xbi8etsb" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ha llegado el momento de dar un gran salto de calidad en tu Gestor de Gastos. Toma el programa que construiste en el bloque de estructuras de datos y <strong>refactorízalo usando funciones</strong>: divide el código en funciones con responsabilidad única, una por cada acción del menú.</p>
+<p>Las funciones que debes crear:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>def mostrar_menu(categorias):
+    # Muestra el menú con las categorías disponibles
+
+def registrar_gasto(gastos, totales, categorias):
+    # Pide importe y categoría, valida y registra
+    # Devuelve True si se registró, False si no
+
+def mostrar_gastos(gastos):
+    # Muestra todos los gastos de la lista
+
+def mostrar_resumen(totales):
+    # Muestra el total por categoría
+
+def mostrar_categorias_usadas(gastos):
+    # Muestra las categorías únicas usadas</code></pre>
+</div>
+</div>
+<p>El bucle principal debería quedar así de limpio:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>while True:
+    mostrar_menu(CATEGORIAS)
+    opcion = input(&quot;Elige una opción: &quot;)
+
+    if opcion == &quot;1&quot;:
+        registrar_gasto(gastos, totales, CATEGORIAS)
+    elif opcion == &quot;2&quot;:
+        mostrar_gastos(gastos)
+    elif opcion == &quot;3&quot;:
+        mostrar_resumen(totales)
+    elif opcion == &quot;4&quot;:
+        mostrar_categorias_usadas(gastos)
+    elif opcion == &quot;5&quot;:
+        print(&quot; ¡Hasta pronto!&quot;)
+        break
+    else:
+        print(&quot; Opción no válida.&quot;)</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2 style="display:none;">Mostrar retroalimentación</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Gestor de Gastos — Versión con funciones
+
+CATEGORIAS = (&quot;comida&quot;, &quot;transporte&quot;, &quot;ocio&quot;, &quot;casa&quot;, &quot;salud&quot;)
+
+def mostrar_menu(categorias):
+    print(&quot;\n=== MENÚ DEL GESTOR ===&quot;)
+    print(f&quot;Categorías: {&#039;, &#039;.join(categorias)}&quot;)
+    print(&quot;\n1. Registrar gasto&quot;)
+    print(&quot;2. Ver todos los gastos&quot;)
+    print(&quot;3. Ver resumen por categoría&quot;)
+    print(&quot;4. Ver categorías usadas&quot;)
+    print(&quot;5. Salir&quot;)
+
+def registrar_gasto(gastos, totales, categorias):
+    importe   = float(input(&quot;Importe: &quot;))
+    categoria = input(&quot;Categoría: &quot;).lower()
+    if categoria not in categorias:
+        print(f&quot; Categoría no válida.&quot;)
+        return False
+    gastos.append({&quot;importe&quot;: importe, &quot;categoria&quot;: categoria})
+    totales[categoria] = totales.get(categoria, 0) + importe
+    print(&quot; Gasto registrado correctamente.&quot;)
+    return True
+
+def mostrar_gastos(gastos):
+    if not gastos:
+        print(&quot; No hay gastos registrados.&quot;)
+        return
+    print(&quot; Listado de gastos:&quot;)
+    for g in gastos:
+        print(f&quot;  - {g[&#039;categoria&#039;]}: {g[&#039;importe&#039;]} €&quot;)
+
+def mostrar_resumen(totales):
+    if not totales:
+        print(&quot; No hay datos todavía.&quot;)
+        return
+    print(&quot; Resumen por categoría:&quot;)
+    for cat, total in totales.items():
+        print(f&quot;  - {cat}: {total:.2f} €&quot;)
+
+def mostrar_categorias_usadas(gastos):
+    if not gastos:
+        print(&quot; No hay categorías usadas todavía.&quot;)
+        return
+    usadas = set([g[&quot;categoria&quot;] for g in gastos])
+    print(f&quot; Categorías usadas: {usadas}&quot;)
+
+# Programa principal
+gastos  = []
+totales = {}
+
+while True:
+    mostrar_menu(CATEGORIAS)
+    opcion = input(&quot;\nElige una opción: &quot;)
+
+    if opcion == &quot;1&quot;:
+        registrar_gasto(gastos, totales, CATEGORIAS)
+    elif opcion == &quot;2&quot;:
+        mostrar_gastos(gastos)
+    elif opcion == &quot;3&quot;:
+        mostrar_resumen(totales)
+    elif opcion == &quot;4&quot;:
+        mostrar_categorias_usadas(gastos)
+    elif opcion == &quot;5&quot;:
+        print(&quot; ¡Hasta pronto!&quot;)
+        break
+    else:
+        print(&quot; Opción no válida. Elige entre 1 y 5.&quot;)</code></pre>
+</div>
+</div>
+<p><strong>¿Tu programa no funciona? Comprueba esto:</strong></p>
+<ul>
+<li>¿Cada función hace solo una cosa?</li>
+<li>¿Pasas las variables como parámetros en lugar de usar global?</li>
+<li>¿Las funciones que modifican datos reciben la lista o diccionario como parámetro?</li>
+<li>¿El bucle principal llama a las funciones correctamente?</li>
+</ul>
+<div class="exe-fx exe-accordion">
+<h2>Reto extra</h2>
+<p>Crea una función calcular_estadisticas(gastos) que devuelva en un diccionario el total, la media, el gasto máximo y el mínimo del mes.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1787905684140-2xww8m0fi" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">4. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1787905684136-j5ih2f7o2" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Definir funciones</h2>
+<p><strong>def </strong>(definir), es la palabra clave para crear una función. Le enseña al ordenador cómo hacer una tarea, agrupando varias líneas de código bajo un solo nombre.</p>
+<h2>Invocar funciones</h2>
+<p>&nbsp;Para usar una función que ya existe, solo tienes que escribir su nombre seguido de paréntesis, por ejemplo: mostrar_menu()</p>
+<h2>Retorno de funciones</h2>
+<p><strong>return </strong>(devolver), se utiliza dentro de la función cuando queremos que el resultado de un cálculo o proceso sea devuelto al programa principal para poder guardarlo en una variable y seguir trabajando con él.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><span style="font-size: 10pt;"><strong>Haz clic sobre la imagen para ampliar</strong></span></div>
+<a href="../content/resources/8_1_UsoFunciones.png" title="Uso de Funciones" rel="lightbox noopener" target="_blank"><span style="font-size: 10pt;" title="Uso de Funciones"><img src="../content/resources/8_1_UsoFunciones.png" title="¿Por qué utilizar funciones?" width="500" height="333" alt="La imagen muestra una comparación visual entre un programa escrito sin funciones y otro organizado mediante funciones en Python. Se destacan las ventajas de utilizar funciones: un código más limpio, modular, reutilizable, fácil de mantener y con menos posibilidades de error."></span></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://chatgpt.com/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con ChatGPT</a>. <span class="title"><em>¿Por qué utilizar funciones?</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/8-divide-y-reutiliza.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/82-no-reinventes-la-rueda.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

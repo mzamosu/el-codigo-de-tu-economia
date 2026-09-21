@@ -1,0 +1,66 @@
+<svg width="1380" height="576" viewBox="0 0 690 288" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Operadores de comparación en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="278" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="18" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Operadores de comparación en Python</text>
+
+<!-- Cabecera columnas -->
+<rect x="20" y="40" width="80" height="26" rx="6" fill="#0891B2"/>
+<rect x="108" y="40" width="150" height="26" rx="6" fill="#0891B2"/>
+<rect x="266" y="40" width="210" height="26" rx="6" fill="#0891B2"/>
+<rect x="484" y="40" width="176" height="26" rx="6" fill="#0891B2"/>
+<text x="60" y="53" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Operador</text>
+<text x="183" y="53" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Significado</text>
+<text x="371" y="53" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Ejemplo</text>
+<text x="572" y="53" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Resultado</text>
+
+<!-- Fila == -->
+<rect x="20" y="70" width="640" height="30" rx="6" fill="#E0F2FE"/>
+<text x="60" y="85" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">==</text>
+<text x="183" y="85" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Igual a</text>
+<text x="371" y="85" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total == 480</text>
+<text x="572" y="85" text-anchor="middle" dominant-baseline="central" style="fill:#059669;font-size:12px;font-weight:700;">✔ True</text>
+
+<!-- Fila != -->
+<rect x="20" y="104" width="640" height="30" rx="6" fill="#FFFFFF"/>
+<text x="60" y="119" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">!=</text>
+<text x="183" y="119" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Distinto de</text>
+<text x="371" y="119" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">categoria != "ocio"</text>
+<text x="572" y="119" text-anchor="middle" dominant-baseline="central" style="fill:#DC2626;font-size:12px;font-weight:700;">✘ False</text>
+
+<!-- Fila > -->
+<rect x="20" y="138" width="640" height="30" rx="6" fill="#E0F2FE"/>
+<text x="60" y="153" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">&gt;</text>
+<text x="183" y="153" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Mayor que</text>
+<text x="371" y="153" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total &gt; presupuesto</text>
+<text x="572" y="153" text-anchor="middle" dominant-baseline="central" style="fill:#DC2626;font-size:12px;font-weight:700;">✘ False</text>
+
+<!-- Fila < -->
+<rect x="20" y="172" width="640" height="30" rx="6" fill="#FFFFFF"/>
+<text x="60" y="187" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">&lt;</text>
+<text x="183" y="187" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Menor que</text>
+<text x="371" y="187" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">importe &lt; 100</text>
+<text x="572" y="187" text-anchor="middle" dominant-baseline="central" style="fill:#059669;font-size:12px;font-weight:700;">✔ True</text>
+
+<!-- Fila >= -->
+<rect x="20" y="206" width="640" height="30" rx="6" fill="#E0F2FE"/>
+<text x="60" y="221" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">&gt;=</text>
+<text x="183" y="221" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Mayor o igual que</text>
+<text x="371" y="221" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">total &gt;= 400</text>
+<text x="572" y="221" text-anchor="middle" dominant-baseline="central" style="fill:#059669;font-size:12px;font-weight:700;">✔ True</text>
+
+<!-- Fila <= -->
+<rect x="20" y="240" width="640" height="30" rx="6" fill="#FFFFFF"/>
+<text x="60" y="255" text-anchor="middle" dominant-baseline="central" style="fill:#0891B2;font-family:'Courier New',monospace;font-size:16px;font-weight:700;">&lt;=</text>
+<text x="183" y="255" text-anchor="middle" dominant-baseline="central" style="fill:#0F172A;font-size:12px;font-weight:600;">Menor o igual que</text>
+<text x="371" y="255" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">importe &lt;= 50</text>
+<text x="572" y="255" text-anchor="middle" dominant-baseline="central" style="fill:#DC2626;font-size:12px;font-weight:700;">✘ False</text>
+
+<rect x="20" y="70" width="640" height="200" rx="6" fill="none" stroke="#BAE6FD" stroke-width="1"/>
+</svg>

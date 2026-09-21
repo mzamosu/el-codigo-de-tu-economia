@@ -1,0 +1,72 @@
+<svg width="1380" height="620" viewBox="0 0 690 310" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Tipos de datos básicos en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="300" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="18" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Tipos de datos básicos en Python</text>
+
+<!-- ── CARD int ── -->
+<rect x="20" y="46" width="152" height="162" rx="10" fill="#0891B2"/>
+<rect x="20" y="46" width="152" height="44" rx="10" fill="rgba(0,0,0,0.15)"/>
+<rect x="20" y="76" width="152" height="14" fill="rgba(0,0,0,0.15)"/>
+<text x="96" y="68" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:22px;font-weight:700;">int</text>
+<text x="96" y="104" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Número entero</text>
+<text x="96" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.88;">Sin decimales</text>
+<rect x="34" y="132" width="124" height="24" rx="5" fill="rgba(0,0,0,0.25)"/>
+<text x="96" y="144" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">num_gastos = 5</text>
+<text x="96" y="168" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.75;">nº gastos del mes</text>
+
+<!-- ── CARD float ── -->
+<rect x="182" y="46" width="152" height="162" rx="10" fill="#7C3AED"/>
+<rect x="182" y="46" width="152" height="44" rx="10" fill="rgba(0,0,0,0.15)"/>
+<rect x="182" y="76" width="152" height="14" fill="rgba(0,0,0,0.15)"/>
+<text x="258" y="68" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:22px;font-weight:700;">float</text>
+<text x="258" y="104" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Número decimal</text>
+<text x="258" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.88;">Con decimales</text>
+<rect x="196" y="132" width="124" height="24" rx="5" fill="rgba(0,0,0,0.25)"/>
+<text x="258" y="144" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">importe = 45.50</text>
+<text x="258" y="168" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.75;">importe de un gasto</text>
+
+<!-- ── CARD str ── -->
+<rect x="344" y="46" width="152" height="162" rx="10" fill="#D97706"/>
+<rect x="344" y="46" width="152" height="44" rx="10" fill="rgba(0,0,0,0.15)"/>
+<rect x="344" y="76" width="152" height="14" fill="rgba(0,0,0,0.15)"/>
+<text x="420" y="68" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:22px;font-weight:700;">str</text>
+<text x="420" y="104" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Cadena de texto</text>
+<text x="420" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.88;">Entre comillas</text>
+<rect x="358" y="132" width="124" height="24" rx="5" fill="rgba(0,0,0,0.25)"/>
+<text x="420" y="144" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">cat = "comida"</text>
+<text x="420" y="168" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.75;">categoría del gasto</text>
+
+<!-- ── CARD bool ── -->
+<rect x="506" y="46" width="154" height="162" rx="10" fill="#DC2626"/>
+<rect x="506" y="46" width="154" height="44" rx="10" fill="rgba(0,0,0,0.15)"/>
+<rect x="506" y="76" width="154" height="14" fill="rgba(0,0,0,0.15)"/>
+<text x="583" y="68" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:22px;font-weight:700;">bool</text>
+<text x="583" y="104" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Valor lógico</text>
+<text x="583" y="120" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.88;">True o False</text>
+<rect x="520" y="132" width="126" height="24" rx="5" fill="rgba(0,0,0,0.25)"/>
+<text x="583" y="144" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">superado = False</text>
+<text x="583" y="168" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;opacity:0.75;">¿presupuesto superado?</text>
+
+<!-- ── SECCIÓN DETECCIÓN AUTOMÁTICA ── -->
+<rect x="20" y="222" width="640" height="66" rx="10" fill="#1E3A5F"/>
+<text x="340" y="240" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Python detecta el tipo automáticamente según el valor asignado</text>
+
+<text x="40" y="260" dominant-baseline="central" style="fill:#67E8F9;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">num_gastos = 5</text>
+<text x="205" y="260" dominant-baseline="central" style="fill:#67E8F9;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">→ int</text>
+
+<text x="280" y="260" dominant-baseline="central" style="fill:#C4B5FD;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">importe = 45.50</text>
+<text x="445" y="260" dominant-baseline="central" style="fill:#C4B5FD;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">→ float</text>
+
+<text x="40" y="278" dominant-baseline="central" style="fill:#FCD34D;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">cat = "comida"</text>
+<text x="205" y="278" dominant-baseline="central" style="fill:#FCD34D;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">→ str</text>
+
+<text x="280" y="278" dominant-baseline="central" style="fill:#FCA5A5;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">superado = False</text>
+<text x="445" y="278" dominant-baseline="central" style="fill:#FCA5A5;font-family:'Courier New',monospace;font-size:11px;font-weight:700;">→ bool</text>
+</svg>

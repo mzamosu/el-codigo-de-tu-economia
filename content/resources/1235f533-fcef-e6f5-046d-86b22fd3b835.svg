@@ -1,0 +1,79 @@
+<svg width="1380" height="880" viewBox="0 0 690 440" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Comparativa entre listas y tuplas en Python</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<rect width="680" height="430" fill="#F8FAFC" rx="12"/>
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="14" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Lista vs Tupla en Python</text>
+<text x="340" y="28" text-anchor="middle" dominant-baseline="central" style="fill:#BAE6FD;font-size:10px;font-weight:600;">Misma estructura, comportamiento distinto</text>
+
+<!-- Cabecera columnas -->
+<rect x="20" y="44" width="150" height="26" rx="6" fill="#475569"/>
+<rect x="178" y="44" width="232" height="26" rx="6" fill="#0891B2"/>
+<rect x="418" y="44" width="242" height="26" rx="6" fill="#7C3AED"/>
+<text x="95" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">Operación</text>
+<text x="294" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">[ ] Lista</text>
+<text x="539" y="57" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">( ) Tupla</text>
+
+<!-- FILA 1: Crear -->
+<rect x="20" y="74" width="640" height="50" rx="4" fill="#E0F2FE"/>
+<rect x="20" y="74" width="150" height="50" rx="4" fill="#1E3A5F"/>
+<text x="95" y="99" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Crear</text>
+<text x="186" y="91" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos = [45.50, 32.00, 18.75]</text>
+<text x="186" y="113" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos = list()</text>
+<text x="426" y="91" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">categorias = ("comida","ocio")</text>
+<text x="426" y="113" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">categorias = tuple()</text>
+
+<!-- FILA 2: Acceder -->
+<rect x="20" y="128" width="640" height="50" rx="4" fill="#FFFFFF"/>
+<rect x="20" y="128" width="150" height="50" rx="4" fill="#334155"/>
+<text x="95" y="153" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Acceder</text>
+<text x="186" y="145" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos[0]   →  45.50</text>
+<text x="186" y="167" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos[-1]  →  18.75  (último)</text>
+<text x="426" y="145" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">categorias[0]  →  "comida"</text>
+<text x="426" y="167" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">categorias[-1] →  "ocio"</text>
+
+<!-- FILA 3: Modificar -->
+<rect x="20" y="182" width="640" height="50" rx="4" fill="#E0F2FE"/>
+<rect x="20" y="182" width="150" height="50" rx="4" fill="#1E3A5F"/>
+<text x="95" y="207" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Modificar</text>
+<text x="186" y="199" dominant-baseline="central" style="fill:#059669;font-size:11px;font-weight:700;">✔ Permitido</text>
+<text x="186" y="221" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos[0] = 50.00</text>
+<text x="426" y="199" dominant-baseline="central" style="fill:#DC2626;font-size:11px;font-weight:700;">✘ No permitido — son inmutables</text>
+<text x="426" y="221" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">categorias = ("comida","ocio","casa")</text>
+
+<!-- FILA 4: Añadir / Eliminar -->
+<rect x="20" y="236" width="640" height="50" rx="4" fill="#FFFFFF"/>
+<rect x="20" y="236" width="150" height="50" rx="4" fill="#334155"/>
+<text x="95" y="253" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Añadir /</text>
+<text x="95" y="269" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Eliminar</text>
+<text x="186" y="253" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos.append(67.30)</text>
+<text x="186" y="269" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">gastos.remove(32.00)</text>
+<text x="426" y="261" dominant-baseline="central" style="fill:#DC2626;font-size:11px;font-weight:700;">✘ No se puede modificar</text>
+
+<!-- FILA 5: Recorrer -->
+<rect x="20" y="290" width="640" height="50" rx="4" fill="#E0F2FE"/>
+<rect x="20" y="290" width="150" height="50" rx="4" fill="#1E3A5F"/>
+<text x="95" y="315" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Recorrer</text>
+<text x="186" y="307" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">for gasto in gastos:</text>
+<text x="204" y="325" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">print(gasto)</text>
+<text x="426" y="307" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">for cat in categorias:</text>
+<text x="444" y="325" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">print(cat)</text>
+
+<!-- FILA 6: Convertir -->
+<rect x="20" y="344" width="640" height="38" rx="4" fill="#FFFFFF"/>
+<rect x="20" y="344" width="150" height="38" rx="4" fill="#334155"/>
+<text x="95" y="363" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">Convertir</text>
+<text x="186" y="363" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">tuple(gastos)  →  convierte a tupla</text>
+<text x="426" y="363" dominant-baseline="central" style="fill:#1E3A5F;font-family:'Courier New',monospace;font-size:10px;font-weight:700;">list(categorias)  →  convierte a lista</text>
+
+<rect x="20" y="74" width="640" height="308" rx="4" fill="none" stroke="#BAE6FD" stroke-width="1"/>
+
+<!-- Footer -->
+<rect x="20" y="396" width="640" height="26" rx="8" fill="#1E3A5F"/>
+<text x="340" y="409" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:11px;font-weight:700;">💡 Usa lista cuando los datos cambian · Usa tupla cuando los datos son fijos</text>
+</svg>

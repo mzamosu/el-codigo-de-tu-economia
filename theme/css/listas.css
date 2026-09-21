@@ -1,0 +1,297 @@
+/*COLOR LISTAS NUMÉRICAS*/
+.exe-content :is(.box-content, .udl-content, .eXelearning-content) :is(ol:not([id], [class]) li::marker, ol.lista_esquema li::marker, ol.listaesquema li::marker, div[mode=export] .idevice_body ol:not([id], [class]) li::marker, div[mode=export] .idevice_body ol.lista_esquema li::marker, div[mode=export] .idevice_body ol.listaesquema li::marker) { content:counters(item, ".") ".- "; color:var(--fondo-cabecera-iDevice); font-weight:bold }
+
+/*FIN COLOR LISTAS NUMÉRICAS*/
+#tinymce.mce-content-body ul:not([id],
+  [class]){
+  list-style-position:outside;
+  padding-left:2rem
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class]) li:not([role],
+  [draggable],
+  [data-id]),
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class]) li:not([role],
+  [draggable],
+  [data-id]),
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class]) li:not([role],
+  [draggable],
+  [data-id]){
+  padding-inline-start:.5rem;
+  margin-top:1rem
+
+}
+
+/*LISTAS*/
+.exe-content :is(.box-content, .udl-content, .eXelearning-content) div[mode=export] .idevice_body ul:not([id], [class]) li:not([role], [draggable], [data-id])::marker { color:var(--fondo-cabecera-iDevice); vertical-align:-2px }
+/*FIN LISTAS*/
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id]),
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id]),
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id]){
+  list-style-type:"⬟ "
+}
+
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])::marker,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])::marker{
+  font-size:1rem;
+  line-height: 0;
+}
+
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li{
+  list-style-type:"○ "
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li::marker,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li::marker{
+  font-size:1rem
+}
+
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li{
+  list-style-type:"■ "
+}
+
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li::marker,
+ .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li::marker{
+  font-size:.9rem
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li,
+.exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li{
+  list-style-type:"□ "
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li::marker,
+.exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li::marker,
+ .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li::marker{
+  font-size:.9rem
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li{
+  list-style-type:"◆ "
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li::marker,
+ .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li::marker,
+   .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li::marker{
+  font-size:.8rem
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li,
+ .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li,
+ .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li{
+  list-style-type:"◇ "
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li::marker,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li::marker,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li::marker{
+  font-size:.8rem
+
+}
+#tinymce.mce-content-body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+ .exe-content :is(.box-content, .udl-content, .eXelearning-content) ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+  .exe-content article.box div[mode=export] .idevice_body ul:not([id],
+  [class])>li:not([role],
+  [draggable],
+  [data-id])>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li{
+  list-style-type:"� "
+}
+
+/*COLOR LISTAS NUMÉRICAS*/
+.exe-content :is(.box-content, .udl-content, .eXelearning-content) :is(ol:not([id], [class]) li::marker, ol.lista_esquema li::marker, ol.listaesquema li::marker, div[mode=export] .idevice_body ol:not([id], [class]) li::marker, div[mode=export] .idevice_body ol.lista_esquema li::marker, div[mode=export] .idevice_body ol.listaesquema li::marker) { content:counters(item, ".") ".- "; color:var(--fondo-cabecera-iDevice); font-weight:bold }
+  
+/*FIN COLOR LISTAS NUMÉRICAS*/
+
+
+#tinymce.mce-content-body ol:not([id],
+  [class]),
+  #tinymce.mce-content-body ol.lista_esquema,
+  #tinymce.mce-content-body ol.listaesquema,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol:not([id],
+  [class]),
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.lista_esquema,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.listaesquema,
+  .exe-content article.box div[mode=export] .idevice_body ol:not([id],
+  [class]),
+  .exe-content article.box div[mode=export] .idevice_body ol.lista_esquema,
+  .exe-content article.box div[mode=export] .idevice_body ol.listaesquema{
+  counter-reset:item;
+  list-style-position:outside;
+  padding-left:2rem
+
+}
+#tinymce.mce-content-body ol:not([id],
+  [class]) ol,
+  #tinymce.mce-content-body ol.lista_esquema ol,
+  #tinymce.mce-content-body ol.listaesquema ol,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol:not([id],
+  [class]) ol,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.lista_esquema ol,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.listaesquema ol,
+  .exe-content article.box div[mode=export] .idevice_body ol:not([id],
+  [class]) ol,
+  .exe-content article.box div[mode=export] .idevice_body ol.lista_esquema ol,
+  .exe-content article.box div[mode=export] .idevice_body ol.listaesquema ol{
+  counter-reset:item
+
+}
+#tinymce.mce-content-body ol:not([id],
+  [class]) li,
+  #tinymce.mce-content-body ol.lista_esquema li,
+  #tinymce.mce-content-body ol.listaesquema li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol:not([id],
+  [class]) li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.lista_esquema li,
+  .exe-content :is(.box-content, .udl-content, .eXelearning-content) ol.listaesquema li,
+  .exe-content article.box div[mode=export] .idevice_body ol:not([id],
+  [class]) li,
+  .exe-content article.box div[mode=export] .idevice_body ol.lista_esquema li,
+  .exe-content article.box div[mode=export] .idevice_body ol.listaesquema li{
+  counter-increment:item;
+  margin-top:1rem;
+  margin-bottom:0rem
+
+}
+
+li::marker{
+  color: var(--fondo-cabecera-iDevice) !important;
+  font-weight:bold !important;
+}
+ol::marker{
+  color: var(--fondo-cabecera-iDevice) !important;
+  content:counters(item, ".") ".- ";  
+  font-weight:bold !important;
+}

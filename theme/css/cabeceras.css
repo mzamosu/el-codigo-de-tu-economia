@@ -1,0 +1,118 @@
+.exe-content .box-head{
+  border-bottom:0
+}
+.exe-content .box.no-header .box-head:has(.box-toggle){
+  min-height:60px
+}
+.exe-content .box-head .box-title{
+  font-size:1.75rem !important;
+  font-weight:700;
+  margin-right: 45px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.exe-content .box-head .exe-icon{
+  float:left
+}
+.exe-export .box-toggle{
+  width:40px;
+  height:40px;
+  background:url(../img/arrow_up_white.svg);
+  background-size:auto 40px;
+  border-radius:50%;
+  border:0;
+  position:absolute;
+  top:10px;
+  right:20px;
+  transition:transform .2s ease-in-out
+
+}
+.exe-export .box.no-header .box-toggle{
+  width:40px;
+  height:40px;
+  background:url(../img/arrow.svg);
+  background-size:auto 40px;
+  border-radius:50%;
+  border:0;
+  position:absolute;
+  top:10px;
+  right:20px;
+  transition:transform .2s ease-in-out
+
+}
+.exe-export .box-head:hover .box-toggle,
+  .exe-export .box-toggle:focus{
+  opacity:1
+}
+.exe-export .minimized .box-toggle{
+  transform:rotate(180deg)
+
+}
+#node-content-container.exe-content .box-head .exe-icon{
+  width:60px;
+  height:60px;
+  font-size:40px
+}
+#node-content-container.exe-content .box-head .exe-icon img{
+  height:28px;
+}
+.exe-export .box-icon img{
+  display:block;
+  float:left;
+  margin-right:10px;
+  width:40px;
+  height:auto;
+}
+.exe-export .box-title{
+  padding-top:5px
+}
+
+.exe-export .box.minimized .box-head{
+  border-bottom:1px solid #ddd;
+  min-height:60px
+
+}
+
+.exe-export .box.no-header.minimized .box-head{
+  border-color:#fff
+
+}
+.exe-export .box.no-header :is(.box-content, .udl-content, .eXelearning-content){
+  background:none;
+  border:none
+
+}
+
+.exe-content .box.no-header .box-head:not(:has(.box-toggle)){
+  min-height:initial;
+  height:initial;
+  padding:initial;
+  padding-top:1rem
+
+}
+.exe-web-site .exe-content article[class="box no-header"]+article[class="box no-header"],
+  .exe-web-site .exe-content article[class="box no-header"]+article[class="no-header box"],
+  .exe-web-site .exe-content article[class="no-header box"]+article[class="box no-header"],
+  .exe-web-site .exe-content article[class="no-header box"]+article[class="no-header box"]{
+  margin-top:0px
+
+}
+
+.exe-content article:not(.no-header) header.box-head .box-title:not([contenteditable=true]){
+  color:#fff
+}
+
+.exe-content article:not(.no-header).minimized header.box-head{
+  border-radius:10px
+}
+
+/*COLORES FONDO CABECERA*/
+
+body:not(.dark-mode-active) article:not(.no-header) .box-head{
+    background-color: var(--fondo-cabecera-iDevice) !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-radius:10px 10px 0 0;
+}
+

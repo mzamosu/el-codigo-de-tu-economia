@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mubjgb7l-3q2hj8gbn">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>10.2 Herencia y Biblioteca de clases | TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Enseñanza y curso: 2º Bachillerato
+Nombre materia: Tecnologías de la Información y la Comunicación II
+Nombre del bloque: Desarrollo de software
+Nombre de la situación de aprendizaje: El código de tu economía">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
+<script src="../idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="../idevices/quick-questions/quick-questions.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/notes.css"><link rel="stylesheet" href="../theme/style.css">
+<style>
+/* Global Font: Atkinson Hyperlegible Next */
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/global/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+}
+
+body, main, article, .exe-content, .iDevice_wrapper, .idevice-content {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif !important;
+}
+
+
+</style>
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site exe-global-font-atkinson-hyperlegible-next">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mubjgb7l-3q2hj8gbn" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Situación de aprendizaje 1.3: El código de tu economía</a>
+<ul class="other-section">
+<li> <a href="../html/1-inicializa-tu-aprendizaje.html" class="no-ch">1. Inicializa tu aprendizaje</a>
+</li>
+<li> <a href="../html/2-diagnostico-del-sistema.html" class="no-ch">2. Diagnóstico del sistema</a>
+</li>
+<li> <a href="../html/3-antes-de-programar-piensa.html" class="no-ch">3. Antes de programar ... ¡piensa!</a>
+</li>
+<li> <a href="../html/4-el-lenguaje-de-las-maquinas-.html" class="daddy">4. El lenguaje de las máquinas </a>
+<ul class="other-section">
+<li> <a href="../html/41-tipos-y-estructura-general.html" class="no-ch">4.1 Tipos y estructura general</a>
+</li>
+<li> <a href="../html/42-tu-taller-python-y-vscode.html" class="no-ch">4.2 Tu taller: Python y VSCode</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-los-cimientos-del-codigo.html" class="daddy">5. Los cimientos del código</a>
+<ul class="other-section">
+<li> <a href="../html/51-variables-constantes-y-tipos-de-datos.html" class="no-ch">5.1 Variables, constantes y tipos de datos</a>
+</li>
+<li> <a href="../html/52-operadores-y-expresiones.html" class="no-ch">5.2 Operadores y expresiones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/6-el-programa-decide-y-repite.html" class="daddy">6. El programa decide y repite</a>
+<ul class="other-section">
+<li> <a href="../html/61-toma-de-decisiones.html" class="no-ch">6.1 Toma de decisiones</a>
+</li>
+<li> <a href="../html/62-repite-sin-cansarte.html" class="no-ch">6.2 Repite sin cansarte</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/7-organiza-tus-datos.html" class="no-ch">7. Organiza tus datos</a>
+</li>
+<li> <a href="../html/8-divide-y-reutiliza.html" class="daddy">8. Divide y reutiliza</a>
+<ul class="other-section">
+<li> <a href="../html/81-creando-tus-propias-funciones.html" class="no-ch">8.1 Creando tus propias funciones</a>
+</li>
+<li> <a href="../html/82-no-reinventes-la-rueda.html" class="no-ch">8.2 No reinventes la rueda</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/9-la-memoria-a-largo-plazo.html" class="no-ch">9. La memoria a largo plazo</a>
+</li>
+<li class="current-page-parent"> <a href="../html/10-el-mundo-en-objetos.html" class="daddy">10. El mundo en objetos</a>
+<ul class="other-section">
+<li> <a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" class="no-ch">10.1 Clases y objetos: los moldes de tu código</a>
+</li>
+<li class="active"> <a href="../html/102-herencia-y-biblioteca-de-clases.html" class="active no-ch">10.2 Herencia y Biblioteca de clases</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/11-resumen.html" class="no-ch">11. Resumen</a>
+</li>
+<li> <a href="../html/imprimible.html" class="no-ch">Imprimible</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">Créditos</a>
+</li>
+<li> <a href="../html/aviso-legal.html" class="no-ch">Aviso legal</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mubjgb7l-3q2hj8gbn" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">21</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">25</strong></span></p>
+
+<div class="package-header"><p class="package-title">TC2 - Situación de aprendizaje 1.3: Desarrollo de Software: El código de tu economía</p></div>
+<div class="page-header"><h1 class="page-title">10.2 Herencia y Biblioteca de clases</h1></div>
+</header><div id="page-content-page-mubjgb7l-3q2hj8gbn" class="page-content">
+<article id="block-mq6pvsy0-dphf0lu2y" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">1. Herencia</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsy0-cbb5g5xm1" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ya sabes crear clases y objetos. Ahora imagina que en tu Gestor necesitas diferenciar entre dos tipos de gastos: los gastos variables (compras, ocio, imprevistos) y los gastos fijos (alquiler, suscripciones, seguros). Ambos tienen importe, categoría y fecha, pero los fijos además tienen un día de cobro mensual y se repiten automáticamente.</p>
+<p>Antes de pasar al ejemplo de nuestro Gestor, vamos a ver el clásico ejemplo del vehículo, para entender el concepto de herencia.</p>
+<p>Imagina que tienes que modelar distintos tipos de vehículos. Todos comparten <strong>características</strong> comunes (marca, velocidad, número de ruedas) y <strong>comportamientos </strong>básicos (arrancar, parar). Pero un coche y una moto también tienen sus propias particularidades.</p>
+<p>Sin herencia tendrías que crear dos clases completamente distintas repitiendo todo el código común. Con <strong>herencia</strong>, la clase hija (<strong>subclase</strong>) reutiliza todo lo de la clase padre (<strong>superclase</strong>), heredando sus atributos y métodos y solo añade lo que la diferencia.</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;">
+<div class="figcaption header"><strong>Haz clic sobre la imagen para ampliarla</strong></div>
+<a href="../content/resources/jerarquia_herencia_vehiculo.png" title="Jerarquia herencia" rel="lightbox"><img src="../content/resources/jerarquia_herencia_vehiculo.png" title="Herencia en Python" width="500" height="312" alt="La imagen muestra un diagrama de herencia en Python con tres clases organizadas en jerarquía. La clase padre Vehiculo define los atributos y métodos comunes, de los que heredan automáticamente las clases hijas Coche y Moto, conectadas mediante flechas discontinuas. Cada clase hija añade sus propios atributos y métodos específicos, diferenciando en verde lo heredado del padre y en amarillo lo propio de cada subclase."></a>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><a href="https://claude.ai/" class="author" target="_blank" rel="noopener">Imagen de elaboración propia generada con Claude</a>. <span class="title"><em>Herencia en Python</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Conoces el método super()?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>super() permite llamar a los métodos de la clase padre desde la clase hija. Su uso más importante es en el constructor:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># En Coche.__init__:
+
+super().__init__(marca, velocidad_max, color)
+
+# Es equivalente a escribir: 
+Vehiculo.__init__(self, marca, velocidad_max, color)</code></pre>
+</div>
+</div>
+<p>Fíjate en la diferencia entre hacerlo <strong>con </strong>y <strong>sin </strong>super():</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ❌ Sin super(): repetimos el código del padre
+class Coche(Vehiculo):
+    def __init__(self, marca, velocidad_max, color, num_puertas):
+        self.marca         = marca          # Repetido del padre
+        self.velocidad_max = velocidad_max  # Repetido del padre
+        self.color         = color          # Repetido del padre
+        self.num_puertas   = num_puertas    # Propio de Coche
+
+# ✅ Con super(): reutilizamos el constructor del padre
+class Coche(Vehiculo):
+    def __init__(self, marca, velocidad_max, color, num_puertas):
+        super().__init__(marca, velocidad_max, color)  # Una sola línea
+        self.num_puertas = num_puertas                 # Propio de Coche</code></pre>
+</div>
+</div>
+<p>Usando super().__init__() evitas repetir en la clase hija el código del constructor del padre. Si mañana añades un atributo nuevo a Vehiculo, como matricula, todas las clases hijas lo heredarán automáticamente sin tocar su código.</p></div></div></section><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Veamos ahora como sería el código de la clase Vehículo y las clases hijas (coche y moto).</p>
+<div class="exe-fx exe-tabs">
+<h2>Clase Padre (Vehículo)</h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ── CLASE PADRE ───────────────────────────────────────────────
+class Vehiculo:
+
+    def __init__(self, marca, velocidad_max):
+        self.marca         = marca
+        self.velocidad_max = velocidad_max
+
+    def __str__(self):
+        return f&quot;{self.marca} (máx. {self.velocidad_max} km/h)&quot;
+
+    def arrancar(self):
+        print(f&quot; {self.marca} arrancando...&quot;)
+</code></pre>
+</div>
+</div>
+<h2>Clase Hija (Coche)</h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ── CLASE HIJA: Coche hereda de Vehiculo ──────────────────────
+class Coche(Vehiculo):
+
+    def __init__(self, marca, velocidad_max, num_puertas):
+        super().__init__(marca, velocidad_max)  # Llama al padre
+        self.num_puertas = num_puertas          # Atributo propio
+
+    def __str__(self):
+        return f&quot;{super().__str__()} · {self.num_puertas} puertas&quot;
+
+    def abrir_maletero(self):
+        print(f&quot;Maletero del {self.marca} abierto&quot;)</code></pre>
+</div>
+</div>
+<h2>Clase Hija (Moto)<br></h2>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># ── CLASE HIJA: Moto hereda de Vehiculo ───────────────────────
+class Moto(Vehiculo):
+
+    def __init__(self, marca, velocidad_max, con_sidecar):
+        super().__init__(marca, velocidad_max)  # Llama al padre
+        self.con_sidecar = con_sidecar          # Atributo propio
+
+    def __str__(self):
+        sidecar = &quot;con sidecar&quot; if self.con_sidecar else &quot;sin sidecar&quot;
+        return f&quot;{super().__str__()} · {sidecar}&quot;
+
+    def hacer_caballito(self):
+        print(f&quot; ¡{self.marca} haciendo caballito!&quot;)</code></pre>
+</div>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Jugamos con la herencia?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Prueba a continuación el siguiente código y comprueba cómo funciona la herencia:</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code># Creamos objetos de cada clase
+v  = Vehiculo(&quot;Genérico&quot;,  200)
+c  = Coche(&quot;Seat Ibiza&quot;,   180, 5)
+m  = Moto(&quot;Honda CBR&quot;,     240, False)
+
+# Todos heredan arrancar() del padre
+v.arrancar()    #  Genérico arrancando...
+c.arrancar()    #  Seat Ibiza arrancando...
+m.arrancar()    #  Honda CBR arrancando...
+
+# Cada uno muestra su propio __str__
+print(v)   # Genérico (máx. 200 km/h)
+print(c)   # Seat Ibiza (máx. 180 km/h) · 5 puertas
+print(m)   # Honda CBR (máx. 240 km/h) · sin sidecar
+
+# Métodos propios de cada clase hija
+c.abrir_maletero()    #  Maletero del Seat Ibiza abierto
+m.hacer_caballito()   #  ¡Honda CBR haciendo caballito!
+
+# isinstance() distingue entre tipos
+vehiculos = [v, c, m]
+for veh in vehiculos:
+    if isinstance(veh, Coche):
+        print(f&quot;{veh.marca} es un Coche con {veh.num_puertas} puertas&quot;)
+    elif isinstance(veh, Moto):
+        print(f&quot;{veh.marca} es una Moto&quot;)
+    else:
+        print(f&quot;{veh.marca} es un Vehículo genérico&quot;)</code></pre>
+</div>
+</div>
+<p>La salida del terminal tiene que ser similar a la siguiente:</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;"><img src="../content/resources/Salida_Terminal_Herencia.png" title="Salida terminal prueba herencia" width="500" height="272" alt="La imagen muestra la salida del terminal al ejecutar el código anterior de prueba de herencia, donde se crean 3 objetos vehículos, uno de la clase padre y 2 de las clases hijas. A continuación se muestra la ejecución de la prueba de los métodos y acceso a los atributos.">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Salida terminal prueba herencia</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsy0-n8r9r0ic4" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">2. Relaciona</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsy0-tqn104iml" class="idevice_node relate" data-idevice-path="../idevices/relate/" data-idevice-type="relate">
+<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona el concepto con su descripción</p></div><div class="relaciona-DataGame js-hidden">{"typeGame":"Relaciona","author":"","randomCards":true,"instructions":"<p>Relaciona el concepto con su descripción</p>","showMinimize":false,"itinerary":{"showClue":false,"clueGame":"","percentageClue":40,"showCodeAccess":false,"codeAccess":"","messageCodeAccess":""},"cardsGame":[{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Clase%20Padre","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Clase%20de%20la%20que%20heredan%20otras%20clases.%20Define%20lo%20com%C3%BAn"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Clase%20hija","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Clase%20que%20hereda%20de%20otra%20y%20a%C3%B1ade%20sus%20propias%20caracter%C3%ADsticas"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"super().__init__()","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Llama%20al%20constructor%20del%20padre%20desde%20la%20clase%20hija"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"isinstance(obj%2C%20Clase)","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Comprueba%20si%20un%20objeto%20es%20instancia%20de%20una%20clase%20concreta"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Herencia","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Mecanismo%20que%20permite%20reutilizar%20el%20c%C3%B3digo%20de%20una%20clase%20en%20otra"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"M%C3%A9todo%20sobreescrito","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"M%C3%A9todo%20del%20padre%20redefinido%20en%20la%20clase%20hija%20con%20nuevo%20comportamiento"}],"isScorm":0,"textButtonScorm":"Guardar la puntuación","repeatActivity":true,"weighted":100,"textAfter":"","version":2,"percentajeCards":100,"type":1,"showSolution":true,"timeShowSolution":3,"time":3,"evaluation":false,"evaluationID":"","id":"idevice-mq6pvsy0-tqn104iml","msgs":{"msgSubmit":"Enviar","msgClue":"¡Genial! La pista es:","msgCodeAccess":"Código de acceso","msgPlayStart":"Pulse aquí para jugar","msgScore":"Puntuación","msgErrors":"Errores","msgHits":"Aciertos","msgMinimize":"Minimizar","msgMaximize":"Maximizar","msgFullScreen":"Pantalla Completa","msgExitFullScreen":"Salir del modo pantalla completa","msgNoImage":"Pregunta sin imágenes","msgEndGameScore":"Antes de guardar la puntuación comience la partida.","msgScoreScorm":"La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.","msgOnlySaveScore":"¡Sólo puede guardar la puntuación una vez!","msgOnlySave":"Sólo puede guardar una vez","msgInformation":"Información","msgYouScore":"Su puntuación","msgAuthor":"Autoría","msgOnlySaveAuto":"Su puntuación se guardará después de cada pregunta. Sólo puede jugar una vez.","msgSaveAuto":"Su puntuación se guardará automáticamente después de cada pregunta.","msgSeveralScore":"Puede guardar la puntuación tantas veces como quiera","msgYouLastScore":"La última puntuación guardada es","msgActityComply":"Ya ha realizado esta actividad.","msgPlaySeveralTimes":"Puede realizar esta actividad cuantas veces quiera","msgClose":"Cerrar","msgAudio":"Audio","msgNumQuestions":"Número de tarjetas","msgTryAgain":"Necesita al menos un %s% de respuestas correctas para conseguir la información. Vuelva a intentarlo.","msgEndGameM":"Has completado el juego. Tu puntuación es %s.","msgUncompletedActivity":"Actividad no completada","msgSuccessfulActivity":"Actividad superada. Puntuación: %s","msgUnsuccessfulActivity":"Actividad no superada. Puntuación: %s","msgTypeGame":"Relaciona","msgCheck":"Comprobar","msgRestart":"Reiniciar"}}</div><div class="game-evaluation-ids js-hidden" data-id="idevice-mq6pvsy0-tqn104iml" data-evaluationb="false" data-evaluationid=""></div><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-mq6pvsy0-o4qrb7wgi" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_conocer.svg" alt="">
+</div>
+<h1 class="box-title">3. Biblioteca de clases</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsy0-hgxpkcuy7" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A lo largo del curso ya has usado bibliotecas de clases sin saberlo. Cuando escribes <em>from datetime import</em> <em>date</em> estás importando una clase llamada <em>date</em>. Cuando creas <em>hoy = date.today()</em> estás creando un objeto de esa clase:</p>
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 500px; text-align: center;"><img src="../content/resources/img0.14.png" alt="Bibliotecas de clase" width="500" height="210">
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Bibliotecas de clase</em></span></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-NC-SA">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>También <em>tk.Button, tk.Label y tk.Entry </em>de <em>tkinter</em> son clases que heredan de una clase base <em>Widget</em>. Cada vez que creabas un botón en tu interfaz, estabas instanciando la clase <em>Button</em>.<br><br></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mq6pvsy1-627jdderu" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_interactivo.svg" alt="">
+</div>
+<h1 class="box-title">4. ¿Qué ocurre en este código?</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mq6pvsy1-wdwxk90n5" class="idevice_node quick-questions" data-idevice-path="../idevices/quick-questions/" data-idevice-type="quick-questions">
+<div class="quext-IDevice"><div class="game-evaluation-ids js-hidden" data-id="idevice-mq6pvsy1-wdwxk90n5" data-evaluationb="false" data-evaluationid=""></div><div class="quext-instructions QXTP-instructions"><p>Elija la respuesta correcta</p></div><div class="quext-version js-hidden">2</div><div class="quext-feedback-game"><p>Has completado la actividad. Revisa las preguntas en las que has fallado y vuelve al apartado 10.2. Herencia y bibliotecas de clases para repasar los conceptos de clase padre, clase hija, super().__init__() e isinstance(). Recuerda que puedes repetir la actividad todas las veces que necesites. ¡Sigue practicando!</p></div><div class="quext-DataGame js-hidden">%E9%B0%F3%E1%FB%F5%FC%F3%E6%E7%E0%F3%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C3%E7%D7%EA%E6%B0%BE%B0%F7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%F6%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E1%E6%F3%E0%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%D7%EA%F7%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%D7%FE%FB%F8%F3%B7%A0%A2%FE%F3%B7%A0%A2%E0%F7%E1%E2%E7%F7%E1%E6%F3%B7%A0%A2%F1%FD%E0%E0%F7%F1%E6%F3%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%D7%FE%FB%F8%F3%B2%FE%F3%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%B2%F1%FD%E0%E0%F7%F1%E6%F3%B2%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FD%E2%E6%FB%FD%FC%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F3%FC%E1%E5%F7%E0%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%E6%E0%E7%F7%BE%B0%E6%FB%FF%F7%C1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A1%BE%B0%E7%E1%F7%DE%FB%E4%F7%E1%B0%A8%E6%E0%E7%F7%BE%B0%FC%E7%FF%F0%F7%E0%DE%FB%E4%F7%E1%B0%A8%A1%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%E3%E7%F7%E1%E6%FB%FD%FC%E1%D5%F3%FF%F7%B0%A8%C9%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A0%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%F0%FE%FD%F0%A8%F3%E2%E2%A8%BD%BD%FE%FD%F1%F3%FE%FA%FD%E1%E6%BD%F3%AA%A4%F0%A7%A1%A5%AA%BF%F4%A0%A5%F0%BF%A6%A0%F0%F1%BF%AA%AB%A6%F0%BF%A5%AA%A3%AA%A5%A0%A6%A3%F0%F1%A4%A4%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%D6%F3%F6%FD%B2%F7%E1%E6%F7%B2%F1a%F6%FB%F5%FD%BE%B2-%E3%E7%7B%B2%FB%FF%E2%E0%FB%FF%F7%B2%E2%E0%FB%FC%E6%BA%F1%BB%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C1%F7%F3%E6%B0%BE%B0%C1%F7%F3%E6%B2%EE%B2%E0%FD%F8%FD%B0%BE%B0%C1%F7%F3%E6%B2%EE%B2%E0%FD%F8%FD%B2%EE%B2%A7%B2%E2%E7%F7%E0%E6%F3%E1%B0%BE%B0%D7%E0%E0%FD%E0%A8%B2%CD%CD%E1%E6%E0%CD%CD%B2%FC%FD%B2%E2%E7%F7%F6%F7%B2%FE%FE%F3%FF%F3%E0%B2%F3%B2%E1%E7%E2%F7%E0%BA%BB%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A0%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A3%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%F0%FE%FD%F0%A8%F3%E2%E2%A8%BD%BD%FE%FD%F1%F3%FE%FA%FD%E1%E6%BD%F3%AA%A4%F0%A7%A1%A5%AA%BF%F4%A0%A5%F0%BF%A6%A0%F0%F1%BF%AA%AB%A6%F0%BF%A5%AA%A3%AA%A5%A0%A6%A3%F0%F1%A4%A4%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0-%C3%E7%7B%B2%E4%F7%FC%E6%F3%F8%F3%B2%E6%FB%F7%FC%F7%B2%E7%E1%F3%E0%B2%E1%E7%E2%F7%E0%BA%BB%BC%CD%CD%FB%FC%FB%E6%CD%CD%BA%BB%B2%F4%E0%F7%FC%E6%F7%B2%F3%B2%E0%F7%E2%F7%E6%FB%E0%B2%FE%FD%E1%B2%F3%E6%E0%FB%F0%E7%E6%FD%E1%B2%F6%F7%FE%B2%E2%F3%F6%E0%F7%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D7%FE%B2%E2%E0%FD%F5%E0%F3%FF%F3%B2%E1%F7%B2%F7%F8%F7%F1%E7%E6%F3%B2%FFs%E1%B2%E0s%E2%FB%F6%FD%B0%BE%B0%C1%FB%B2%F1%F3%FF%F0%FB%F3%E1%B2%F7%FE%B2%E2%F3%F6%E0%F7%BE%B2%FE%F3%E1%B2%FA%FB%F8%F3%E1%B2%E1%F7%B2%F3%F1%E6%E7%F3%FE%FB%E8%F3%FC%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B0%BE%B0%C2%F7%E0%FF%FB%E6%F7%B2%F1%E0%F7%F3%E0%B2%FD%F0%F8%F7%E6%FD%E1%B2%E1%FB%FC%B2%E2%F3%E1%F3%E0%B2%E2%F3%E0s%FF%F7%E6%E0%FD%E1%B0%BE%B0%D7%E4%FB%E6%F3%B2%E3%E7%F7%B2%FE%F3%B2%F1%FE%F3%E1%F7%B2%FA%FB%F8%F3%B2%E2%E7%F7%F6%F3%B2%E1%FD%F0%E0%F7%F7%E1%F1%E0%FB%F0%FB%E0%B2%FF%7B%E6%FD%F6%FD%E1%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A3%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%F0%FE%FD%F0%A8%F3%E2%E2%A8%BD%BD%FE%FD%F1%F3%FE%FA%FD%E1%E6%BD%F3%AA%A4%F0%A7%A1%A5%AA%BF%F4%A0%A5%F0%BF%A6%A0%F0%F1%BF%AA%AB%A6%F0%BF%A5%AA%A3%AA%A5%A0%A6%A3%F0%F1%A4%A4%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%D7%FC%B2%F7%FE%B2%D5%F7%E1%E6%FD%E0%B2%F6%F7%B2%D5%F3%E1%E6%FD%E1%BE%B2-%E2%F3%E0%F3%B2%E3%E7%7B%B2%E1%FB%E0%E4%F7%B2%FB%E1%FB%FC%E1%E6%F3%FC%F1%F7%BA%F5%BE%B2%D5%F3%E1%E6%FD%D4%FB%F8%FD%BB%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D1%E0%F7%F3%B2%E7%FC%B2%FD%F0%F8%F7%E6%FD%B2%F6%F7%B2%E6%FB%E2%FD%B2%D5%F3%E1%E6%FD%D4%FB%F8%FD%B0%BE%B0%D1%FD%FF%E2%E0%E7%F7%F0%F3%B2%E1%FB%B2%F5%B2%F4%E7%F7%B2%F1%E0%F7%F3%F6%FD%B2%F1%FD%FF%FD%B2%D5%F3%E1%E6%FD%D4%FB%F8%FD%B2%EB%B2%FC%FD%B2%F1%FD%FF%FD%B2%D5%F3%E1%E6%FD%B0%BE%B0%D1%FD%FC%E4%FB%F7%E0%E6%F7%B2%E7%FC%B2%D5%F3%E1%E6%FD%B2%F7%FC%B2%D5%F3%E1%E6%FD%D4%FB%F8%FD%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B0%BE%B0%DE%FE%F3%FF%F3%B2%F3%FE%B2%F1%FD%FC%E1%E6%E0%E7%F1%E6%FD%E0%B2%F6%F7%B2%D5%F3%E1%E6%FD%D4%FB%F8%FD%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%CF%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%E6%E0%E7%F7%BE%B0%E5%F7%FB%F5%FA%E6%F7%F6%B0%A8%A3%A2%A2%BE%B0%E6%FB%E6%FE%F7%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%DA%F3%E1%B7%A0%A2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B7%A0%A2%FE%F3%B7%A0%A2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B7%A0%A2%C0%F7%E4%FB%E1%F3%B7%A0%A2%FE%F3%E1%B7%A0%A2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B7%A0%A2%F7%FC%B7%A0%A2%FE%F3%E1%B7%A0%A2%E3%E7%F7%B7%A0%A2%FA%F3%E1%B7%A0%A2%F4%F3%FE%FE%F3%F6%FD%B7%A0%A2%EB%B7%A0%A2%E4%E7%F7%FE%E4%F7%B7%A0%A2%F3%FE%B7%A0%A2%F3%E2%F3%E0%E6%F3%F6%FD%B7%A0%A2%A3%A2%BC%A0%BC%B7%A0%A2%DA%F7%E0%F7%FC%F1%FB%F3%B7%A0%A2%EB%B7%A0%A2%F0%FB%F0%FE%FB%FD%E6%F7%F1%F3%E1%B7%A0%A2%F6%F7%B7%A0%A2%F1%FE%F3%E1%F7%E1%B7%A0%A2%E2%F3%E0%F3%B7%A0%A2%E0%F7%E2%F3%E1%F3%E0%B7%A0%A2%FE%FD%E1%B7%A0%A2%F1%FD%FC%F1%F7%E2%E6%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%F1%FE%F3%E1%F7%B7%A0%A2%E2%F3%F6%E0%F7%B7%A0%D1%B7%A0%A2%F1%FE%F3%E1%F7%B7%A0%A2%FA%FB%F8%F3%B7%A0%D1%B7%A0%A2%E1%E7%E2%F7%E0%B7%A0%AA%B7%A0%AB%BC%CD%CD%FB%FC%FB%E6%CD%CD%B7%A0%AA%B7%A0%AB%B7%A0%A2%F7%B7%A0%A2%FB%E1%FB%FC%E1%E6%F3%FC%F1%F7%B7%A0%AA%B7%A0%AB%BC%B7%A0%A2%C0%F7%F1%E7%F7%E0%F6%F3%B7%A0%A2%E3%E7%F7%B7%A0%A2%E2%E7%F7%F6%F7%E1%B7%A0%A2%E0%F7%E2%F7%E6%FB%E0%B7%A0%A2%FE%F3%B7%A0%A2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B7%A0%A2%E6%FD%F6%F3%E1%B7%A0%A2%FE%F3%E1%B7%A0%A2%E4%F7%F1%F7%E1%B7%A0%A2%E3%E7%F7%B7%A0%A2%FC%F7%F1%F7%E1%FB%E6%F7%E1%BC%B7%A0%A2%B7%D3%A3%C1%FB%F5%E7%F7%B7%A0%A2%E2%E0%F3%F1%E6%FB%F1%F3%FC%F6%FD%B7%A0%A3%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%F5%F3%FF%F7%DF%FD%F6%F7%B0%A8%A3%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%E6%E0%E7%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A7%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A0%BE%B0%F1%E7%E1%E6%FD%FF%DF%F7%E1%E1%F3%F5%F7%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%A3%A2%A2%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%B0%BE%B0%F5%FE%FD%F0%F3%FE%C6%FB%FF%F7%B0%A8%A2%BE%B0%FB%F6%B0%A8%B0%FB%F6%F7%E4%FB%F1%F7%BF%FF%E3%A4%E2%E4%E1%EB%A3%BF%E5%F6%E5%EA%F9%AB%A2%FC%A7%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C1%E6%F3%E0%E6%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%D7%FC%E4%FB%F3%E0%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%DC%F7%E5%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B2%FD%E6%E0%F3%B2%E2%F3%E0%E6%FB%F6%F3%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%DE%FD%FD%F9%FB%FC%F5%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%F7%E1%E6%F3%F0%F3%B2%F0%E7%E1%F1%F3%FC%F6%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C5%F7%FB%F5%FA%E6%B0%A8%B0%C2%F7%E1%FD%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%C6%FB%F7%FF%E2%FD%B2%E2%FD%E0%B2%E2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B2%E1%FB%FC%B2%FB%FFs%F5%F7%FC%F7%E1%B0%BE%B0%FF%E1%F5%D1%FD%FD%FE%B0%A8%B03%D0%FB%F7%FC%B3%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%C6%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%A1%A1%A2%B2%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%DE%FB%E4%F7%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E7%FC%F3%B2%E4%FB%F6%F3%B0%BE%B0%FF%E1%F5%DE%FD%E1%E6%DE%FB%E4%F7%E1%B0%A8%B03%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E6%FD%F6%F3%E1%B2%E1%E7%E1%B2%E4%FB%F6%F3%E1%B3%B0%BE%B0%FF%E1%F5%D3%FE%FE%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B03%D1%FD%FF%E2%FE%F7%E6%F3%F6%F3%E1%B2%FE%F3%E1%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%E7%FC%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%F1%FD%FC%E1%F7%F5%E7%FB%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%C4%E7%F7%FE%E4%F3%B2%F3%B2%FB%FC%E6%F7%FC%E6%F3%E0%FE%FD%BC%B0%BE%B0%FF%E1%F5%C4%FB%F6%F7%FD%DB%FC%E6%E0%FD%B0%A8%B0%C4%7F%F6%F7%FD%B2%F6%F7%B2%FB%FC%E6%E0%FD%F6%E7%F1%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%DD%E2%E6%FB%FD%FC%B0%A8%B0%DD%E2%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C7%E1%F7%D4%E7%FE%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%F7%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%E1%F7%E0s%B2%FF%E7%EB%B2h%E6%FB%FE%B0%BE%B0%FF%E1%F5%DE%FD%F3%F6%FB%FC%F5%B0%A8%B0%D1%F3%E0%F5%F3%FC%F6%FD%BC%B2%D7%E1%E2%F7%E0%F7%BE%B2%E2%FD%E0%B2%F4%F3%E4%FD%E0%BC%BC%BC%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%DB%FC%FB%F1%FB%F3%B2%F7%FE%B2%F8%E7%F7%F5%FD%BC%BC%BC%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C3%E7%D7%EA%E6%B0%EF%EF</div><a href="../content/resources/Act_Herencia.png" class="js-hidden quext-LinkImages">0</a><div class="quext-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-1788110170150-kv80kr97c" class="box minimized">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_exp_tarea.svg" alt="">
+</div>
+<h1 class="box-title">5. Del vehículo al Gestor de Gastos</h1>
+<button class="box-toggle box-toggle-off" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1788110170146-ae3ngcjpb" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A lo largo de este bloque has aprendido los conceptos de la Programación Orientada a Objetos usando el ejemplo del vehículo. Ahora es el momento de aplicar todo lo aprendido a tu propio proyecto: el Gestor de Gastos Personales.</p>
+<p>En esta actividad vas a reescribir tu Gestor usando dos clases que modelan los tipos de gastos que puede registrar la aplicación.</p>
+<p><strong>Las clases que debes crear:</strong></p>
+<ul>
+<li>
+<p><strong>Clase Gasto — clase padre</strong>.&nbsp;</p>
+</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Representa un gasto variable del mes. Debe tener:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>Atributos</strong>: importe, categoria y fecha (asignada automáticamente con datetime).</li>
+<li><strong>Método __init__</strong>: recibe importe y categoria como parámetros.</li>
+<li><strong>Método __str__</strong>: devuelve una línea con la fecha, categoría e importe formateado.</li>
+<li><strong>Método es_elevado()</strong>: devuelve True si el importe supera los 100 €.</li>
+<li><strong>Método es_valido()</strong>: devuelve True si la categoría está en la tupla CATEGORIAS.</li>
+</ul>
+</li>
+<li><strong>Clase GastoFijo — clase hija que hereda de Gasto.</strong></li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Representa un gasto que se repite cada mes (alquiler, suscripciones...). Debe tener:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>Atributo propio</strong>: dia_cobro (día del mes en que se cobra).</li>
+<li><strong>Método __init__</strong>: recibe importe, categoria y dia_cobro. Usa super().__init__() para reutilizar el constructor del padre.</li>
+<li><strong>Método __str__</strong>: amplía el del padre añadiendo [Fijo · día X].</li>
+<li><strong>Método aviso_cobro()</strong>: muestra un mensaje indicando qué día del mes se cobra ese gasto.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Lo que debe hacer el programa</strong></p>
+<p>Una vez definidas las clases, escribe el programa principal que:</p>
+<ol>
+<li>Defina la tupla CATEGORIAS con: comida, transporte, ocio, casa, salud.</li>
+<li>Cree al menos 3 gastos fijos usando la clase GastoFijo (por ejemplo: alquiler, Netflix, seguro).</li>
+<li>Cree al menos 3 gastos variables usando la clase Gasto (por ejemplo: comida, ocio, transporte).</li>
+<li>Guarde todos los gastos en una sola lista mezclando ambos tipos.</li>
+<li>Muestre el listado completo de gastos usando print(g) para cada uno, añadiendo ⚠️ si el gasto es elevado.</li>
+<li>Muestre los avisos de cobro solo para los gastos fijos usando isinstance().</li>
+<li>Calcule y muestre el total, desglosado en gastos fijos y variables.</li>
+</ol>
+<p>Así debe verse la salida de tu programa:</p>
+<figure class="exe-figure position-center" style="width: 500px; text-align: center;"><span style="font-size: 10pt;"><img src="../content/resources/Salida_Terminal_Herencia_GastosFijos.png" title="Salida Terminal Herencia Gastos Fijos" width="500" height="401" alt="La imagen muestra la salida del terminal al ejecutar el código de solución de la actividad donde se trabaja la herencia en el Gestor de Gastos Personal"></span>
+<figcaption class="figcaption"><span style="font-size: 10pt;"><span class="author">Imagen de elaboración propia</span>. <span class="title"><em>Salida Terminal Herencia Gastos Fijos</em></span> <span class="license" style="font-size: 8pt;"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" class="license" target="_blank" rel="noopener">CC BY-NC-SA</a><span class="sep">)</span></span></span></figcaption>
+</figure></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Necesitas alguna pista?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul>
+<li>Usa import datetime para asignar la fecha automáticamente en __init__.</li>
+<li>En GastoFijo.__init__ llama a super().__init__(importe, categoria) antes de asignar dia_cobro.</li>
+<li>En GastoFijo.__str__ usa super().__str__() para no repetir el código del padre.</li>
+<li>Usa isinstance(g, GastoFijo) dentro del bucle para distinguir los tipos de gasto.</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2 style="display:none;">Mostrar Retroalimentación</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code language-python">
+<div>
+<pre><code>import datetime
+
+CATEGORIAS = (&quot;comida&quot;, &quot;transporte&quot;, &quot;ocio&quot;, &quot;casa&quot;, &quot;salud&quot;)
+
+class Gasto:
+    &quot;&quot;&quot;Representa un gasto variable.&quot;&quot;&quot;
+
+    def __init__(self, importe, categoria):
+        self.importe   = float(importe)
+        self.categoria = categoria.lower().strip()
+        self.fecha     = datetime.date.today().strftime(&quot;%d/%m/%Y&quot;)
+
+    def __str__(self):
+        return f&quot;{self.fecha} | {self.categoria:&lt;12} | {self.importe:.2f} €&quot;
+
+    def es_elevado(self):
+        return self.importe &gt; 100
+
+    def es_valido(self):
+        return self.categoria in CATEGORIAS
+
+
+class GastoFijo(Gasto):
+    &quot;&quot;&quot;Representa un gasto fijo mensual. Hereda de Gasto.&quot;&quot;&quot;
+
+    def __init__(self, importe, categoria, dia_cobro):
+        super().__init__(importe, categoria)
+        self.dia_cobro = dia_cobro
+
+    def __str__(self):
+        return f&quot;{super().__str__()} [Fijo · día {self.dia_cobro}]&quot;
+
+    def aviso_cobro(self):
+        print(f&quot;⏰ &#039;{self.categoria}&#039; se cobra el día {self.dia_cobro} de cada mes&quot;)
+
+
+# ── Programa principal ─────────────────────────────────────────
+gastos = []
+
+# Gastos fijos mensuales
+gastos.append(GastoFijo(650.00, &quot;casa&quot;,        1))
+gastos.append(GastoFijo(15.99,  &quot;ocio&quot;,        15))
+gastos.append(GastoFijo(89.00,  &quot;transporte&quot;,  5))
+
+# Gastos variables
+gastos.append(Gasto(45.50, &quot;comida&quot;))
+gastos.append(Gasto(18.75, &quot;ocio&quot;))
+gastos.append(Gasto(32.00, &quot;transporte&quot;))
+
+# Mostrar todos
+print(&quot;📋 Listado completo de gastos:&quot;)
+print(&quot;─&quot; * 52)
+for g in gastos:
+    alerta = &quot; ⚠️&quot; if g.es_elevado() else &quot;&quot;
+    print(f&quot;{g}{alerta}&quot;)
+
+# Avisos de cobro solo para fijos
+print(&quot;\n⏰ Próximos cobros fijos:&quot;)
+for g in gastos:
+    if isinstance(g, GastoFijo):
+        g.aviso_cobro()
+
+# Totales desglosados
+total     = sum(g.importe for g in gastos)
+fijos     = sum(g.importe for g in gastos if isinstance(g, GastoFijo))
+variables = total - fijos
+
+print(f&quot;\n💰 Total gastos:   {total:.2f} €&quot;)
+print(f&quot;   → Fijos:       {fijos:.2f} €&quot;)
+print(f&quot;   → Variables:   {variables:.2f} €&quot;)</code></pre>
+</div>
+</div>
+<p><strong>¿Tu programa no funciona? Comprueba esto:</strong></p>
+<ul>
+<li>¿La clase GastoFijo incluye (Gasto) en su definición?</li>
+<li>¿Usas super().__init__() en el constructor de GastoFijo?</li>
+<li>¿Usas isinstance(g, GastoFijo) para distinguir los tipos?</li>
+<li>¿El __str__ de GastoFijo llama a super().__str__()?</li>
+</ul>
+<div class="exe-fx exe-accordion">
+<h2>Reto extra</h2>
+<p>Crea una tercera clase GastoExtraordinario(Gasto) para gastos imprevistos importantes con un atributo motivo y un método generar_informe() que muestre todos sus datos detalladamente.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2 style="display:none;">¿Añadimos emojis a nuestro código?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Seguramente te habrás dado cuenta de que en el código también podemos añadir emojis que hará que la salida por el terminal sea más atractiva.</p>
+<p>Si quieres añadirlos en tu código puedes entrar en <a href="https://emojipedia.org/" target="_blank" title="" rel="noopener">Emojipedia</a>, busca el emoji que quieras y copiálo. Para añadirlos a tu código simplemente los pegas dentro de la cadena de texto en VS Code y funcionan perfectamente.</p>
+<p>Para que los emojis se muestren correctamente en la terminal de VS Code asegúrate de que el archivo está guardado con codificación UTF-8. En VS Code se ve en la barra inferior derecha. Si pone otra cosa haz clic y cámbialo a UTF-8.</p>
+<p><br></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-1788115457769-r4bda19af" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_udl_rep_importante.svg" alt="">
+</div>
+<h1 class="box-title">6. Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1788115457761-7p4emm6l3" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Clase y Objeto</h2>
+<p>Una clase es el molde que define la estructura: qué atributos tiene y qué puede hacer. Un objeto es una instancia concreta creada a partir de ese molde, con sus propios valores.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>class Gasto:              # Molde
+    pass
+
+g1 = Gasto()              # Objeto concreto</code></pre>
+</div>
+</div>
+<p>La clase se define una sola vez. Los objetos se crean tantas veces como necesites.</p>
+<h2>El constructor __init__ y self</h2>
+<p><em>__init__</em> se ejecuta automáticamente al crear un objeto y asigna los valores iniciales de sus atributos. <em>self </em>hace referencia al propio objeto que se está creando.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>class Gasto:
+    def __init__(self, importe, categoria):
+        self.importe   = importe    # Atributo del objeto
+        self.categoria = categoria  # Atributo del objeto</code></pre>
+</div>
+</div>
+<p><em>self </em>es obligatorio como primer parámetro en todos los métodos, aunque Python lo gestiona automáticamente al llamarlos.</p>
+<h2>Atributos y métodos</h2>
+<p>Los <strong>atributos </strong>son las características del objeto (qué tiene). Los <strong>métodos </strong>son sus comportamientos (qué hace). Se accede a ambos con la <strong>notación punto</strong>.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>g1 = Gasto(45.50, &quot;comida&quot;)
+
+# Acceder a atributos
+print(g1.importe)        # 45.5
+
+# Llamar a métodos
+g1.mostrar()             # Ejecuta el método</code></pre>
+</div>
+</div>
+<h2>El método str</h2>
+<p>Define cómo se representa el objeto cuando usas <em>print()</em>. Sin él, Python muestra una dirección de memoria poco útil.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>def __str__(self):
+    return f&quot;{self.fecha} | {self.categoria} | {self.importe:.2f} €&quot;
+
+print(g1)   # 06/11/2024 | comida | 45.50 €</code></pre>
+</div>
+</div>
+<h2>Herencia</h2>
+<p>Una clase hija hereda todos los atributos y métodos de la clase padre y añade los suyos propios. Se indica poniendo la clase padre entre paréntesis.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>class GastoFijo(Gasto):          # Hereda de Gasto
+    def __init__(self, importe, categoria, dia_cobro):
+        super().__init__(importe, categoria)  # Constructor del padre
+        self.dia_cobro = dia_cobro            # Atributo propio</code></pre>
+</div>
+</div>
+<p>super().__init__() reutiliza el constructor del padre sin repetir código. Si el padre cambia, la clase hija se actualiza automáticamente.</p>
+<h2>isinstance()</h2>
+<p>Cuando tienes una lista con objetos de distintas clases, <em>isinstance()</em> te permite identificar de qué tipo es cada uno.</p>
+<div class="highlighted-code language-python line-numbers">
+<div>
+<pre><code>for g in gastos:
+    if isinstance(g, GastoFijo):
+        g.aviso_cobro()    # Solo los gastos fijos</code></pre>
+</div>
+</div>
+</div>
+<p><br></p></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/101-clases-y-objetos-los-moldes-de-tu-codigo.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/11-resumen.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+:root{
+  --fondo: #FFFFFF;
+  --fondo-claro: #FFFCF2;
+  --fondo-intermedio: #e6e6e6;
+  --fondo-oscuro: #323232;
+  --c1: #CCFF33;
+  --c2: #9ef01a;
+  --c3: #70e000;
+  --c4: #ffedd8;
+  --c5: #E09088;
+  --ctitulo: #00843d;
+  --cc2: #024054;
+  --cc5: #531B15;
+  --texto: #333333;
+  --enlace: #2495ff;
+  --header-bg: #25441E;
+  --header-border: #25441E;
+  --footer-bg: #343131;
+  --footer-border: #e1e4e5;
+  --footer-text: #ffffff;
+  --footer-link: #ecd078;
+  --tabla-th-text: white;
+  --fondo-cabecera-iDevice: #f1dfad;
+  --fondo-cabecera-iDevice-Aspectos: #00843d;/* #499113;*/
+  --fondo-cabecera-iDevice-Tareas: #0065ab;
+  --fondo-cabecera-iDevice-Contenidos: #784aba;
+  --fondo-cabecera-iDevice-Oscuro: #161b22;
+  --fondo-cuerpo-iDevice-Oscuro: #0d1117;
+  --color-texto-cabecera-iDevice: white;
+  --fondo-cuerpo-iDevice: #d3e3d5;
+  --fondo-cuerpo-iDevice-Aspectos: #f4faef;
+  --fondo-cuerpo-iDevice-Tareas: #f2f8fd;
+  --fondo-cuerpo-iDevice-Contenidos: #faf2fd;
+  --fondo-inferior-iDevice-botonera: var(--fondo-cabecera-iDevice);
+  --fondo-inferior-iDevice-botonera-boton: var(--fondo-cuerpo-iDevice);
+  --fondo-cabecera-Preguntas: #0065ab;
+  --fondo-cuerpo-Preguntas: #f7efe6;
+  --background-color-feedback: #EFEFEF;
+  --color-fondo-actividad: #E0EED9;
+  --color-fondo-cabecera-actividad: #0065ab;
+  --color-texto-cabecera-actividad: #6DD152;
+  --background-nav-button: #555559;
+  --background-nav-bar: #00843d;
+  --background-siteNav: white;
+  --fuente-siteNav: black;
+
+}
+
+body:not(.dark-mode-active) article:has(.exe-udlContent-expression, .exe-trueorfalse-container, .trueorfalse, .seleccionamedias-IDevice, .quick-questionsIdevice, .selecciona-IDevice, .exe-form-container, .form, .mathproblems-IDevice, .mathoperations-IDevice, .vquext-IDevice){
+  --fondo-cabecera-iDevice:#0065ab; 
+  --fondo-cuerpo-iDevice:#f2f8fd;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 80%, white);
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 50%, white);
+}
+
+body:not(.dark-mode-active) article:has(:where(.exe-udlContent-representation,.exe-text-template, .text, .exe-casestudy-container, .casestudy, #iframeWebsiteIdevice, .imageGallery-IDevice, .exe-interactive-video, .auto-geogebra-wrapper, .periodic-table-IDevice)){
+  --fondo-cabecera-iDevice:#784aba;
+  --fondo-cuerpo-iDevice:#faf2fd;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Contenidos) 80%, white);
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Contenidos) 50%, white);
+}
+body:not(.dark-mode-active) article:has(.exe-udlContent-engagement, .listacotejo-IDevice, .informe-IDevice, .rubric-IDevice, .exe-download-package-instructions, .mapa-IDevice, .exe-magnifier-container, .digcompeduIdeviceContent){
+  --fondo-cabecera-iDevice: #00843d;
+  --fondo-cuerpo-iDevice:#f4faef;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Aspectos) 80%, white);
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Aspectos) 50%, white);
+}
+body:not(.dark-mode-active) article:has(.quext-IDevice, .exe-sortableList, .identifica-IDevice, .adivina-IDevice, .rosco-IDevice, .relaciona-IDevice, .completa-IDevice, .beforeafter-IDevice, .clasifica-IDevice, .descubre-IDevice, .hiddenimage-IDevice, .dragdrop-IDevice, .flipcards-IDevice, .candado-IDevice, .puzzle-IDevice, .ordena-IDevice, .sopa-IDevice, .desafio-IDevice){
+  --fondo-cabecera-iDevice:#0065ab;
+  --fondo-cuerpo-iDevice:#f2f8fd;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 80%, white);
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 50%, white);
+}
+
+/*ICONOS*/
+body:not(.dark-mode-active) article:has(.box-icon img[alt*="icon_udl_exp"], .box-icon img[src*="icon_udl_exp"]){
+  --fondo-cabecera-iDevice:#0065ab !important;
+  --fondo-cuerpo-iDevice:#f2f8fd !important;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 80%, white) !important;
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Tareas) 50%, white) !important;
+}
+
+body:not(.dark-mode-active) article:has(.box-icon img[alt*="icon_udl_rep"], .box-icon img[src*="icon_udl_rep"]){
+  --fondo-cabecera-iDevice:#784aba !important;
+  --fondo-cuerpo-iDevice:#faf2fd !important;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Contenidos) 80%, white) !important;
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Contenidos) 50%, white) !important; 
+}
+
+body:not(.dark-mode-active) article:has(.box-icon img[alt*="icon_udl_eng"], .box-icon img[src*="icon_udl_eng"]){
+  --fondo-cabecera-iDevice: #00843d !important;
+  --fondo-cuerpo-iDevice:#f4faef !important;
+  --fondo-cabecera-iDevice-fx: color-mix(in srgb, var(--fondo-cabecera-iDevice-Aspectos) 80%, white) !important;
+  --fondo-cabecera-iDevice-fx-contenido: color-mix(in srgb, var(--fondo-cabecera-iDevice-Aspectos) 50%, white) !important;
+}
+
+/*FIN ICONOS*/

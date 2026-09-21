@@ -1,0 +1,330 @@
+/*NAVEGACIÓN*/
+#siteNav{
+  float:left;
+  width:300px;
+  padding-top:20px;
+  padding-left:8px;
+  padding-bottom:20px;
+  background-color:var(--background-siteNav);
+  height:calc(100vh - 98px);
+  z-index:1;
+  scrollbar-width:none;
+  transition:left .3s ease;
+  overflow:visible;
+  margin-top:94px;
+  margin-left:4px;
+  margin-bottom:4px;
+  border-radius:12px
+
+}
+#siteNav>ul{
+  max-height:100%;
+  overflow-y:auto;
+  margin:0;
+  padding:0;
+  scrollbar-width:thin;
+  scrollbar-color:#999 rgba(0,0,0,0)
+}
+#siteNav>ul::-webkit-scrollbar{
+  display:none;
+  width:12px
+
+}
+#siteNav>ul::-webkit-scrollbar-track{
+  background:rgba(0,0,0,0)
+}
+#siteNav>ul::-webkit-scrollbar-thumb{
+  background:#999;
+  border-radius:4px
+
+}
+#siteNav>ul::-webkit-scrollbar-thumb:hover{
+  background:#666
+
+}
+#siteNav .other-section{
+  display:none
+
+}
+#sidebar-nav.fixed,
+  #sidebar-nav{
+  position:fixed
+
+}
+body.siteNav-off #siteNav{
+  display:none
+}
+.exe-web-site #siteFooter{
+  padding-left:320px;
+  padding-right:20px;
+  transition:padding .3s ease
+
+}
+.exe-web-site main.page{
+  box-sizing:border-box;
+  width:100%;
+  padding-left:300px;
+  padding-bottom:40px;
+  transition:padding .3s ease
+
+}
+body.siteNav-off main.page,
+  body.siteNav-off #siteFooter{
+  padding-left:0
+
+}
+#siteNav ul,
+  #siteNav li{
+  margin:0;
+  padding:0 0px 0 0;
+  list-style:none
+
+}
+#siteNav li{
+  margin-bottom:4px
+
+}
+#siteNav a{
+  color:var(--fuente-siteNav);
+  display:block;
+  padding:8px 15px;
+  border-radius:8px;
+  max-width:280px;
+  transition:background-color .5s ease
+
+}
+#siteNav a.main-node{
+  background-color:#555559;
+  color:#fff;
+  font-weight:bolder;
+  font-variant:small-caps
+
+}
+#siteNav a.active{
+  color:#fff;
+  background-color:#555559;
+  font-weight:bold;
+  margin-bottom:4px
+
+}
+#siteNav a.highlighted-link{
+  color:#000;
+  margin-top:10px;
+  background:#f1f1f1 url(../img/book.svg) no-repeat 8px center;
+  padding-left:42px
+
+}
+#siteNav a.highlighted-link.active{
+  background:#00758f url(../img/book_color.svg) no-repeat 8px center !important;
+  color:#fff
+
+}
+#siteNav a.highlighted-link:hover{
+  background:#005771 url(../img/book_color.svg) no-repeat 8px center !important;
+  color:#fff
+
+}
+#siteNav a.highlighted-link:focus{
+  background:#00758f url(../img/book_color.svg) no-repeat 8px center !important;
+  color:#fff
+
+}
+#siteNav a.highlighted-link{
+  margin-top:10px
+
+}
+#siteNav a.highlighted-link:hover,
+  #siteNav a.highlighted-link:focus{
+  background:#005771
+
+}
+#siteNav a:hover{
+  background:hsl(240,
+  2.2988505747%,
+  24.1176470588%);
+  text-decoration:none;
+  color:#fff
+
+}
+#siteNav ul ul a{
+  padding-left:35px;
+  font-size:.95em;
+  background-color:#f2f2f7
+
+}
+.current-page-parent a{
+  background-color:#f2f2f7;
+  margin-bottom:4px
+
+}
+#siteNav ul ul ul a{
+  padding-left:55px;
+  font-size:.9em
+
+}
+#siteNav ul ul ul ul a{
+  padding-left:75px
+
+}
+
+
+button#siteNavToggler{
+  background:#fff url(../img/menu_open.svg) no-repeat 12px center/24px
+
+}
+button#siteNavToggler span,
+  button#siteNavToggler .sr-av,
+  body.siteNav-off button#siteNavToggler span{
+  padding-left:24px
+
+}
+
+
+/*SELECCIONADO*/
+.daddy:not(.main-node){
+  background:#c9c9c9 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+
+}
+.daddy.main-node{
+  background:#555559 !important
+
+}
+.daddy{
+  padding-right:40px !important
+
+}
+.active .daddy{
+  background:#f2f2f7 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+
+}
+.current-page-parent .daddy:not(.main-node){
+  background:#f2f2f7 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+
+}
+.current-page-parent .daddy.main-node{
+  background:#555559
+
+}
+.active .active.daddy{
+  background:#555559 url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
+
+}
+.daddy:hover{
+  background:hsl(240,
+  2.2988505747%,
+  29.1176470588%) url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
+
+}
+.current-page-parent .daddy:hover{
+  background:hsl(240,
+  2.2988505747%,
+  29.1176470588%) url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
+
+}
+.active.daddy:hover{
+  background:hsl(240,
+  2.2988505747%,
+  24.1176470588%) url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
+
+}
+/*FIN SELECCIONADO*/
+
+/*BOTONES DE NAVEGACION*/
+.nav-buttons .nav-button,
+  button.toggler{
+  position:fixed;
+  top:15px;
+  right:65px;
+  display:inline-block;
+  width:auto;
+  height:auto;
+  background-image:url(../img/arrow_back.svg);
+  background-size:24px;
+  background-color:var(--background-nav-button);
+  background-repeat:no-repeat;
+  border-radius:8px;
+  z-index:999;
+  border:0;
+  transition:background-color .5s ease;
+  padding:18px;
+  color:#fff;
+  font-weight:600
+
+}
+.nav-buttons .nav-button:hover,
+  button.toggler:hover{
+  background-color:color-mix(in srgb,
+   var(--background-nav-button),
+   white 10%)
+
+}
+.nav-buttons span.nav-button{
+  opacity:.5;
+  filter:grayscale(1);
+  cursor:not-allowed
+
+}
+.nav-buttons .nav-button-left{
+  background-position:left 14px center;
+  padding-left:48px;
+  right:166px
+
+}
+.nav-buttons .nav-button-right{
+  background-position:right 14px center;
+  padding-right:48px;
+  background-image:url(../img/arrow_forward.svg);
+  right:20px
+
+}
+button#siteNavToggler{
+  left:14px;
+  top:17px;
+  background:#fff url(../img/menu_open.svg) no-repeat center center/32px;
+  width:40px;
+  height:40px;
+  border-radius:8px;
+  box-sizing:content-box;
+  padding:8px
+
+}
+#siteNavToggler:hover{
+  background-color:#f4f4f4
+
+}
+button#siteNavToggler span,
+  .siteNav-off button#siteNavToggler span{
+  display:none
+
+}
+body.siteNav-off button#siteNavToggler{
+  left:14px;
+  top:17px;
+  background:url(../img/menu_closed.svg) no-repeat center center/32px
+
+}
+body.siteNav-off button#siteNavToggler:hover{
+  background-color:#363636
+
+}
+#siteNavToggler .sr-av{
+  visibility:visible;
+  position:static;
+  padding-left:24px;
+  color:#fff;
+  font-size:1rem;
+  font-weight:600
+
+}
+.nav-buttons a:hover,
+  .nav-buttons a:focus,
+  button.toggler:hover,
+  button.toggler:focus{
+  background-color:#005771;
+  border-color:#005771;
+  color:#fff;
+  text-decoration:none
+
+}
+/*FIN BOTONES DE NAVEGACION*/
+

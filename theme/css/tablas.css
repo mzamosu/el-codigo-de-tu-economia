@@ -1,0 +1,65 @@
+table{
+  display:table;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  max-width:100% !important;
+  margin:2em 0 !important
+
+}
+
+/*T  A  B  L  A  S*/
+/*CAMBIAR COLORES DE LAS TABLAS*/
+
+:is(.box-content, .udl-content, .eXelearning-content) table:not(.exe-table,.digcompedu-summary-table) {
+  border: 2px solid var(--fondo-cabecera-iDevice);
+  border-collapse: collapse;
+}
+
+:is(.box-content, .udl-content, .eXelearning-content) table:not(.exe-table,.digcompedu-summary-table) th {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+    background-color: var(--fondo-cabecera-iDevice);
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    transition:0.5s;
+}
+:is(.box-content, .udl-content, .eXelearning-content) table:not(.exe-table,.digcompedu-summary-table) th:hover {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+    background-color: var(--fondo-cuerpo-iDevice);
+    color: black;
+    font-weight: bold;
+    transition:0.5s;
+    text-align: center;
+}
+:is(.box-content, .udl-content, .eXelearning-content) table:not(.exe-table,.digcompedu-summary-tabler) td {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+    background-color: white;
+    transition:0.5s;
+}
+:is(.box-content, .udl-content, .eXelearning-content) table:not(.exe-table,.digcompedu-summary-table) td:hover {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+    background-color: var(--fondo-cuerpo-iDevice);
+    transition:0.5s;
+}
+
+/*exe-table*/
+:is(.box-content, .udl-content, .eXelearning-content) table.exe-table {
+  border: 2px solid var(--fondo-cabecera-iDevice);
+  border-collapse: collapse;
+  align-self: center;   /* Se centra verticalmente a sí mismo */
+  justify-self: center;
+}
+
+:is(.box-content, .udl-content, .eXelearning-content) table.exe-table th {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+}
+
+:is(.box-content, .udl-content, .eXelearning-content) table.exe-table td {
+    border: 1px solid var(--fondo-cabecera-iDevice);
+}
+
+/*fin exe-table*/
+
+/**/
+/*F  I  N     T  A  B  L  A  S*/
+

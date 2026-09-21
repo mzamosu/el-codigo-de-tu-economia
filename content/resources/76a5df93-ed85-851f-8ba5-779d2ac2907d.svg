@@ -1,0 +1,91 @@
+<svg width="1380" height="800" viewBox="0 0 690 400" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Lenguajes compilados vs interpretados</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+  * { font-family:'Poppins','Segoe UI',Arial,sans-serif; }
+</style>
+
+<defs>
+  <marker id="arrL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#0891B2" stroke-width="1.8"/>
+  </marker>
+  <marker id="arrR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#7C3AED" stroke-width="1.8"/>
+  </marker>
+  <marker id="arrRd" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="270">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#94A3B8" stroke-width="1.8"/>
+  </marker>
+</defs>
+
+<rect width="680" height="390" fill="#F8FAFC" rx="12"/>
+
+<!-- Cabecera -->
+<rect x="0" y="0" width="680" height="36" rx="12" fill="#1E3A5F"/>
+<rect x="0" y="24" width="680" height="12" fill="#1E3A5F"/>
+<text x="340" y="18" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:15px;font-weight:700;">Lenguajes compilados vs interpretados</text>
+
+<!-- Separador central -->
+<line x1="340" y1="44" x2="340" y2="382" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 3"/>
+
+<!-- Cabeceras columnas -->
+<rect x="20" y="44" width="306" height="28" rx="6" fill="#0891B2"/>
+<text x="173" y="58" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">COMPILADO</text>
+<rect x="354" y="44" width="306" height="28" rx="6" fill="#7C3AED"/>
+<text x="507" y="58" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:13px;font-weight:700;">INTERPRETADO</text>
+
+<!-- Ejemplos -->
+<text x="173" y="86" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">Ej: C, C++, Java</text>
+<text x="507" y="86" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">Ej: Python, JavaScript, Ruby</text>
+
+<!-- PASO 1: Código fuente -->
+<rect x="20" y="96" width="306" height="56" rx="8" fill="#1E3A5F"/>
+<text x="173" y="116" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">📄 Código fuente</text>
+<text x="173" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">El programador escribe el código</text>
+
+<rect x="354" y="96" width="306" height="56" rx="8" fill="#1E3A5F"/>
+<text x="507" y="116" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">📄 Código fuente</text>
+<text x="507" y="136" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">El programador escribe el código</text>
+
+<!-- Flechas 1→2 -->
+<line x1="173" y1="152" x2="173" y2="168" stroke="#0891B2" stroke-width="2" marker-end="url(#arrL)"/>
+<line x1="507" y1="152" x2="507" y2="168" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrR)"/>
+
+<!-- PASO 2: Compilador / Intérprete -->
+<rect x="20" y="168" width="306" height="72" rx="8" fill="#DBEAFE"/>
+<text x="173" y="192" text-anchor="middle" dominant-baseline="central" style="fill:#1E3A5F;font-size:12px;font-weight:700;">⚙️ Compilador</text>
+<text x="173" y="212" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">Traduce TODO el código de golpe</text>
+<text x="173" y="228" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">y genera un archivo ejecutable</text>
+
+<rect x="354" y="168" width="306" height="72" rx="8" fill="#EDE9FE"/>
+<text x="507" y="192" text-anchor="middle" dominant-baseline="central" style="fill:#4C1D95;font-size:12px;font-weight:700;">⚙️ Intérprete</text>
+<text x="507" y="212" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">Lee y ejecuta el código línea a línea</text>
+<text x="507" y="228" text-anchor="middle" dominant-baseline="central" style="fill:#64748B;font-size:10px;font-weight:600;">sin generar ningún archivo previo</text>
+
+<!-- Flecha 2→3 izquierda -->
+<line x1="173" y1="240" x2="173" y2="256" stroke="#0891B2" stroke-width="2" marker-end="url(#arrL)"/>
+
+<!-- Flecha derecha: salta paso 3 -->
+<line x1="507" y1="240" x2="507" y2="322" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="5 3" marker-end="url(#arrRd)"/>
+
+<!-- PASO 3: Ejecutable / Sin archivo -->
+<rect x="20" y="256" width="306" height="52" rx="8" fill="#0891B2"/>
+<text x="173" y="276" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">💾 Archivo ejecutable (.exe)</text>
+<text x="173" y="294" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:10px;font-weight:600;">Archivo independiente listo para ejecutar</text>
+
+<!-- Caja vacía derecha con borde discontinuo -->
+<rect x="354" y="256" width="306" height="52" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="507" y="279" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;font-style:italic;">⚡ No hay archivo intermedio</text>
+<text x="507" y="296" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;font-style:italic;">El intérprete va directo a ejecutar</text>
+
+<!-- Flecha 3→4 izquierda -->
+<line x1="173" y1="308" x2="173" y2="324" stroke="#0891B2" stroke-width="2" marker-end="url(#arrL)"/>
+
+<!-- PASO 4: Ordenador -->
+<rect x="20" y="324" width="306" height="52" rx="8" fill="#1E3A5F"/>
+<text x="173" y="344" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">🖥️ El ordenador lo ejecuta</text>
+<text x="173" y="362" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">Lee el archivo ejecutable generado</text>
+
+<rect x="354" y="324" width="306" height="52" rx="8" fill="#4C1D95"/>
+<text x="507" y="344" text-anchor="middle" dominant-baseline="central" style="fill:#FFFFFF;font-size:12px;font-weight:700;">🖥️ El ordenador lo ejecuta</text>
+<text x="507" y="362" text-anchor="middle" dominant-baseline="central" style="fill:#94A3B8;font-size:10px;font-weight:600;">El intérprete ejecuta línea a línea</text>
+</svg>
