@@ -1,8 +1,15 @@
-background/*CAMBIO COLOR FONDO CUERPO SEGÚN SELECCIÓN DEL USUARIO EN EL DUA*/
+/*CAMBIO COLOR FONDO CUERPO SEGÚN SELECCIÓN DEL USUARIO EN EL DUA*/
+.page{
+  background-color: #ECEAE3 !important;
+  
+}
 
-body:not(.dark-mode-active) article:not(.no-header) :is(.box-content, .udl-content, .eXelearning-content){
-  background-color:var(--fondo-cuerpo-iDevice);
+body:not(.dark-mode-active) article:not(.no-header) .box-head + :is(.box-content, .udl-content, .eXelearning-content){
+  background-color:/*var(--fondo-cuerpo-iDevice)*/white !important;
   border-radius:0 0 10px 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--fondo-cuerpo-iDevice) 70%, black);
+  border-right: 1px solid color-mix(in srgb, var(--fondo-cuerpo-iDevice) 70%, black);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body:not(.dark-mode-active) .no-header :is(.box-content, .udl-content, .eXelearning-content){

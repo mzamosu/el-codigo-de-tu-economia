@@ -6,7 +6,7 @@
   padding-left:8px;
   padding-bottom:20px;
   background-color:var(--background-siteNav);
-  height:calc(100vh - 98px);
+  height:auto;
   z-index:1;
   scrollbar-width:none;
   transition:left .3s ease;
@@ -14,8 +14,10 @@
   margin-top:94px;
   margin-left:4px;
   margin-bottom:4px;
-  border-radius:12px
-
+  border-radius:12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--background-siteNav) 70%, black);
+  border-right: 1px solid color-mix(in srgb, var(--background-siteNav) 70%, black);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 #siteNav>ul{
   max-height:100%;
@@ -94,7 +96,7 @@ body.siteNav-off main.page,
 
 }
 #siteNav a.main-node{
-  background-color:#555559;
+  background-color:#00843d;
   color:#fff;
   font-weight:bolder;
   font-variant:small-caps
@@ -102,7 +104,7 @@ body.siteNav-off main.page,
 }
 #siteNav a.active{
   color:#fff;
-  background-color:#555559;
+  background-color:#006d34;
   font-weight:bold;
   margin-bottom:4px
 
@@ -110,7 +112,7 @@ body.siteNav-off main.page,
 #siteNav a.highlighted-link{
   color:#000;
   margin-top:10px;
-  background:#f1f1f1 url(../img/book.svg) no-repeat 8px center;
+  background:#edf9f0 url(../img/book.svg) no-repeat 8px center;
   padding-left:42px
 
 }
@@ -139,9 +141,7 @@ body.siteNav-off main.page,
 
 }
 #siteNav a:hover{
-  background:hsl(240,
-  2.2988505747%,
-  24.1176470588%);
+  background:#006d34;
   text-decoration:none;
   color:#fff
 
@@ -149,11 +149,11 @@ body.siteNav-off main.page,
 #siteNav ul ul a{
   padding-left:35px;
   font-size:.95em;
-  background-color:#f2f2f7
+  background-color:#edf9f0
 
 }
 .current-page-parent a{
-  background-color:#f2f2f7;
+  background-color:#edf9f0;
   margin-bottom:4px
 
 }
@@ -182,11 +182,11 @@ button#siteNavToggler span,
 
 /*SELECCIONADO*/
 .daddy:not(.main-node){
-  background:#c9c9c9 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+  background:#d9efe1 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
 
 }
 .daddy.main-node{
-  background:#555559 !important
+  background:#00843d !important
 
 }
 .daddy{
@@ -194,37 +194,31 @@ button#siteNavToggler span,
 
 }
 .active .daddy{
-  background:#f2f2f7 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+  background:#edf9f0 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
 
 }
 .current-page-parent .daddy:not(.main-node){
-  background:#f2f2f7 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
+  background:#edf9f0 url(../img/arrow_down.svg) no-repeat right 16px center/22px !important
 
 }
 .current-page-parent .daddy.main-node{
-  background:#555559
+  background:#00843d
 
 }
 .active .active.daddy{
-  background:#555559 url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
+  background:#006d34 url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
 
 }
 .daddy:hover{
-  background:hsl(240,
-  2.2988505747%,
-  29.1176470588%) url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
+  background:#006d34 url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
 
 }
 .current-page-parent .daddy:hover{
-  background:hsl(240,
-  2.2988505747%,
-  29.1176470588%) url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
+  background:#006d34 url(../img/arrow_down_white.svg) no-repeat right 16px center/22px !important
 
 }
 .active.daddy:hover{
-  background:hsl(240,
-  2.2988505747%,
-  24.1176470588%) url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
+  background:#005e2d url(../img/arrow_up_white.svg) no-repeat right 16px center/22px !important
 
 }
 /*FIN SELECCIONADO*/
@@ -240,7 +234,7 @@ button#siteNavToggler span,
   height:auto;
   background-image:url(../img/arrow_back.svg);
   background-size:24px;
-  background-color:var(--background-nav-button);
+  background-color: color-mix(in srgb, var(--background-nav-bar), white 10%);
   background-repeat:no-repeat;
   border-radius:8px;
   z-index:999;
@@ -254,8 +248,7 @@ button#siteNavToggler span,
 .nav-buttons .nav-button:hover,
   button.toggler:hover{
   background-color:color-mix(in srgb,
-   var(--background-nav-button),
-   white 10%)
+   var(--background-nav-bar) 90%, white 20%);
 
 }
 .nav-buttons span.nav-button{
@@ -289,7 +282,7 @@ button#siteNavToggler{
 
 }
 #siteNavToggler:hover{
-  background-color:#f4f4f4
+  background-color:#edf9f0
 
 }
 button#siteNavToggler span,
@@ -304,7 +297,7 @@ body.siteNav-off button#siteNavToggler{
 
 }
 body.siteNav-off button#siteNavToggler:hover{
-  background-color:#363636
+  background-color:#006d34
 
 }
 #siteNavToggler .sr-av{
